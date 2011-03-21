@@ -1,0 +1,4 @@
+import www::ubx::ch::openAir;
+
+sortedGreetings(Model this) :
+	this.greetings.sortBy(g|g.name.toLowerCase());

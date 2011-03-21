@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/www.ubx.ch.OpenAir/src-gen"
+    editDirectory="/www.ubx.ch.OpenAir.edit/src" editorDirectory="/www.ubx.ch.OpenAir.editor/src"
+    modelPluginID="www.ubx.ch.OpenAir" forceOverwrite="true" modelName="OpenAir" updateClasspath="false"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="5.0"
+    copyrightFields="false" editPluginID="www.ubx.ch.OpenAir.edit" editorPluginID="www.ubx.ch.OpenAir.editor">
+  <genPackages prefix="OpenAir" basePackage="www.ubx.ch" disposableProviderFactory="true"
+      ecorePackage="OpenAir.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OpenAir.ecore#//ClassType">
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/B"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/C"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/D"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/E"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/F"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/G"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/Q"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/R"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/W"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/P"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/GP"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/TMZ"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/CTR"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/Restricted"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//ClassType/UKN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OpenAir.ecore#//Units">
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/feed"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/meter"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/msl"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/m_msl"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/ft_msl"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/agl"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/m_agl"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/ft_AGL"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/AMSL"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//Units/m_AMSL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OpenAir.ecore#//WE">
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//WE/W"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//WE/E"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OpenAir.ecore#//NS">
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//NS/N"/>
+      <genEnumLiterals ecoreEnumLiteral="OpenAir.ecore#//NS/S"/>
+    </genEnums>
+    <genClasses ecoreClass="OpenAir.ecore#//OpenAir">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//OpenAir/airspaces"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Airspace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Airspace/thedef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Airspace/thegeom"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//TheDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/asclass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/sp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/sb"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/at"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//TheDef/limit"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//AsClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//AsClass/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//SP">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SP/sp0"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SP/sp1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SP/sp2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SP/sp3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SP/sp4"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//SB">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SB/sbVal1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SB/sbVal2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SB/sbVal3"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//AsName">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//AsName/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Limites">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Limites/lowLimit"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//LLimit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//LLimit/highLimit"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//HLimit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//HLimit/heighLimit"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//TheGeom"/>
+    <genClasses ecoreClass="OpenAir.ecore#//LowLimit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//LowLimit/ll"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//HighLimit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//HighLimit/hl"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Limit"/>
+    <genClasses ecoreClass="OpenAir.ecore#//FL">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//FL/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//SFC"/>
+    <genClasses ecoreClass="OpenAir.ecore#//GND"/>
+    <genClasses ecoreClass="OpenAir.ecore#//UNL"/>
+    <genClasses ecoreClass="OpenAir.ecore#//VAL">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//VAL/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//VAL/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//V">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//V/vsub"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Vsub">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Vsub/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Vsub/d"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DC">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DC/radius"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DP">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DP/dp"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Point/ns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Point/we"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Point1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/longD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/longM"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/longS"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/latD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/latM"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point1/latS"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Point2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point2/longD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point2/longMf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point2/latD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point2/latMf"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Point3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/longD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/longM"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/longS"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/latD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/latM"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point3/latS"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Point4">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point4/longD"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Point4/latD"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//LongDegr">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//LongDegr/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//LatDegr">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//LatDegr/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//MinSec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//MinSec/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//SecDec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//SecDec/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//MinDec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//MinDec/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//LongDec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//LongDec/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//LatDec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//LatDec/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DA">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DA/da"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DaParams">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DaParams/angleStart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DaParams/angleEnd"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DaParams1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DaParams1/radius"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DaParams2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DaParams2/radius"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//DB">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DB/dp0"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DB/dp1"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//AT">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//AT/lp"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
