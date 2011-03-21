@@ -108,19 +108,22 @@ LatDegr:
 	value=INT;
 
 MinSec:
-	':' value=INT;
+	Sep value=INT;
 
 SecDec:
-	':' value=REAL;
+	Sep value=REAL;
 
 MinDec:
-	':' value=REAL;
+	Sep value=REAL;
 
 LongDec:
 	value=REAL;
 
 LatDec:
 	value=REAL;
+
+Sep:
+	':';
 
 enum WE:
 	W='W' | E='E';
