@@ -4903,11 +4903,11 @@ protected class LatDegr_ValueAssignment extends AssignmentToken  {
 /************ begin Rule MinSec ****************
  *
  * MinSec:
- * 	":" value=INT;
+ * 	Sep value=INT;
  *
  **/
 
-// ":" value=INT
+// Sep value=INT
 protected class MinSec_Group extends GroupToken {
 	
 	public MinSec_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -4936,16 +4936,16 @@ protected class MinSec_Group extends GroupToken {
 
 }
 
-// ":"
-protected class MinSec_ColonKeyword_0 extends KeywordToken  {
-	
-	public MinSec_ColonKeyword_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+// Sep
+protected class MinSec_SepParserRuleCall_0 extends UnassignedTextToken {
+
+	public MinSec_SepParserRuleCall_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getMinSecAccess().getColonKeyword_0();
+	public RuleCall getGrammarElement() {
+		return grammarAccess.getMinSecAccess().getSepParserRuleCall_0();
 	}
 
     @Override
@@ -4972,7 +4972,7 @@ protected class MinSec_ValueAssignment_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new MinSec_ColonKeyword_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new MinSec_SepParserRuleCall_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -4998,11 +4998,11 @@ protected class MinSec_ValueAssignment_1 extends AssignmentToken  {
 /************ begin Rule SecDec ****************
  *
  * SecDec:
- * 	":" value=REAL;
+ * 	Sep value=REAL;
  *
  **/
 
-// ":" value=REAL
+// Sep value=REAL
 protected class SecDec_Group extends GroupToken {
 	
 	public SecDec_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -5031,16 +5031,16 @@ protected class SecDec_Group extends GroupToken {
 
 }
 
-// ":"
-protected class SecDec_ColonKeyword_0 extends KeywordToken  {
-	
-	public SecDec_ColonKeyword_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+// Sep
+protected class SecDec_SepParserRuleCall_0 extends UnassignedTextToken {
+
+	public SecDec_SepParserRuleCall_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getSecDecAccess().getColonKeyword_0();
+	public RuleCall getGrammarElement() {
+		return grammarAccess.getSecDecAccess().getSepParserRuleCall_0();
 	}
 
     @Override
@@ -5067,7 +5067,7 @@ protected class SecDec_ValueAssignment_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new SecDec_ColonKeyword_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new SecDec_SepParserRuleCall_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -5093,11 +5093,11 @@ protected class SecDec_ValueAssignment_1 extends AssignmentToken  {
 /************ begin Rule MinDec ****************
  *
  * MinDec:
- * 	":" value=REAL;
+ * 	Sep value=REAL;
  *
  **/
 
-// ":" value=REAL
+// Sep value=REAL
 protected class MinDec_Group extends GroupToken {
 	
 	public MinDec_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -5126,16 +5126,16 @@ protected class MinDec_Group extends GroupToken {
 
 }
 
-// ":"
-protected class MinDec_ColonKeyword_0 extends KeywordToken  {
-	
-	public MinDec_ColonKeyword_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+// Sep
+protected class MinDec_SepParserRuleCall_0 extends UnassignedTextToken {
+
+	public MinDec_SepParserRuleCall_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getMinDecAccess().getColonKeyword_0();
+	public RuleCall getGrammarElement() {
+		return grammarAccess.getMinDecAccess().getSepParserRuleCall_0();
 	}
 
     @Override
@@ -5162,7 +5162,7 @@ protected class MinDec_ValueAssignment_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new MinDec_ColonKeyword_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new MinDec_SepParserRuleCall_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -5273,6 +5273,7 @@ protected class LatDec_ValueAssignment extends AssignmentToken  {
 }
 
 /************ end Rule LatDec ****************/
+
 
 
 /************ begin Rule DA ****************

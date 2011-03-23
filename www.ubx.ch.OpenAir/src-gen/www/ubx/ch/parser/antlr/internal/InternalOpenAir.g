@@ -2565,9 +2565,13 @@ ruleMinSec returns [EObject current=null]
     @after { resetLookahead(); 
     	lastConsumedNode = currentNode;
     }:
-(	':' 
-    {
-        createLeafNode(grammarAccess.getMinSecAccess().getColonKeyword_0(), null); 
+(
+    { 
+        currentNode=createCompositeNode(grammarAccess.getMinSecAccess().getSepParserRuleCall_0(), currentNode); 
+    }
+ruleSep
+    { 
+        currentNode = currentNode.getParent();
     }
 (
 (
@@ -2616,9 +2620,13 @@ ruleSecDec returns [EObject current=null]
     @after { resetLookahead(); 
     	lastConsumedNode = currentNode;
     }:
-(	':' 
-    {
-        createLeafNode(grammarAccess.getSecDecAccess().getColonKeyword_0(), null); 
+(
+    { 
+        currentNode=createCompositeNode(grammarAccess.getSecDecAccess().getSepParserRuleCall_0(), currentNode); 
+    }
+ruleSep
+    { 
+        currentNode = currentNode.getParent();
     }
 (
 (
@@ -2667,9 +2675,13 @@ ruleMinDec returns [EObject current=null]
     @after { resetLookahead(); 
     	lastConsumedNode = currentNode;
     }:
-(	':' 
-    {
-        createLeafNode(grammarAccess.getMinDecAccess().getColonKeyword_0(), null); 
+(
+    { 
+        currentNode=createCompositeNode(grammarAccess.getMinDecAccess().getSepParserRuleCall_0(), currentNode); 
+    }
+ruleSep
+    { 
+        currentNode = currentNode.getParent();
     }
 (
 (
@@ -2791,6 +2803,35 @@ ruleLatDec returns [EObject current=null]
 )
 )
 ;
+
+
+
+
+
+// Entry rule entryRuleSep
+entryRuleSep returns [String current=null] 
+	:
+	{ currentNode = createCompositeNode(grammarAccess.getSepRule(), currentNode); } 
+	 iv_ruleSep=ruleSep 
+	 { $current=$iv_ruleSep.current.getText(); }  
+	 EOF 
+;
+
+// Rule Sep
+ruleSep returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { setCurrentLookahead(); resetLookahead(); 
+    }
+    @after { resetLookahead(); 
+	    lastConsumedNode = currentNode;
+    }:
+
+	kw=':' 
+    {
+        $current.merge(kw);
+        createLeafNode(grammarAccess.getSepAccess().getColonKeyword(), null); 
+    }
+
+    ;
 
 
 

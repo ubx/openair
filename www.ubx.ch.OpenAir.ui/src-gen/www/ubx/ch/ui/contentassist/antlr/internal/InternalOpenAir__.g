@@ -7,79 +7,79 @@ package www.ubx.ch.ui.contentassist.antlr.internal;
 import org.eclipse.xtext.ui.editor.contentassist.antlr.internal.Lexer;
 }
 
-T12 : '+' ;
-T13 : '-' ;
-T14 : 'A' ;
-T15 : 'B' ;
-T16 : 'C' ;
-T17 : 'D' ;
-T18 : 'E' ;
-T19 : 'F' ;
-T20 : 'G' ;
-T21 : 'Q' ;
-T22 : 'R' ;
-T23 : 'W' ;
-T24 : 'P' ;
-T25 : 'GP' ;
-T26 : 'TMZ' ;
-T27 : 'CTR' ;
-T28 : 'Restricted' ;
-T29 : 'UKN' ;
-T30 : 'ft' ;
-T31 : 'm' ;
-T32 : 'MSL' ;
-T33 : 'm MSL' ;
-T34 : 'ft MSL' ;
-T35 : 'AGL' ;
-T36 : 'm AGL' ;
-T37 : 'ft AGL' ;
-T38 : 'AMSL' ;
-T39 : 'm AMSL' ;
-T40 : 'N' ;
-T41 : 'S' ;
-T42 : 'AC' ;
-T43 : 'SP' ;
-T44 : ',' ;
-T45 : 'SB' ;
-T46 : 'AN' ;
-T47 : 'AL' ;
-T48 : 'AH' ;
-T49 : 'FL' ;
-T50 : 'SFC' ;
-T51 : 'GND' ;
-T52 : 'UNL' ;
-T53 : 'V' ;
-T54 : 'X=' ;
-T55 : 'D=' ;
-T56 : 'DC' ;
-T57 : 'DP' ;
-T58 : ':' ;
+T12 : ':' ;
+T13 : '+' ;
+T14 : '-' ;
+T15 : 'A' ;
+T16 : 'B' ;
+T17 : 'C' ;
+T18 : 'D' ;
+T19 : 'E' ;
+T20 : 'F' ;
+T21 : 'G' ;
+T22 : 'Q' ;
+T23 : 'R' ;
+T24 : 'W' ;
+T25 : 'P' ;
+T26 : 'GP' ;
+T27 : 'TMZ' ;
+T28 : 'CTR' ;
+T29 : 'Restricted' ;
+T30 : 'UKN' ;
+T31 : 'ft' ;
+T32 : 'm' ;
+T33 : 'MSL' ;
+T34 : 'm MSL' ;
+T35 : 'ft MSL' ;
+T36 : 'AGL' ;
+T37 : 'm AGL' ;
+T38 : 'ft AGL' ;
+T39 : 'AMSL' ;
+T40 : 'm AMSL' ;
+T41 : 'N' ;
+T42 : 'S' ;
+T43 : 'AC' ;
+T44 : 'SP' ;
+T45 : ',' ;
+T46 : 'SB' ;
+T47 : 'AN' ;
+T48 : 'AL' ;
+T49 : 'AH' ;
+T50 : 'FL' ;
+T51 : 'SFC' ;
+T52 : 'GND' ;
+T53 : 'UNL' ;
+T54 : 'V' ;
+T55 : 'X=' ;
+T56 : 'D=' ;
+T57 : 'DC' ;
+T58 : 'DP' ;
 T59 : 'DA' ;
 T60 : 'DB' ;
 T61 : 'AT' ;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6270
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6294
 RULE_REAL : '-'? RULE_INT+ '.' RULE_INT+;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6272
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6296
 RULE_SL_COMMENT : '*' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6274
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6298
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6276
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6300
 RULE_INT : ('0'..'9')+;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6278
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6302
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6280
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6304
 RULE_ML_COMMENT : '/*' ( options {greedy=false;} : . )*'*/';
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6282
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6306
 RULE_WS : (' '|'\t'|'\r'|'\n')+;
 
-// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6284
+// $ANTLR src "../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g" 6308
 RULE_ANY_OTHER : .;
 
 

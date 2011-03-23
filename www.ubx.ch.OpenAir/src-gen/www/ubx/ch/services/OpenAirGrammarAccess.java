@@ -1048,19 +1048,19 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	public class MinSecElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MinSec");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cColonKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cSepParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Assignment cValueAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cValueINTTerminalRuleCall_1_0 = (RuleCall)cValueAssignment_1.eContents().get(0);
 		
 		//MinSec:
-		//	":" value=INT;
+		//	Sep value=INT;
 		public ParserRule getRule() { return rule; }
 
-		//":" value=INT
+		//Sep value=INT
 		public Group getGroup() { return cGroup; }
 
-		//":"
-		public Keyword getColonKeyword_0() { return cColonKeyword_0; }
+		//Sep
+		public RuleCall getSepParserRuleCall_0() { return cSepParserRuleCall_0; }
 
 		//value=INT
 		public Assignment getValueAssignment_1() { return cValueAssignment_1; }
@@ -1072,19 +1072,19 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	public class SecDecElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SecDec");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cColonKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cSepParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Assignment cValueAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cValueREALTerminalRuleCall_1_0 = (RuleCall)cValueAssignment_1.eContents().get(0);
 		
 		//SecDec:
-		//	":" value=REAL;
+		//	Sep value=REAL;
 		public ParserRule getRule() { return rule; }
 
-		//":" value=REAL
+		//Sep value=REAL
 		public Group getGroup() { return cGroup; }
 
-		//":"
-		public Keyword getColonKeyword_0() { return cColonKeyword_0; }
+		//Sep
+		public RuleCall getSepParserRuleCall_0() { return cSepParserRuleCall_0; }
 
 		//value=REAL
 		public Assignment getValueAssignment_1() { return cValueAssignment_1; }
@@ -1096,19 +1096,19 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	public class MinDecElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MinDec");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cColonKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cSepParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Assignment cValueAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cValueREALTerminalRuleCall_1_0 = (RuleCall)cValueAssignment_1.eContents().get(0);
 		
 		//MinDec:
-		//	":" value=REAL;
+		//	Sep value=REAL;
 		public ParserRule getRule() { return rule; }
 
-		//":" value=REAL
+		//Sep value=REAL
 		public Group getGroup() { return cGroup; }
 
-		//":"
-		public Keyword getColonKeyword_0() { return cColonKeyword_0; }
+		//Sep
+		public RuleCall getSepParserRuleCall_0() { return cSepParserRuleCall_0; }
 
 		//value=REAL
 		public Assignment getValueAssignment_1() { return cValueAssignment_1; }
@@ -1147,6 +1147,18 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 
 		//REAL
 		public RuleCall getValueREALTerminalRuleCall_0() { return cValueREALTerminalRuleCall_0; }
+	}
+
+	public class SepElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Sep");
+		private final Keyword cColonKeyword = (Keyword)rule.eContents().get(1);
+		
+		//Sep returns ecore::EString:
+		//	":";
+		public ParserRule getRule() { return rule; }
+
+		//":"
+		public Keyword getColonKeyword() { return cColonKeyword; }
 	}
 
 	public class DAElements extends AbstractParserRuleElementFinder {
@@ -1670,6 +1682,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	private MinDecElements pMinDec;
 	private LongDecElements pLongDec;
 	private LatDecElements pLatDec;
+	private SepElements pSep;
 	private WEElements unknownRuleWE;
 	private NSElements unknownRuleNS;
 	private DAElements pDA;
@@ -2034,7 +2047,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//MinSec:
-	//	":" value=INT;
+	//	Sep value=INT;
 	public MinSecElements getMinSecAccess() {
 		return (pMinSec != null) ? pMinSec : (pMinSec = new MinSecElements());
 	}
@@ -2044,7 +2057,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//SecDec:
-	//	":" value=REAL;
+	//	Sep value=REAL;
 	public SecDecElements getSecDecAccess() {
 		return (pSecDec != null) ? pSecDec : (pSecDec = new SecDecElements());
 	}
@@ -2054,7 +2067,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//MinDec:
-	//	":" value=REAL;
+	//	Sep value=REAL;
 	public MinDecElements getMinDecAccess() {
 		return (pMinDec != null) ? pMinDec : (pMinDec = new MinDecElements());
 	}
@@ -2081,6 +2094,16 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getLatDecRule() {
 		return getLatDecAccess().getRule();
+	}
+
+	//Sep returns ecore::EString:
+	//	":";
+	public SepElements getSepAccess() {
+		return (pSep != null) ? pSep : (pSep = new SepElements());
+	}
+	
+	public ParserRule getSepRule() {
+		return getSepAccess().getRule();
 	}
 
 	//enum WE:

@@ -82,10 +82,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT12() throws RecognitionException {
         try {
             int _type = T12;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:10:5: ( '+' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:10:7: '+'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:10:5: ( ':' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:10:7: ':'
             {
-            match('+'); 
+            match(':'); 
 
             }
 
@@ -100,10 +100,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT13() throws RecognitionException {
         try {
             int _type = T13;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:11:5: ( '-' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:11:7: '-'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:11:5: ( '+' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:11:7: '+'
             {
-            match('-'); 
+            match('+'); 
 
             }
 
@@ -118,10 +118,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT14() throws RecognitionException {
         try {
             int _type = T14;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:12:5: ( 'A' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:12:7: 'A'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:12:5: ( '-' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:12:7: '-'
             {
-            match('A'); 
+            match('-'); 
 
             }
 
@@ -136,10 +136,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT15() throws RecognitionException {
         try {
             int _type = T15;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:13:5: ( 'B' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:13:7: 'B'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:13:5: ( 'A' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:13:7: 'A'
             {
-            match('B'); 
+            match('A'); 
 
             }
 
@@ -154,10 +154,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT16() throws RecognitionException {
         try {
             int _type = T16;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:14:5: ( 'C' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:14:7: 'C'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:14:5: ( 'B' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:14:7: 'B'
             {
-            match('C'); 
+            match('B'); 
 
             }
 
@@ -172,10 +172,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT17() throws RecognitionException {
         try {
             int _type = T17;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:15:5: ( 'D' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:15:7: 'D'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:15:5: ( 'C' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:15:7: 'C'
             {
-            match('D'); 
+            match('C'); 
 
             }
 
@@ -190,10 +190,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT18() throws RecognitionException {
         try {
             int _type = T18;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:16:5: ( 'E' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:16:7: 'E'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:16:5: ( 'D' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:16:7: 'D'
             {
-            match('E'); 
+            match('D'); 
 
             }
 
@@ -208,10 +208,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT19() throws RecognitionException {
         try {
             int _type = T19;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:17:5: ( 'F' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:17:7: 'F'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:17:5: ( 'E' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:17:7: 'E'
             {
-            match('F'); 
+            match('E'); 
 
             }
 
@@ -226,10 +226,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT20() throws RecognitionException {
         try {
             int _type = T20;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:18:5: ( 'G' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:18:7: 'G'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:18:5: ( 'F' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:18:7: 'F'
             {
-            match('G'); 
+            match('F'); 
 
             }
 
@@ -244,10 +244,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT21() throws RecognitionException {
         try {
             int _type = T21;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:19:5: ( 'Q' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:19:7: 'Q'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:19:5: ( 'G' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:19:7: 'G'
             {
-            match('Q'); 
+            match('G'); 
 
             }
 
@@ -262,10 +262,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT22() throws RecognitionException {
         try {
             int _type = T22;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:20:5: ( 'R' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:20:7: 'R'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:20:5: ( 'Q' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:20:7: 'Q'
             {
-            match('R'); 
+            match('Q'); 
 
             }
 
@@ -280,10 +280,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT23() throws RecognitionException {
         try {
             int _type = T23;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:21:5: ( 'W' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:21:7: 'W'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:21:5: ( 'R' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:21:7: 'R'
             {
-            match('W'); 
+            match('R'); 
 
             }
 
@@ -298,10 +298,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT24() throws RecognitionException {
         try {
             int _type = T24;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:22:5: ( 'P' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:22:7: 'P'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:22:5: ( 'W' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:22:7: 'W'
             {
-            match('P'); 
+            match('W'); 
 
             }
 
@@ -316,11 +316,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT25() throws RecognitionException {
         try {
             int _type = T25;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:23:5: ( 'GP' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:23:7: 'GP'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:23:5: ( 'P' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:23:7: 'P'
             {
-            match("GP"); 
-
+            match('P'); 
 
             }
 
@@ -335,10 +334,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT26() throws RecognitionException {
         try {
             int _type = T26;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:24:5: ( 'TMZ' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:24:7: 'TMZ'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:24:5: ( 'GP' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:24:7: 'GP'
             {
-            match("TMZ"); 
+            match("GP"); 
 
 
             }
@@ -354,10 +353,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT27() throws RecognitionException {
         try {
             int _type = T27;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:25:5: ( 'CTR' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:25:7: 'CTR'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:25:5: ( 'TMZ' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:25:7: 'TMZ'
             {
-            match("CTR"); 
+            match("TMZ"); 
 
 
             }
@@ -373,10 +372,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT28() throws RecognitionException {
         try {
             int _type = T28;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:26:5: ( 'Restricted' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:26:7: 'Restricted'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:26:5: ( 'CTR' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:26:7: 'CTR'
             {
-            match("Restricted"); 
+            match("CTR"); 
 
 
             }
@@ -392,10 +391,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT29() throws RecognitionException {
         try {
             int _type = T29;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:27:5: ( 'UKN' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:27:7: 'UKN'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:27:5: ( 'Restricted' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:27:7: 'Restricted'
             {
-            match("UKN"); 
+            match("Restricted"); 
 
 
             }
@@ -411,10 +410,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT30() throws RecognitionException {
         try {
             int _type = T30;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:28:5: ( 'ft' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:28:7: 'ft'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:28:5: ( 'UKN' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:28:7: 'UKN'
             {
-            match("ft"); 
+            match("UKN"); 
 
 
             }
@@ -430,10 +429,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT31() throws RecognitionException {
         try {
             int _type = T31;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:29:5: ( 'm' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:29:7: 'm'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:29:5: ( 'ft' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:29:7: 'ft'
             {
-            match('m'); 
+            match("ft"); 
+
 
             }
 
@@ -448,11 +448,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT32() throws RecognitionException {
         try {
             int _type = T32;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:30:5: ( 'MSL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:30:7: 'MSL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:30:5: ( 'm' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:30:7: 'm'
             {
-            match("MSL"); 
-
+            match('m'); 
 
             }
 
@@ -467,10 +466,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT33() throws RecognitionException {
         try {
             int _type = T33;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:31:5: ( 'm MSL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:31:7: 'm MSL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:31:5: ( 'MSL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:31:7: 'MSL'
             {
-            match("m MSL"); 
+            match("MSL"); 
 
 
             }
@@ -486,10 +485,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT34() throws RecognitionException {
         try {
             int _type = T34;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:32:5: ( 'ft MSL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:32:7: 'ft MSL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:32:5: ( 'm MSL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:32:7: 'm MSL'
             {
-            match("ft MSL"); 
+            match("m MSL"); 
 
 
             }
@@ -505,10 +504,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT35() throws RecognitionException {
         try {
             int _type = T35;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:33:5: ( 'AGL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:33:7: 'AGL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:33:5: ( 'ft MSL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:33:7: 'ft MSL'
             {
-            match("AGL"); 
+            match("ft MSL"); 
 
 
             }
@@ -524,10 +523,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT36() throws RecognitionException {
         try {
             int _type = T36;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:34:5: ( 'm AGL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:34:7: 'm AGL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:34:5: ( 'AGL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:34:7: 'AGL'
             {
-            match("m AGL"); 
+            match("AGL"); 
 
 
             }
@@ -543,10 +542,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT37() throws RecognitionException {
         try {
             int _type = T37;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:35:5: ( 'ft AGL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:35:7: 'ft AGL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:35:5: ( 'm AGL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:35:7: 'm AGL'
             {
-            match("ft AGL"); 
+            match("m AGL"); 
 
 
             }
@@ -562,10 +561,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT38() throws RecognitionException {
         try {
             int _type = T38;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:36:5: ( 'AMSL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:36:7: 'AMSL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:36:5: ( 'ft AGL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:36:7: 'ft AGL'
             {
-            match("AMSL"); 
+            match("ft AGL"); 
 
 
             }
@@ -581,10 +580,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT39() throws RecognitionException {
         try {
             int _type = T39;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:37:5: ( 'm AMSL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:37:7: 'm AMSL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:37:5: ( 'AMSL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:37:7: 'AMSL'
             {
-            match("m AMSL"); 
+            match("AMSL"); 
 
 
             }
@@ -600,10 +599,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT40() throws RecognitionException {
         try {
             int _type = T40;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:38:5: ( 'N' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:38:7: 'N'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:38:5: ( 'm AMSL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:38:7: 'm AMSL'
             {
-            match('N'); 
+            match("m AMSL"); 
+
 
             }
 
@@ -618,10 +618,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT41() throws RecognitionException {
         try {
             int _type = T41;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:39:5: ( 'S' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:39:7: 'S'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:39:5: ( 'N' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:39:7: 'N'
             {
-            match('S'); 
+            match('N'); 
 
             }
 
@@ -636,11 +636,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT42() throws RecognitionException {
         try {
             int _type = T42;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:40:5: ( 'AC' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:40:7: 'AC'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:40:5: ( 'S' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:40:7: 'S'
             {
-            match("AC"); 
-
+            match('S'); 
 
             }
 
@@ -655,10 +654,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT43() throws RecognitionException {
         try {
             int _type = T43;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:41:5: ( 'SP' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:41:7: 'SP'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:41:5: ( 'AC' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:41:7: 'AC'
             {
-            match("SP"); 
+            match("AC"); 
 
 
             }
@@ -674,10 +673,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT44() throws RecognitionException {
         try {
             int _type = T44;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:42:5: ( ',' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:42:7: ','
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:42:5: ( 'SP' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:42:7: 'SP'
             {
-            match(','); 
+            match("SP"); 
+
 
             }
 
@@ -692,11 +692,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT45() throws RecognitionException {
         try {
             int _type = T45;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:43:5: ( 'SB' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:43:7: 'SB'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:43:5: ( ',' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:43:7: ','
             {
-            match("SB"); 
-
+            match(','); 
 
             }
 
@@ -711,10 +710,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT46() throws RecognitionException {
         try {
             int _type = T46;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:44:5: ( 'AN' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:44:7: 'AN'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:44:5: ( 'SB' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:44:7: 'SB'
             {
-            match("AN"); 
+            match("SB"); 
 
 
             }
@@ -730,10 +729,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT47() throws RecognitionException {
         try {
             int _type = T47;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:45:5: ( 'AL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:45:7: 'AL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:45:5: ( 'AN' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:45:7: 'AN'
             {
-            match("AL"); 
+            match("AN"); 
 
 
             }
@@ -749,10 +748,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT48() throws RecognitionException {
         try {
             int _type = T48;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:46:5: ( 'AH' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:46:7: 'AH'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:46:5: ( 'AL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:46:7: 'AL'
             {
-            match("AH"); 
+            match("AL"); 
 
 
             }
@@ -768,10 +767,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT49() throws RecognitionException {
         try {
             int _type = T49;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:47:5: ( 'FL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:47:7: 'FL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:47:5: ( 'AH' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:47:7: 'AH'
             {
-            match("FL"); 
+            match("AH"); 
 
 
             }
@@ -787,10 +786,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT50() throws RecognitionException {
         try {
             int _type = T50;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:48:5: ( 'SFC' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:48:7: 'SFC'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:48:5: ( 'FL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:48:7: 'FL'
             {
-            match("SFC"); 
+            match("FL"); 
 
 
             }
@@ -806,10 +805,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT51() throws RecognitionException {
         try {
             int _type = T51;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:49:5: ( 'GND' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:49:7: 'GND'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:49:5: ( 'SFC' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:49:7: 'SFC'
             {
-            match("GND"); 
+            match("SFC"); 
 
 
             }
@@ -825,10 +824,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT52() throws RecognitionException {
         try {
             int _type = T52;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:50:5: ( 'UNL' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:50:7: 'UNL'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:50:5: ( 'GND' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:50:7: 'GND'
             {
-            match("UNL"); 
+            match("GND"); 
 
 
             }
@@ -844,10 +843,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT53() throws RecognitionException {
         try {
             int _type = T53;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:51:5: ( 'V' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:51:7: 'V'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:51:5: ( 'UNL' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:51:7: 'UNL'
             {
-            match('V'); 
+            match("UNL"); 
+
 
             }
 
@@ -862,11 +862,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT54() throws RecognitionException {
         try {
             int _type = T54;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:52:5: ( 'X=' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:52:7: 'X='
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:52:5: ( 'V' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:52:7: 'V'
             {
-            match("X="); 
-
+            match('V'); 
 
             }
 
@@ -881,10 +880,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT55() throws RecognitionException {
         try {
             int _type = T55;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:53:5: ( 'D=' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:53:7: 'D='
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:53:5: ( 'X=' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:53:7: 'X='
             {
-            match("D="); 
+            match("X="); 
 
 
             }
@@ -900,10 +899,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT56() throws RecognitionException {
         try {
             int _type = T56;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:54:5: ( 'DC' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:54:7: 'DC'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:54:5: ( 'D=' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:54:7: 'D='
             {
-            match("DC"); 
+            match("D="); 
 
 
             }
@@ -919,10 +918,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT57() throws RecognitionException {
         try {
             int _type = T57;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:55:5: ( 'DP' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:55:7: 'DP'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:55:5: ( 'DC' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:55:7: 'DC'
             {
-            match("DP"); 
+            match("DC"); 
 
 
             }
@@ -938,10 +937,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mT58() throws RecognitionException {
         try {
             int _type = T58;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:56:5: ( ':' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:56:7: ':'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:56:5: ( 'DP' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:56:7: 'DP'
             {
-            match(':'); 
+            match("DP"); 
+
 
             }
 
@@ -1013,10 +1013,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_REAL() throws RecognitionException {
         try {
             int _type = RULE_REAL;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:11: ( ( '-' )? ( RULE_INT )+ '.' ( RULE_INT )+ )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:13: ( '-' )? ( RULE_INT )+ '.' ( RULE_INT )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:11: ( ( '-' )? ( RULE_INT )+ '.' ( RULE_INT )+ )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:13: ( '-' )? ( RULE_INT )+ '.' ( RULE_INT )+
             {
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:13: ( '-' )?
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:13: ( '-' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1025,7 +1025,7 @@ public class InternalOpenAirLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:13: '-'
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:13: '-'
                     {
                     match('-'); 
 
@@ -1034,7 +1034,7 @@ public class InternalOpenAirLexer extends Lexer {
 
             }
 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:18: ( RULE_INT )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:18: ( RULE_INT )+
             int cnt2=0;
             loop2:
             do {
@@ -1048,7 +1048,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:18: RULE_INT
+            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:18: RULE_INT
             	    {
             	    mRULE_INT(); 
 
@@ -1065,7 +1065,7 @@ public class InternalOpenAirLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:32: ( RULE_INT )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:32: ( RULE_INT )+
             int cnt3=0;
             loop3:
             do {
@@ -1079,7 +1079,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6270:32: RULE_INT
+            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6294:32: RULE_INT
             	    {
             	    mRULE_INT(); 
 
@@ -1109,11 +1109,11 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_SL_COMMENT() throws RecognitionException {
         try {
             int _type = RULE_SL_COMMENT;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:17: ( '*' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:19: '*' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:17: ( '*' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:19: '*' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match('*'); 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:23: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:23: (~ ( ( '\\n' | '\\r' ) ) )*
             loop4:
             do {
                 int alt4=2;
@@ -1126,7 +1126,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:23: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:23: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFE') ) {
             	        input.consume();
@@ -1147,7 +1147,7 @@ public class InternalOpenAirLexer extends Lexer {
                 }
             } while (true);
 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:39: ( ( '\\r' )? '\\n' )?
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:39: ( ( '\\r' )? '\\n' )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1156,9 +1156,9 @@ public class InternalOpenAirLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:40: ( '\\r' )? '\\n'
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:40: ( '\\r' )? '\\n'
                     {
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:40: ( '\\r' )?
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:40: ( '\\r' )?
                     int alt5=2;
                     int LA5_0 = input.LA(1);
 
@@ -1167,7 +1167,7 @@ public class InternalOpenAirLexer extends Lexer {
                     }
                     switch (alt5) {
                         case 1 :
-                            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6272:40: '\\r'
+                            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6296:40: '\\r'
                             {
                             match('\r'); 
 
@@ -1197,10 +1197,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6274:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6274:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6298:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6298:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6274:11: ( '^' )?
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6298:11: ( '^' )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1209,7 +1209,7 @@ public class InternalOpenAirLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6274:11: '^'
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6298:11: '^'
                     {
                     match('^'); 
 
@@ -1228,7 +1228,7 @@ public class InternalOpenAirLexer extends Lexer {
                 recover(mse);    throw mse;
             }
 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6274:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6298:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop8:
             do {
                 int alt8=2;
@@ -1276,10 +1276,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_INT() throws RecognitionException {
         try {
             int _type = RULE_INT;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6276:10: ( ( '0' .. '9' )+ )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6276:12: ( '0' .. '9' )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6300:10: ( ( '0' .. '9' )+ )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6300:12: ( '0' .. '9' )+
             {
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6276:12: ( '0' .. '9' )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6300:12: ( '0' .. '9' )+
             int cnt9=0;
             loop9:
             do {
@@ -1293,7 +1293,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6276:13: '0' .. '9'
+            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6300:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1323,10 +1323,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_STRING() throws RecognitionException {
         try {
             int _type = RULE_STRING;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -1338,16 +1338,16 @@ public class InternalOpenAirLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("6278:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )", 12, 0, input);
+                    new NoViableAltException("6302:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )", 12, 0, input);
 
                 throw nvae;
             }
             switch (alt12) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop10:
                     do {
                         int alt10=3;
@@ -1363,7 +1363,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1380,7 +1380,7 @@ public class InternalOpenAirLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:62: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:62: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
                     	        input.consume();
@@ -1406,10 +1406,10 @@ public class InternalOpenAirLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:82: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:82: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:87: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:87: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop11:
                     do {
                         int alt11=3;
@@ -1425,7 +1425,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:88: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:88: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1442,7 +1442,7 @@ public class InternalOpenAirLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6278:129: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6302:129: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
                     	        input.consume();
@@ -1484,12 +1484,12 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_ML_COMMENT() throws RecognitionException {
         try {
             int _type = RULE_ML_COMMENT;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6280:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6280:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6304:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6304:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6280:24: ( options {greedy=false; } : . )*
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6304:24: ( options {greedy=false; } : . )*
             loop13:
             do {
                 int alt13=2;
@@ -1514,7 +1514,7 @@ public class InternalOpenAirLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6280:52: .
+            	    // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6304:52: .
             	    {
             	    matchAny(); 
 
@@ -1542,10 +1542,10 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_WS() throws RecognitionException {
         try {
             int _type = RULE_WS;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6282:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6282:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6306:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6306:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6282:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6306:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt14=0;
             loop14:
             do {
@@ -1598,8 +1598,8 @@ public class InternalOpenAirLexer extends Lexer {
     public final void mRULE_ANY_OTHER() throws RecognitionException {
         try {
             int _type = RULE_ANY_OTHER;
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6284:16: ( . )
-            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6284:18: .
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6308:16: ( . )
+            // ../www.ubx.ch.OpenAir.ui/src-gen/www/ubx/ch/ui/contentassist/antlr/internal/InternalOpenAir.g:6308:18: .
             {
             matchAny(); 
 
@@ -2031,86 +2031,83 @@ public class InternalOpenAirLexer extends Lexer {
 
     protected DFA15 dfa15 = new DFA15(this);
     static final String DFA15_eotS =
-        "\2\uffff\1\44\1\55\1\56\1\60\1\66\1\67\1\71\1\74\1\75\1\77\1\100"+
-        "\1\101\3\54\1\107\1\54\1\111\1\115\1\uffff\1\117\1\54\1\uffff\1"+
-        "\122\1\uffff\1\41\1\uffff\3\41\5\uffff\1\54\1\131\1\54\1\133\1\134"+
-        "\1\135\1\136\3\uffff\1\54\1\uffff\1\140\1\141\1\142\1\143\3\uffff"+
-        "\1\144\1\uffff\1\145\1\54\2\uffff\1\54\3\uffff\3\54\1\154\2\uffff"+
-        "\1\54\1\uffff\1\160\1\161\1\54\6\uffff\1\122\4\uffff\1\163\1\uffff"+
-        "\1\54\4\uffff\1\165\6\uffff\1\166\1\54\1\170\1\171\1\172\4\uffff"+
-        "\1\177\2\uffff\1\u0080\1\uffff\1\u0081\2\uffff\1\54\12\uffff\5\54"+
-        "\1\u0088\1\uffff";
+        "\3\uffff\1\44\1\56\1\57\1\61\1\67\1\70\1\72\1\75\1\76\1\100\1\101"+
+        "\1\102\3\55\1\110\1\55\1\112\1\116\1\uffff\1\120\1\55\1\122\1\uffff"+
+        "\1\41\1\uffff\3\41\6\uffff\1\55\1\131\1\55\1\133\1\134\1\135\1\136"+
+        "\3\uffff\1\55\1\uffff\1\140\1\141\1\142\1\143\3\uffff\1\144\1\uffff"+
+        "\1\145\1\55\2\uffff\1\55\3\uffff\3\55\1\154\2\uffff\1\55\1\uffff"+
+        "\1\160\1\55\1\162\5\uffff\1\122\4\uffff\1\163\1\uffff\1\55\4\uffff"+
+        "\1\165\6\uffff\1\166\1\55\1\170\1\171\1\172\4\uffff\1\177\1\uffff"+
+        "\1\u0080\2\uffff\1\u0081\2\uffff\1\55\12\uffff\5\55\1\u0088\1\uffff";
     static final String DFA15_eofS =
         "\u0089\uffff";
     static final String DFA15_minS =
-        "\1\0\1\uffff\14\60\1\115\1\113\1\164\1\40\1\123\2\60\1\uffff\1\60"+
-        "\1\75\1\uffff\1\56\1\uffff\1\101\1\uffff\2\0\1\52\5\uffff\1\114"+
-        "\1\60\1\123\4\60\3\uffff\1\122\1\uffff\4\60\3\uffff\1\60\1\uffff"+
-        "\1\60\1\104\2\uffff\1\163\3\uffff\1\132\1\116\1\114\1\40\1\101\1"+
-        "\uffff\1\114\1\uffff\2\60\1\103\6\uffff\1\56\4\uffff\1\60\1\uffff"+
-        "\1\114\4\uffff\1\60\6\uffff\1\60\1\164\3\60\1\101\1\uffff\1\107"+
-        "\1\uffff\1\60\2\uffff\1\60\1\uffff\1\60\2\uffff\1\162\12\uffff\1"+
-        "\151\1\143\1\164\1\145\1\144\1\60\1\uffff";
+        "\1\0\2\uffff\14\60\1\115\1\113\1\164\1\40\1\123\2\60\1\uffff\1\60"+
+        "\1\75\1\56\1\uffff\1\101\1\uffff\2\0\1\52\6\uffff\1\114\1\60\1\123"+
+        "\4\60\3\uffff\1\122\1\uffff\4\60\3\uffff\1\60\1\uffff\1\60\1\104"+
+        "\2\uffff\1\163\3\uffff\1\132\1\116\1\114\1\40\1\101\1\uffff\1\114"+
+        "\1\uffff\1\60\1\103\1\60\5\uffff\1\56\4\uffff\1\60\1\uffff\1\114"+
+        "\4\uffff\1\60\6\uffff\1\60\1\164\3\60\1\101\1\uffff\1\107\1\uffff"+
+        "\1\60\1\uffff\1\60\2\uffff\1\60\2\uffff\1\162\12\uffff\1\151\1\143"+
+        "\1\164\1\145\1\144\1\60\1\uffff";
     static final String DFA15_maxS =
-        "\1\ufffe\1\uffff\1\71\13\172\1\115\1\116\1\164\1\172\1\123\2\172"+
-        "\1\uffff\1\172\1\75\1\uffff\1\71\1\uffff\1\172\1\uffff\2\ufffe\1"+
-        "\52\5\uffff\1\114\1\172\1\123\4\172\3\uffff\1\122\1\uffff\4\172"+
-        "\3\uffff\1\172\1\uffff\1\172\1\104\2\uffff\1\163\3\uffff\1\132\1"+
-        "\116\1\114\1\172\1\115\1\uffff\1\114\1\uffff\2\172\1\103\6\uffff"+
-        "\1\71\4\uffff\1\172\1\uffff\1\114\4\uffff\1\172\6\uffff\1\172\1"+
-        "\164\3\172\1\115\1\uffff\1\115\1\uffff\1\172\2\uffff\1\172\1\uffff"+
-        "\1\172\2\uffff\1\162\12\uffff\1\151\1\143\1\164\1\145\1\144\1\172"+
-        "\1\uffff";
+        "\1\ufffe\2\uffff\1\71\13\172\1\115\1\116\1\164\1\172\1\123\2\172"+
+        "\1\uffff\1\172\1\75\1\71\1\uffff\1\172\1\uffff\2\ufffe\1\52\6\uffff"+
+        "\1\114\1\172\1\123\4\172\3\uffff\1\122\1\uffff\4\172\3\uffff\1\172"+
+        "\1\uffff\1\172\1\104\2\uffff\1\163\3\uffff\1\132\1\116\1\114\1\172"+
+        "\1\115\1\uffff\1\114\1\uffff\1\172\1\103\1\172\5\uffff\1\71\4\uffff"+
+        "\1\172\1\uffff\1\114\4\uffff\1\172\6\uffff\1\172\1\164\3\172\1\115"+
+        "\1\uffff\1\115\1\uffff\1\172\1\uffff\1\172\2\uffff\1\172\2\uffff"+
+        "\1\162\12\uffff\1\151\1\143\1\164\1\145\1\144\1\172\1\uffff";
     static final String DFA15_acceptS =
-        "\1\uffff\1\1\23\uffff\1\41\2\uffff\1\57\1\uffff\1\64\1\uffff\1\65"+
-        "\3\uffff\1\71\1\72\1\1\1\63\1\2\7\uffff\1\65\1\3\1\4\1\uffff\1\5"+
-        "\4\uffff\1\54\1\6\1\7\1\uffff\1\10\2\uffff\1\11\1\12\1\uffff\1\13"+
-        "\1\14\1\15\5\uffff\1\24\1\uffff\1\35\3\uffff\1\36\1\41\1\52\1\53"+
-        "\1\57\1\66\1\uffff\1\64\1\67\1\70\1\71\1\uffff\1\37\1\uffff\1\45"+
-        "\1\43\1\44\1\62\1\uffff\1\61\1\60\1\56\1\55\1\46\1\16\6\uffff\1"+
-        "\23\1\uffff\1\26\1\uffff\1\42\1\40\1\uffff\1\30\1\uffff\1\20\1\50"+
-        "\1\uffff\1\17\1\22\1\51\1\27\1\32\1\34\1\31\1\25\1\47\1\33\6\uffff"+
-        "\1\21";
+        "\1\uffff\1\1\1\2\23\uffff\1\42\3\uffff\1\64\1\uffff\1\65\3\uffff"+
+        "\1\71\1\72\1\1\1\2\1\3\1\63\7\uffff\1\65\1\4\1\5\1\uffff\1\6\4\uffff"+
+        "\1\55\1\7\1\10\1\uffff\1\11\2\uffff\1\12\1\13\1\uffff\1\14\1\15"+
+        "\1\16\5\uffff\1\25\1\uffff\1\36\3\uffff\1\37\1\42\1\53\1\54\1\66"+
+        "\1\uffff\1\64\1\67\1\70\1\71\1\uffff\1\40\1\uffff\1\45\1\46\1\44"+
+        "\1\62\1\uffff\1\61\1\60\1\57\1\56\1\47\1\17\6\uffff\1\24\1\uffff"+
+        "\1\27\1\uffff\1\41\1\uffff\1\43\1\31\1\uffff\1\21\1\51\1\uffff\1"+
+        "\20\1\23\1\52\1\30\1\33\1\32\1\35\1\26\1\50\1\34\6\uffff\1\22";
     static final String DFA15_specialS =
         "\u0089\uffff}>";
     static final String[] DFA15_transitionS = {
             "\11\41\2\40\2\41\1\40\22\41\1\40\1\41\1\35\4\41\1\36\2\41\1"+
-            "\32\1\1\1\25\1\2\1\41\1\37\12\31\1\30\6\41\1\3\1\4\1\5\1\6\1"+
-            "\7\1\10\1\11\5\34\1\22\1\23\1\34\1\15\1\12\1\13\1\24\1\16\1"+
-            "\17\1\26\1\14\1\27\2\34\3\41\1\33\1\34\1\41\5\34\1\20\6\34\1"+
-            "\21\15\34\uff84\41",
+            "\32\1\2\1\26\1\3\1\41\1\37\12\31\1\1\6\41\1\4\1\5\1\6\1\7\1"+
+            "\10\1\11\1\12\5\34\1\23\1\24\1\34\1\16\1\13\1\14\1\25\1\17\1"+
+            "\20\1\27\1\15\1\30\2\34\3\41\1\33\1\34\1\41\5\34\1\21\6\34\1"+
+            "\22\15\34\uff84\41",
             "",
-            "\12\43",
-            "\12\54\7\uffff\2\54\1\46\3\54\1\45\1\50\3\54\1\52\1\47\1\51"+
-            "\5\54\1\53\6\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\23\54\1\57\6\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\3\uffff\1\65\3\uffff\1\62\1\61\1\64\14\54\1\63\12\54"+
-            "\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\13\54\1\70\16\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\15\54\1\73\1\54\1\72\12\54\4\uffff\1\54\1\uffff"+
-            "\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\4\54\1\76\25\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\1\102",
-            "\1\103\2\uffff\1\104",
-            "\1\105",
-            "\1\106\17\uffff\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32"+
-            "\54",
-            "\1\110",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\1\54\1\112\3\54\1\114\11\54\1\113\12\54\4\uffff"+
-            "\1\54\1\uffff\32\54",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\1\120",
+            "\12\45",
+            "\12\55\7\uffff\2\55\1\47\3\55\1\46\1\52\3\55\1\51\1\50\1\53"+
+            "\5\55\1\54\6\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\23\55\1\60\6\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\3\uffff\1\66\3\uffff\1\63\1\62\1\65\14\55\1\64\12\55"+
+            "\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\13\55\1\71\16\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\15\55\1\74\1\55\1\73\12\55\4\uffff\1\55\1\uffff"+
+            "\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\4\55\1\77\25\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\1\103",
+            "\1\104\2\uffff\1\105",
+            "\1\106",
+            "\1\107\17\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55",
+            "\1\111",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\1\55\1\115\3\55\1\114\11\55\1\113\12\55\4\uffff"+
+            "\1\55\1\uffff\32\55",
             "",
-            "\1\43\1\uffff\12\123",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\1\121",
+            "\1\45\1\uffff\12\123",
             "",
-            "\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "\uffff\125",
             "\uffff\125",
@@ -2120,28 +2117,29 @@ public class InternalOpenAirLexer extends Lexer {
             "",
             "",
             "",
+            "",
             "\1\130",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\132",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
             "",
             "\1\137",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\146",
             "",
             "",
@@ -2152,55 +2150,54 @@ public class InternalOpenAirLexer extends Lexer {
             "\1\150",
             "\1\151",
             "\1\152",
-            "\1\153\17\uffff\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32"+
-            "\54",
+            "\1\153\17\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55",
             "\1\155\13\uffff\1\156",
             "",
             "\1\157",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\1\162",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\1\161",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
             "",
             "",
             "",
-            "",
-            "\1\43\1\uffff\12\123",
-            "",
+            "\1\45\1\uffff\12\123",
             "",
             "",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "\1\164",
             "",
             "",
             "",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
             "",
             "",
             "",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\167",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\174\13\uffff\1\173",
             "",
-            "\1\176\5\uffff\1\175",
+            "\1\175\5\uffff\1\176",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
-            "",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "",
             "\1\u0082",
@@ -2219,7 +2216,7 @@ public class InternalOpenAirLexer extends Lexer {
             "\1\u0085",
             "\1\u0086",
             "\1\u0087",
-            "\12\54\7\uffff\32\54\4\uffff\1\54\1\uffff\32\54",
+            "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             ""
     };
 

@@ -1065,6 +1065,36 @@ finally {
 
 
 
+// Entry rule entryRuleSep
+entryRuleSep 
+:
+{ before(grammarAccess.getSepRule()); }
+	 ruleSep
+{ after(grammarAccess.getSepRule()); } 
+	 EOF 
+;
+
+// Rule Sep
+ruleSep
+    @init {
+		int stackSize = keepStackSize();
+    }
+	:
+(
+{ before(grammarAccess.getSepAccess().getColonKeyword()); }
+
+	':' 
+
+{ after(grammarAccess.getSepAccess().getColonKeyword()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+
 // Entry rule entryRuleDA
 entryRuleDA 
 :
@@ -4385,11 +4415,9 @@ rule__MinSec__Group__0__Impl
     }
 :
 (
-{ before(grammarAccess.getMinSecAccess().getColonKeyword_0()); }
-
-	':' 
-
-{ after(grammarAccess.getMinSecAccess().getColonKeyword_0()); }
+{ before(grammarAccess.getMinSecAccess().getSepParserRuleCall_0()); }
+	ruleSep
+{ after(grammarAccess.getMinSecAccess().getSepParserRuleCall_0()); }
 )
 
 ;
@@ -4448,11 +4476,9 @@ rule__SecDec__Group__0__Impl
     }
 :
 (
-{ before(grammarAccess.getSecDecAccess().getColonKeyword_0()); }
-
-	':' 
-
-{ after(grammarAccess.getSecDecAccess().getColonKeyword_0()); }
+{ before(grammarAccess.getSecDecAccess().getSepParserRuleCall_0()); }
+	ruleSep
+{ after(grammarAccess.getSecDecAccess().getSepParserRuleCall_0()); }
 )
 
 ;
@@ -4511,11 +4537,9 @@ rule__MinDec__Group__0__Impl
     }
 :
 (
-{ before(grammarAccess.getMinDecAccess().getColonKeyword_0()); }
-
-	':' 
-
-{ after(grammarAccess.getMinDecAccess().getColonKeyword_0()); }
+{ before(grammarAccess.getMinDecAccess().getSepParserRuleCall_0()); }
+	ruleSep
+{ after(grammarAccess.getMinDecAccess().getSepParserRuleCall_0()); }
 )
 
 ;

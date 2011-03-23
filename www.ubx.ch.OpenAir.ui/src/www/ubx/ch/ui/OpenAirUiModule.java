@@ -15,11 +15,10 @@ public class OpenAirUiModule extends www.ubx.ch.ui.AbstractOpenAirUiModule {
 	public OpenAirUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
 	}
-	
-	  @Override
-	  public Class<? extends ISemanticModelTransformer> 
-	   bindISemanticModelTransformer() {
+
+	@Override
+	public Class<? extends ISemanticModelTransformer> bindISemanticModelTransformer() {
 		return OpenAirTransformer.class;
-	  }
+	}
 
 }

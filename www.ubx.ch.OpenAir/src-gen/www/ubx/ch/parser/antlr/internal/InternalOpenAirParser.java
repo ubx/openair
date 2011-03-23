@@ -3704,11 +3704,11 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                         if ( (LA12_4==30) ) {
                             int LA12_6 = input.LA(5);
 
-                            if ( (LA12_6==RULE_REAL) ) {
-                                alt12=3;
-                            }
-                            else if ( (LA12_6==RULE_INT) ) {
+                            if ( (LA12_6==RULE_INT) ) {
                                 alt12=1;
+                            }
+                            else if ( (LA12_6==RULE_REAL) ) {
+                                alt12=3;
                             }
                             else {
                                 NoViableAltException nvae =
@@ -5353,7 +5353,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleMinSec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2562:1: ruleMinSec returns [EObject current=null] : ( ':' ( (lv_value_1_0= RULE_INT ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2562:1: ruleMinSec returns [EObject current=null] : ( ruleSep ( (lv_value_1_0= RULE_INT ) ) ) ;
     public final EObject ruleMinSec() throws RecognitionException {
         EObject current = null;
 
@@ -5362,24 +5362,30 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2567:6: ( ( ':' ( (lv_value_1_0= RULE_INT ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2568:1: ( ':' ( (lv_value_1_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2567:6: ( ( ruleSep ( (lv_value_1_0= RULE_INT ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2568:1: ( ruleSep ( (lv_value_1_0= RULE_INT ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2568:1: ( ':' ( (lv_value_1_0= RULE_INT ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2568:3: ':' ( (lv_value_1_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2568:1: ( ruleSep ( (lv_value_1_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2569:5: ruleSep ( (lv_value_1_0= RULE_INT ) )
             {
-            match(input,30,FOLLOW_30_in_ruleMinSec4318); 
-
-                    createLeafNode(grammarAccess.getMinSecAccess().getColonKeyword_0(), null); 
+             
+                    currentNode=createCompositeNode(grammarAccess.getMinSecAccess().getSepParserRuleCall_0(), currentNode); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2572:1: ( (lv_value_1_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2573:1: (lv_value_1_0= RULE_INT )
+            pushFollow(FOLLOW_ruleSep_in_ruleMinSec4324);
+            ruleSep();
+            _fsp--;
+
+             
+                    currentNode = currentNode.getParent();
+                
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2576:1: ( (lv_value_1_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2577:1: (lv_value_1_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2573:1: (lv_value_1_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2574:3: lv_value_1_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2577:1: (lv_value_1_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2578:3: lv_value_1_0= RULE_INT
             {
             lv_value_1_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleMinSec4335); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleMinSec4340); 
 
             			createLeafNode(grammarAccess.getMinSecAccess().getValueINTTerminalRuleCall_1_0(), "value"); 
             		
@@ -5428,7 +5434,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleSecDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2604:1: entryRuleSecDec returns [EObject current=null] : iv_ruleSecDec= ruleSecDec EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2608:1: entryRuleSecDec returns [EObject current=null] : iv_ruleSecDec= ruleSecDec EOF ;
     public final EObject entryRuleSecDec() throws RecognitionException {
         EObject current = null;
 
@@ -5436,16 +5442,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2605:2: (iv_ruleSecDec= ruleSecDec EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2606:2: iv_ruleSecDec= ruleSecDec EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2609:2: (iv_ruleSecDec= ruleSecDec EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2610:2: iv_ruleSecDec= ruleSecDec EOF
             {
              currentNode = createCompositeNode(grammarAccess.getSecDecRule(), currentNode); 
-            pushFollow(FOLLOW_ruleSecDec_in_entryRuleSecDec4376);
+            pushFollow(FOLLOW_ruleSecDec_in_entryRuleSecDec4381);
             iv_ruleSecDec=ruleSecDec();
             _fsp--;
 
              current =iv_ruleSecDec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSecDec4386); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSecDec4391); 
 
             }
 
@@ -5463,7 +5469,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleSecDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2613:1: ruleSecDec returns [EObject current=null] : ( ':' ( (lv_value_1_0= RULE_REAL ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2617:1: ruleSecDec returns [EObject current=null] : ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) ) ;
     public final EObject ruleSecDec() throws RecognitionException {
         EObject current = null;
 
@@ -5472,24 +5478,30 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2618:6: ( ( ':' ( (lv_value_1_0= RULE_REAL ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2619:1: ( ':' ( (lv_value_1_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2622:6: ( ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2623:1: ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2619:1: ( ':' ( (lv_value_1_0= RULE_REAL ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2619:3: ':' ( (lv_value_1_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2623:1: ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2624:5: ruleSep ( (lv_value_1_0= RULE_REAL ) )
             {
-            match(input,30,FOLLOW_30_in_ruleSecDec4421); 
-
-                    createLeafNode(grammarAccess.getSecDecAccess().getColonKeyword_0(), null); 
+             
+                    currentNode=createCompositeNode(grammarAccess.getSecDecAccess().getSepParserRuleCall_0(), currentNode); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2623:1: ( (lv_value_1_0= RULE_REAL ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2624:1: (lv_value_1_0= RULE_REAL )
+            pushFollow(FOLLOW_ruleSep_in_ruleSecDec4432);
+            ruleSep();
+            _fsp--;
+
+             
+                    currentNode = currentNode.getParent();
+                
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2631:1: ( (lv_value_1_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2632:1: (lv_value_1_0= RULE_REAL )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2624:1: (lv_value_1_0= RULE_REAL )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2625:3: lv_value_1_0= RULE_REAL
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2632:1: (lv_value_1_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2633:3: lv_value_1_0= RULE_REAL
             {
             lv_value_1_0=(Token)input.LT(1);
-            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleSecDec4438); 
+            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleSecDec4448); 
 
             			createLeafNode(grammarAccess.getSecDecAccess().getValueREALTerminalRuleCall_1_0(), "value"); 
             		
@@ -5538,7 +5550,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleMinDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2655:1: entryRuleMinDec returns [EObject current=null] : iv_ruleMinDec= ruleMinDec EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2663:1: entryRuleMinDec returns [EObject current=null] : iv_ruleMinDec= ruleMinDec EOF ;
     public final EObject entryRuleMinDec() throws RecognitionException {
         EObject current = null;
 
@@ -5546,16 +5558,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2656:2: (iv_ruleMinDec= ruleMinDec EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2657:2: iv_ruleMinDec= ruleMinDec EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2664:2: (iv_ruleMinDec= ruleMinDec EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2665:2: iv_ruleMinDec= ruleMinDec EOF
             {
              currentNode = createCompositeNode(grammarAccess.getMinDecRule(), currentNode); 
-            pushFollow(FOLLOW_ruleMinDec_in_entryRuleMinDec4479);
+            pushFollow(FOLLOW_ruleMinDec_in_entryRuleMinDec4489);
             iv_ruleMinDec=ruleMinDec();
             _fsp--;
 
              current =iv_ruleMinDec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMinDec4489); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMinDec4499); 
 
             }
 
@@ -5573,7 +5585,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleMinDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2664:1: ruleMinDec returns [EObject current=null] : ( ':' ( (lv_value_1_0= RULE_REAL ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2672:1: ruleMinDec returns [EObject current=null] : ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) ) ;
     public final EObject ruleMinDec() throws RecognitionException {
         EObject current = null;
 
@@ -5582,24 +5594,30 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2669:6: ( ( ':' ( (lv_value_1_0= RULE_REAL ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2670:1: ( ':' ( (lv_value_1_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2677:6: ( ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2678:1: ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2670:1: ( ':' ( (lv_value_1_0= RULE_REAL ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2670:3: ':' ( (lv_value_1_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2678:1: ( ruleSep ( (lv_value_1_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2679:5: ruleSep ( (lv_value_1_0= RULE_REAL ) )
             {
-            match(input,30,FOLLOW_30_in_ruleMinDec4524); 
-
-                    createLeafNode(grammarAccess.getMinDecAccess().getColonKeyword_0(), null); 
+             
+                    currentNode=createCompositeNode(grammarAccess.getMinDecAccess().getSepParserRuleCall_0(), currentNode); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2674:1: ( (lv_value_1_0= RULE_REAL ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2675:1: (lv_value_1_0= RULE_REAL )
+            pushFollow(FOLLOW_ruleSep_in_ruleMinDec4540);
+            ruleSep();
+            _fsp--;
+
+             
+                    currentNode = currentNode.getParent();
+                
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2686:1: ( (lv_value_1_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2687:1: (lv_value_1_0= RULE_REAL )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2675:1: (lv_value_1_0= RULE_REAL )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2676:3: lv_value_1_0= RULE_REAL
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2687:1: (lv_value_1_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2688:3: lv_value_1_0= RULE_REAL
             {
             lv_value_1_0=(Token)input.LT(1);
-            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleMinDec4541); 
+            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleMinDec4556); 
 
             			createLeafNode(grammarAccess.getMinDecAccess().getValueREALTerminalRuleCall_1_0(), "value"); 
             		
@@ -5648,7 +5666,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleLongDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2706:1: entryRuleLongDec returns [EObject current=null] : iv_ruleLongDec= ruleLongDec EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2718:1: entryRuleLongDec returns [EObject current=null] : iv_ruleLongDec= ruleLongDec EOF ;
     public final EObject entryRuleLongDec() throws RecognitionException {
         EObject current = null;
 
@@ -5656,16 +5674,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2707:2: (iv_ruleLongDec= ruleLongDec EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2708:2: iv_ruleLongDec= ruleLongDec EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2719:2: (iv_ruleLongDec= ruleLongDec EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2720:2: iv_ruleLongDec= ruleLongDec EOF
             {
              currentNode = createCompositeNode(grammarAccess.getLongDecRule(), currentNode); 
-            pushFollow(FOLLOW_ruleLongDec_in_entryRuleLongDec4582);
+            pushFollow(FOLLOW_ruleLongDec_in_entryRuleLongDec4597);
             iv_ruleLongDec=ruleLongDec();
             _fsp--;
 
              current =iv_ruleLongDec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleLongDec4592); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleLongDec4607); 
 
             }
 
@@ -5683,7 +5701,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleLongDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2715:1: ruleLongDec returns [EObject current=null] : ( (lv_value_0_0= RULE_REAL ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2727:1: ruleLongDec returns [EObject current=null] : ( (lv_value_0_0= RULE_REAL ) ) ;
     public final EObject ruleLongDec() throws RecognitionException {
         EObject current = null;
 
@@ -5692,17 +5710,17 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2720:6: ( ( (lv_value_0_0= RULE_REAL ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2721:1: ( (lv_value_0_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2732:6: ( ( (lv_value_0_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2733:1: ( (lv_value_0_0= RULE_REAL ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2721:1: ( (lv_value_0_0= RULE_REAL ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2722:1: (lv_value_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2733:1: ( (lv_value_0_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2734:1: (lv_value_0_0= RULE_REAL )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2722:1: (lv_value_0_0= RULE_REAL )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2723:3: lv_value_0_0= RULE_REAL
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2734:1: (lv_value_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2735:3: lv_value_0_0= RULE_REAL
             {
             lv_value_0_0=(Token)input.LT(1);
-            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleLongDec4633); 
+            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleLongDec4648); 
 
             			createLeafNode(grammarAccess.getLongDecAccess().getValueREALTerminalRuleCall_0(), "value"); 
             		
@@ -5748,7 +5766,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleLatDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2753:1: entryRuleLatDec returns [EObject current=null] : iv_ruleLatDec= ruleLatDec EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2765:1: entryRuleLatDec returns [EObject current=null] : iv_ruleLatDec= ruleLatDec EOF ;
     public final EObject entryRuleLatDec() throws RecognitionException {
         EObject current = null;
 
@@ -5756,16 +5774,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2754:2: (iv_ruleLatDec= ruleLatDec EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2755:2: iv_ruleLatDec= ruleLatDec EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2766:2: (iv_ruleLatDec= ruleLatDec EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2767:2: iv_ruleLatDec= ruleLatDec EOF
             {
              currentNode = createCompositeNode(grammarAccess.getLatDecRule(), currentNode); 
-            pushFollow(FOLLOW_ruleLatDec_in_entryRuleLatDec4673);
+            pushFollow(FOLLOW_ruleLatDec_in_entryRuleLatDec4688);
             iv_ruleLatDec=ruleLatDec();
             _fsp--;
 
              current =iv_ruleLatDec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleLatDec4683); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleLatDec4698); 
 
             }
 
@@ -5783,7 +5801,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleLatDec
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2762:1: ruleLatDec returns [EObject current=null] : ( (lv_value_0_0= RULE_REAL ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2774:1: ruleLatDec returns [EObject current=null] : ( (lv_value_0_0= RULE_REAL ) ) ;
     public final EObject ruleLatDec() throws RecognitionException {
         EObject current = null;
 
@@ -5792,17 +5810,17 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2767:6: ( ( (lv_value_0_0= RULE_REAL ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2768:1: ( (lv_value_0_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2779:6: ( ( (lv_value_0_0= RULE_REAL ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2780:1: ( (lv_value_0_0= RULE_REAL ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2768:1: ( (lv_value_0_0= RULE_REAL ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2769:1: (lv_value_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2780:1: ( (lv_value_0_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2781:1: (lv_value_0_0= RULE_REAL )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2769:1: (lv_value_0_0= RULE_REAL )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2770:3: lv_value_0_0= RULE_REAL
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2781:1: (lv_value_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2782:3: lv_value_0_0= RULE_REAL
             {
             lv_value_0_0=(Token)input.LT(1);
-            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleLatDec4724); 
+            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleLatDec4739); 
 
             			createLeafNode(grammarAccess.getLatDecAccess().getValueREALTerminalRuleCall_0(), "value"); 
             		
@@ -5847,8 +5865,81 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
     // $ANTLR end ruleLatDec
 
 
+    // $ANTLR start entryRuleSep
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2812:1: entryRuleSep returns [String current=null] : iv_ruleSep= ruleSep EOF ;
+    public final String entryRuleSep() throws RecognitionException {
+        String current = null;
+
+        AntlrDatatypeRuleToken iv_ruleSep = null;
+
+
+        try {
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2813:2: (iv_ruleSep= ruleSep EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2814:2: iv_ruleSep= ruleSep EOF
+            {
+             currentNode = createCompositeNode(grammarAccess.getSepRule(), currentNode); 
+            pushFollow(FOLLOW_ruleSep_in_entryRuleSep4780);
+            iv_ruleSep=ruleSep();
+            _fsp--;
+
+             current =iv_ruleSep.getText(); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSep4791); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end entryRuleSep
+
+
+    // $ANTLR start ruleSep
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2821:1: ruleSep returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : kw= ':' ;
+    public final AntlrDatatypeRuleToken ruleSep() throws RecognitionException {
+        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
+
+        Token kw=null;
+
+         setCurrentLookahead(); resetLookahead(); 
+            
+        try {
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2826:6: (kw= ':' )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2828:2: kw= ':'
+            {
+            kw=(Token)input.LT(1);
+            match(input,30,FOLLOW_30_in_ruleSep4828); 
+
+                    current.merge(kw);
+                    createLeafNode(grammarAccess.getSepAccess().getColonKeyword(), null); 
+                
+
+            }
+
+             resetLookahead(); 
+            	    lastConsumedNode = currentNode;
+                
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end ruleSep
+
+
     // $ANTLR start entryRuleDA
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2800:1: entryRuleDA returns [EObject current=null] : iv_ruleDA= ruleDA EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2841:1: entryRuleDA returns [EObject current=null] : iv_ruleDA= ruleDA EOF ;
     public final EObject entryRuleDA() throws RecognitionException {
         EObject current = null;
 
@@ -5856,16 +5947,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2801:2: (iv_ruleDA= ruleDA EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2802:2: iv_ruleDA= ruleDA EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2842:2: (iv_ruleDA= ruleDA EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2843:2: iv_ruleDA= ruleDA EOF
             {
              currentNode = createCompositeNode(grammarAccess.getDARule(), currentNode); 
-            pushFollow(FOLLOW_ruleDA_in_entryRuleDA4764);
+            pushFollow(FOLLOW_ruleDA_in_entryRuleDA4867);
             iv_ruleDA=ruleDA();
             _fsp--;
 
              current =iv_ruleDA; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDA4774); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDA4877); 
 
             }
 
@@ -5883,7 +5974,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleDA
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2809:1: ruleDA returns [EObject current=null] : ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2850:1: ruleDA returns [EObject current=null] : ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) ) ;
     public final EObject ruleDA() throws RecognitionException {
         EObject current = null;
 
@@ -5893,26 +5984,26 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2814:6: ( ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2815:1: ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2855:6: ( ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2856:1: ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2815:1: ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2815:3: 'DA' ( (lv_da_1_0= ruleDaParams ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2856:1: ( 'DA' ( (lv_da_1_0= ruleDaParams ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2856:3: 'DA' ( (lv_da_1_0= ruleDaParams ) )
             {
-            match(input,31,FOLLOW_31_in_ruleDA4809); 
+            match(input,31,FOLLOW_31_in_ruleDA4912); 
 
                     createLeafNode(grammarAccess.getDAAccess().getDAKeyword_0(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2819:1: ( (lv_da_1_0= ruleDaParams ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2820:1: (lv_da_1_0= ruleDaParams )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2860:1: ( (lv_da_1_0= ruleDaParams ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2861:1: (lv_da_1_0= ruleDaParams )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2820:1: (lv_da_1_0= ruleDaParams )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2821:3: lv_da_1_0= ruleDaParams
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2861:1: (lv_da_1_0= ruleDaParams )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2862:3: lv_da_1_0= ruleDaParams
             {
              
             	        currentNode=createCompositeNode(grammarAccess.getDAAccess().getDaDaParamsParserRuleCall_1_0(), currentNode); 
             	    
-            pushFollow(FOLLOW_ruleDaParams_in_ruleDA4830);
+            pushFollow(FOLLOW_ruleDaParams_in_ruleDA4933);
             lv_da_1_0=ruleDaParams();
             _fsp--;
 
@@ -5962,7 +6053,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleDaParams
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2851:1: entryRuleDaParams returns [EObject current=null] : iv_ruleDaParams= ruleDaParams EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2892:1: entryRuleDaParams returns [EObject current=null] : iv_ruleDaParams= ruleDaParams EOF ;
     public final EObject entryRuleDaParams() throws RecognitionException {
         EObject current = null;
 
@@ -5970,16 +6061,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2852:2: (iv_ruleDaParams= ruleDaParams EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2853:2: iv_ruleDaParams= ruleDaParams EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2893:2: (iv_ruleDaParams= ruleDaParams EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2894:2: iv_ruleDaParams= ruleDaParams EOF
             {
              currentNode = createCompositeNode(grammarAccess.getDaParamsRule(), currentNode); 
-            pushFollow(FOLLOW_ruleDaParams_in_entryRuleDaParams4866);
+            pushFollow(FOLLOW_ruleDaParams_in_entryRuleDaParams4969);
             iv_ruleDaParams=ruleDaParams();
             _fsp--;
 
              current =iv_ruleDaParams; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams4876); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams4979); 
 
             }
 
@@ -5997,7 +6088,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleDaParams
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2860:1: ruleDaParams returns [EObject current=null] : (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2901:1: ruleDaParams returns [EObject current=null] : (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 ) ;
     public final EObject ruleDaParams() throws RecognitionException {
         EObject current = null;
 
@@ -6009,10 +6100,10 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2865:6: ( (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2866:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2906:6: ( (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2907:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2866:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2907:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -6024,18 +6115,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("2866:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )", 13, 0, input);
+                    new NoViableAltException("2907:1: (this_DaParams1_0= ruleDaParams1 | this_DaParams2_1= ruleDaParams2 )", 13, 0, input);
 
                 throw nvae;
             }
             switch (alt13) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2867:5: this_DaParams1_0= ruleDaParams1
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2908:5: this_DaParams1_0= ruleDaParams1
                     {
                      
                             currentNode=createCompositeNode(grammarAccess.getDaParamsAccess().getDaParams1ParserRuleCall_0(), currentNode); 
                         
-                    pushFollow(FOLLOW_ruleDaParams1_in_ruleDaParams4923);
+                    pushFollow(FOLLOW_ruleDaParams1_in_ruleDaParams5026);
                     this_DaParams1_0=ruleDaParams1();
                     _fsp--;
 
@@ -6047,12 +6138,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2877:5: this_DaParams2_1= ruleDaParams2
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2918:5: this_DaParams2_1= ruleDaParams2
                     {
                      
                             currentNode=createCompositeNode(grammarAccess.getDaParamsAccess().getDaParams2ParserRuleCall_1(), currentNode); 
                         
-                    pushFollow(FOLLOW_ruleDaParams2_in_ruleDaParams4950);
+                    pushFollow(FOLLOW_ruleDaParams2_in_ruleDaParams5053);
                     this_DaParams2_1=ruleDaParams2();
                     _fsp--;
 
@@ -6086,7 +6177,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleDaParams1
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2893:1: entryRuleDaParams1 returns [EObject current=null] : iv_ruleDaParams1= ruleDaParams1 EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2934:1: entryRuleDaParams1 returns [EObject current=null] : iv_ruleDaParams1= ruleDaParams1 EOF ;
     public final EObject entryRuleDaParams1() throws RecognitionException {
         EObject current = null;
 
@@ -6094,16 +6185,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2894:2: (iv_ruleDaParams1= ruleDaParams1 EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2895:2: iv_ruleDaParams1= ruleDaParams1 EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2935:2: (iv_ruleDaParams1= ruleDaParams1 EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2936:2: iv_ruleDaParams1= ruleDaParams1 EOF
             {
              currentNode = createCompositeNode(grammarAccess.getDaParams1Rule(), currentNode); 
-            pushFollow(FOLLOW_ruleDaParams1_in_entryRuleDaParams14985);
+            pushFollow(FOLLOW_ruleDaParams1_in_entryRuleDaParams15088);
             iv_ruleDaParams1=ruleDaParams1();
             _fsp--;
 
              current =iv_ruleDaParams1; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams14995); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams15098); 
 
             }
 
@@ -6121,7 +6212,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleDaParams1
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2902:1: ruleDaParams1 returns [EObject current=null] : ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2943:1: ruleDaParams1 returns [EObject current=null] : ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) ;
     public final EObject ruleDaParams1() throws RecognitionException {
         EObject current = null;
 
@@ -6132,20 +6223,20 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2907:6: ( ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2908:1: ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2948:6: ( ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2949:1: ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2908:1: ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2908:2: ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2949:1: ( ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2949:2: ( (lv_radius_0_0= RULE_REAL ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2908:2: ( (lv_radius_0_0= RULE_REAL ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2909:1: (lv_radius_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2949:2: ( (lv_radius_0_0= RULE_REAL ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2950:1: (lv_radius_0_0= RULE_REAL )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2909:1: (lv_radius_0_0= RULE_REAL )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2910:3: lv_radius_0_0= RULE_REAL
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2950:1: (lv_radius_0_0= RULE_REAL )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2951:3: lv_radius_0_0= RULE_REAL
             {
             lv_radius_0_0=(Token)input.LT(1);
-            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleDaParams15037); 
+            match(input,RULE_REAL,FOLLOW_RULE_REAL_in_ruleDaParams15140); 
 
             			createLeafNode(grammarAccess.getDaParams1Access().getRadiusREALTerminalRuleCall_0_0(), "radius"); 
             		
@@ -6171,18 +6262,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            match(input,14,FOLLOW_14_in_ruleDaParams15052); 
+            match(input,14,FOLLOW_14_in_ruleDaParams15155); 
 
                     createLeafNode(grammarAccess.getDaParams1Access().getCommaKeyword_1(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2936:1: ( (lv_angleStart_2_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2937:1: (lv_angleStart_2_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2977:1: ( (lv_angleStart_2_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2978:1: (lv_angleStart_2_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2937:1: (lv_angleStart_2_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2938:3: lv_angleStart_2_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2978:1: (lv_angleStart_2_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2979:3: lv_angleStart_2_0= RULE_INT
             {
             lv_angleStart_2_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams15069); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams15172); 
 
             			createLeafNode(grammarAccess.getDaParams1Access().getAngleStartINTTerminalRuleCall_2_0(), "angleStart"); 
             		
@@ -6208,18 +6299,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            match(input,14,FOLLOW_14_in_ruleDaParams15084); 
+            match(input,14,FOLLOW_14_in_ruleDaParams15187); 
 
                     createLeafNode(grammarAccess.getDaParams1Access().getCommaKeyword_3(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2964:1: ( (lv_angleEnd_4_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2965:1: (lv_angleEnd_4_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3005:1: ( (lv_angleEnd_4_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3006:1: (lv_angleEnd_4_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2965:1: (lv_angleEnd_4_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2966:3: lv_angleEnd_4_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3006:1: (lv_angleEnd_4_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3007:3: lv_angleEnd_4_0= RULE_INT
             {
             lv_angleEnd_4_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams15101); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams15204); 
 
             			createLeafNode(grammarAccess.getDaParams1Access().getAngleEndINTTerminalRuleCall_4_0(), "angleEnd"); 
             		
@@ -6268,7 +6359,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleDaParams2
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2996:1: entryRuleDaParams2 returns [EObject current=null] : iv_ruleDaParams2= ruleDaParams2 EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3037:1: entryRuleDaParams2 returns [EObject current=null] : iv_ruleDaParams2= ruleDaParams2 EOF ;
     public final EObject entryRuleDaParams2() throws RecognitionException {
         EObject current = null;
 
@@ -6276,16 +6367,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2997:2: (iv_ruleDaParams2= ruleDaParams2 EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:2998:2: iv_ruleDaParams2= ruleDaParams2 EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3038:2: (iv_ruleDaParams2= ruleDaParams2 EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3039:2: iv_ruleDaParams2= ruleDaParams2 EOF
             {
              currentNode = createCompositeNode(grammarAccess.getDaParams2Rule(), currentNode); 
-            pushFollow(FOLLOW_ruleDaParams2_in_entryRuleDaParams25142);
+            pushFollow(FOLLOW_ruleDaParams2_in_entryRuleDaParams25245);
             iv_ruleDaParams2=ruleDaParams2();
             _fsp--;
 
              current =iv_ruleDaParams2; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams25152); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDaParams25255); 
 
             }
 
@@ -6303,7 +6394,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleDaParams2
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3005:1: ruleDaParams2 returns [EObject current=null] : ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3046:1: ruleDaParams2 returns [EObject current=null] : ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) ;
     public final EObject ruleDaParams2() throws RecognitionException {
         EObject current = null;
 
@@ -6314,20 +6405,20 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3010:6: ( ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3011:1: ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3051:6: ( ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3052:1: ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3011:1: ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3011:2: ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3052:1: ( ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3052:2: ( (lv_radius_0_0= RULE_INT ) ) ',' ( (lv_angleStart_2_0= RULE_INT ) ) ',' ( (lv_angleEnd_4_0= RULE_INT ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3011:2: ( (lv_radius_0_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3012:1: (lv_radius_0_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3052:2: ( (lv_radius_0_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3053:1: (lv_radius_0_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3012:1: (lv_radius_0_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3013:3: lv_radius_0_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3053:1: (lv_radius_0_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3054:3: lv_radius_0_0= RULE_INT
             {
             lv_radius_0_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25194); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25297); 
 
             			createLeafNode(grammarAccess.getDaParams2Access().getRadiusINTTerminalRuleCall_0_0(), "radius"); 
             		
@@ -6353,18 +6444,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            match(input,14,FOLLOW_14_in_ruleDaParams25209); 
+            match(input,14,FOLLOW_14_in_ruleDaParams25312); 
 
                     createLeafNode(grammarAccess.getDaParams2Access().getCommaKeyword_1(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3039:1: ( (lv_angleStart_2_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3040:1: (lv_angleStart_2_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3080:1: ( (lv_angleStart_2_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3081:1: (lv_angleStart_2_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3040:1: (lv_angleStart_2_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3041:3: lv_angleStart_2_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3081:1: (lv_angleStart_2_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3082:3: lv_angleStart_2_0= RULE_INT
             {
             lv_angleStart_2_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25226); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25329); 
 
             			createLeafNode(grammarAccess.getDaParams2Access().getAngleStartINTTerminalRuleCall_2_0(), "angleStart"); 
             		
@@ -6390,18 +6481,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            match(input,14,FOLLOW_14_in_ruleDaParams25241); 
+            match(input,14,FOLLOW_14_in_ruleDaParams25344); 
 
                     createLeafNode(grammarAccess.getDaParams2Access().getCommaKeyword_3(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3067:1: ( (lv_angleEnd_4_0= RULE_INT ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3068:1: (lv_angleEnd_4_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3108:1: ( (lv_angleEnd_4_0= RULE_INT ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3109:1: (lv_angleEnd_4_0= RULE_INT )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3068:1: (lv_angleEnd_4_0= RULE_INT )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3069:3: lv_angleEnd_4_0= RULE_INT
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3109:1: (lv_angleEnd_4_0= RULE_INT )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3110:3: lv_angleEnd_4_0= RULE_INT
             {
             lv_angleEnd_4_0=(Token)input.LT(1);
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25258); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDaParams25361); 
 
             			createLeafNode(grammarAccess.getDaParams2Access().getAngleEndINTTerminalRuleCall_4_0(), "angleEnd"); 
             		
@@ -6450,7 +6541,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleDB
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3099:1: entryRuleDB returns [EObject current=null] : iv_ruleDB= ruleDB EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3140:1: entryRuleDB returns [EObject current=null] : iv_ruleDB= ruleDB EOF ;
     public final EObject entryRuleDB() throws RecognitionException {
         EObject current = null;
 
@@ -6458,16 +6549,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3100:2: (iv_ruleDB= ruleDB EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3101:2: iv_ruleDB= ruleDB EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3141:2: (iv_ruleDB= ruleDB EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3142:2: iv_ruleDB= ruleDB EOF
             {
              currentNode = createCompositeNode(grammarAccess.getDBRule(), currentNode); 
-            pushFollow(FOLLOW_ruleDB_in_entryRuleDB5299);
+            pushFollow(FOLLOW_ruleDB_in_entryRuleDB5402);
             iv_ruleDB=ruleDB();
             _fsp--;
 
              current =iv_ruleDB; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDB5309); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDB5412); 
 
             }
 
@@ -6485,7 +6576,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleDB
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3108:1: ruleDB returns [EObject current=null] : ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3149:1: ruleDB returns [EObject current=null] : ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) ) ;
     public final EObject ruleDB() throws RecognitionException {
         EObject current = null;
 
@@ -6497,26 +6588,26 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3113:6: ( ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3114:1: ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3154:6: ( ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3155:1: ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3114:1: ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3114:3: 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3155:1: ( 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3155:3: 'DB' ( (lv_dp0_1_0= rulePoint ) ) ( ',' )? ( (lv_dp1_3_0= rulePoint ) )
             {
-            match(input,32,FOLLOW_32_in_ruleDB5344); 
+            match(input,32,FOLLOW_32_in_ruleDB5447); 
 
                     createLeafNode(grammarAccess.getDBAccess().getDBKeyword_0(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3118:1: ( (lv_dp0_1_0= rulePoint ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3119:1: (lv_dp0_1_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3159:1: ( (lv_dp0_1_0= rulePoint ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3160:1: (lv_dp0_1_0= rulePoint )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3119:1: (lv_dp0_1_0= rulePoint )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3120:3: lv_dp0_1_0= rulePoint
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3160:1: (lv_dp0_1_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3161:3: lv_dp0_1_0= rulePoint
             {
              
             	        currentNode=createCompositeNode(grammarAccess.getDBAccess().getDp0PointParserRuleCall_1_0(), currentNode); 
             	    
-            pushFollow(FOLLOW_rulePoint_in_ruleDB5365);
+            pushFollow(FOLLOW_rulePoint_in_ruleDB5468);
             lv_dp0_1_0=rulePoint();
             _fsp--;
 
@@ -6543,7 +6634,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3142:2: ( ',' )?
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3183:2: ( ',' )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -6552,9 +6643,9 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
             }
             switch (alt14) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3142:4: ','
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3183:4: ','
                     {
-                    match(input,14,FOLLOW_14_in_ruleDB5376); 
+                    match(input,14,FOLLOW_14_in_ruleDB5479); 
 
                             createLeafNode(grammarAccess.getDBAccess().getCommaKeyword_2(), null); 
                         
@@ -6564,16 +6655,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3146:3: ( (lv_dp1_3_0= rulePoint ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3147:1: (lv_dp1_3_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3187:3: ( (lv_dp1_3_0= rulePoint ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3188:1: (lv_dp1_3_0= rulePoint )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3147:1: (lv_dp1_3_0= rulePoint )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3148:3: lv_dp1_3_0= rulePoint
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3188:1: (lv_dp1_3_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3189:3: lv_dp1_3_0= rulePoint
             {
              
             	        currentNode=createCompositeNode(grammarAccess.getDBAccess().getDp1PointParserRuleCall_3_0(), currentNode); 
             	    
-            pushFollow(FOLLOW_rulePoint_in_ruleDB5399);
+            pushFollow(FOLLOW_rulePoint_in_ruleDB5502);
             lv_dp1_3_0=rulePoint();
             _fsp--;
 
@@ -6623,7 +6714,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start entryRuleAT
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3178:1: entryRuleAT returns [EObject current=null] : iv_ruleAT= ruleAT EOF ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3219:1: entryRuleAT returns [EObject current=null] : iv_ruleAT= ruleAT EOF ;
     public final EObject entryRuleAT() throws RecognitionException {
         EObject current = null;
 
@@ -6631,16 +6722,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3179:2: (iv_ruleAT= ruleAT EOF )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3180:2: iv_ruleAT= ruleAT EOF
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3220:2: (iv_ruleAT= ruleAT EOF )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3221:2: iv_ruleAT= ruleAT EOF
             {
              currentNode = createCompositeNode(grammarAccess.getATRule(), currentNode); 
-            pushFollow(FOLLOW_ruleAT_in_entryRuleAT5435);
+            pushFollow(FOLLOW_ruleAT_in_entryRuleAT5538);
             iv_ruleAT=ruleAT();
             _fsp--;
 
              current =iv_ruleAT; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAT5445); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAT5548); 
 
             }
 
@@ -6658,7 +6749,7 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleAT
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3187:1: ruleAT returns [EObject current=null] : ( 'AT' ( (lv_lp_1_0= rulePoint ) ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3228:1: ruleAT returns [EObject current=null] : ( 'AT' ( (lv_lp_1_0= rulePoint ) ) ) ;
     public final EObject ruleAT() throws RecognitionException {
         EObject current = null;
 
@@ -6668,26 +6759,26 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
          EObject temp=null; setCurrentLookahead(); resetLookahead(); 
             
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3192:6: ( ( 'AT' ( (lv_lp_1_0= rulePoint ) ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3193:1: ( 'AT' ( (lv_lp_1_0= rulePoint ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3233:6: ( ( 'AT' ( (lv_lp_1_0= rulePoint ) ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:1: ( 'AT' ( (lv_lp_1_0= rulePoint ) ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3193:1: ( 'AT' ( (lv_lp_1_0= rulePoint ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3193:3: 'AT' ( (lv_lp_1_0= rulePoint ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:1: ( 'AT' ( (lv_lp_1_0= rulePoint ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:3: 'AT' ( (lv_lp_1_0= rulePoint ) )
             {
-            match(input,33,FOLLOW_33_in_ruleAT5480); 
+            match(input,33,FOLLOW_33_in_ruleAT5583); 
 
                     createLeafNode(grammarAccess.getATAccess().getATKeyword_0(), null); 
                 
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3197:1: ( (lv_lp_1_0= rulePoint ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3198:1: (lv_lp_1_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3238:1: ( (lv_lp_1_0= rulePoint ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3239:1: (lv_lp_1_0= rulePoint )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3198:1: (lv_lp_1_0= rulePoint )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3199:3: lv_lp_1_0= rulePoint
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3239:1: (lv_lp_1_0= rulePoint )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3240:3: lv_lp_1_0= rulePoint
             {
              
             	        currentNode=createCompositeNode(grammarAccess.getATAccess().getLpPointParserRuleCall_1_0(), currentNode); 
             	    
-            pushFollow(FOLLOW_rulePoint_in_ruleAT5501);
+            pushFollow(FOLLOW_rulePoint_in_ruleAT5604);
             lv_lp_1_0=rulePoint();
             _fsp--;
 
@@ -6737,16 +6828,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleClassType
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3229:1: ruleClassType returns [Enumerator current=null] : ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3270:1: ruleClassType returns [Enumerator current=null] : ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) ) ;
     public final Enumerator ruleClassType() throws RecognitionException {
         Enumerator current = null;
 
          setCurrentLookahead(); resetLookahead(); 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3233:6: ( ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3274:6: ( ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3275:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3275:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )
             int alt15=16;
             switch ( input.LA(1) ) {
             case 34:
@@ -6831,19 +6922,19 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("3234:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )", 15, 0, input);
+                    new NoViableAltException("3275:1: ( ( 'A' ) | ( 'B' ) | ( 'C' ) | ( 'D' ) | ( 'E' ) | ( 'F' ) | ( 'G' ) | ( 'Q' ) | ( 'R' ) | ( 'W' ) | ( 'P' ) | ( 'GP' ) | ( 'TMZ' ) | ( 'CTR' ) | ( 'Restricted' ) | ( 'UKN' ) )", 15, 0, input);
 
                 throw nvae;
             }
 
             switch (alt15) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:2: ( 'A' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3275:2: ( 'A' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:2: ( 'A' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3234:4: 'A'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3275:2: ( 'A' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3275:4: 'A'
                     {
-                    match(input,34,FOLLOW_34_in_ruleClassType5549); 
+                    match(input,34,FOLLOW_34_in_ruleClassType5652); 
 
                             current = grammarAccess.getClassTypeAccess().getAEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getAEnumLiteralDeclaration_0(), null); 
@@ -6855,12 +6946,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3240:6: ( 'B' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3281:6: ( 'B' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3240:6: ( 'B' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3240:8: 'B'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3281:6: ( 'B' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3281:8: 'B'
                     {
-                    match(input,35,FOLLOW_35_in_ruleClassType5564); 
+                    match(input,35,FOLLOW_35_in_ruleClassType5667); 
 
                             current = grammarAccess.getClassTypeAccess().getBEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getBEnumLiteralDeclaration_1(), null); 
@@ -6872,12 +6963,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3246:6: ( 'C' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3287:6: ( 'C' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3246:6: ( 'C' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3246:8: 'C'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3287:6: ( 'C' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3287:8: 'C'
                     {
-                    match(input,36,FOLLOW_36_in_ruleClassType5579); 
+                    match(input,36,FOLLOW_36_in_ruleClassType5682); 
 
                             current = grammarAccess.getClassTypeAccess().getCEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getCEnumLiteralDeclaration_2(), null); 
@@ -6889,12 +6980,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3252:6: ( 'D' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3293:6: ( 'D' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3252:6: ( 'D' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3252:8: 'D'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3293:6: ( 'D' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3293:8: 'D'
                     {
-                    match(input,37,FOLLOW_37_in_ruleClassType5594); 
+                    match(input,37,FOLLOW_37_in_ruleClassType5697); 
 
                             current = grammarAccess.getClassTypeAccess().getDEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getDEnumLiteralDeclaration_3(), null); 
@@ -6906,12 +6997,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3258:6: ( 'E' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3299:6: ( 'E' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3258:6: ( 'E' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3258:8: 'E'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3299:6: ( 'E' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3299:8: 'E'
                     {
-                    match(input,38,FOLLOW_38_in_ruleClassType5609); 
+                    match(input,38,FOLLOW_38_in_ruleClassType5712); 
 
                             current = grammarAccess.getClassTypeAccess().getEEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getEEnumLiteralDeclaration_4(), null); 
@@ -6923,12 +7014,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3264:6: ( 'F' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3305:6: ( 'F' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3264:6: ( 'F' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3264:8: 'F'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3305:6: ( 'F' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3305:8: 'F'
                     {
-                    match(input,39,FOLLOW_39_in_ruleClassType5624); 
+                    match(input,39,FOLLOW_39_in_ruleClassType5727); 
 
                             current = grammarAccess.getClassTypeAccess().getFEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getFEnumLiteralDeclaration_5(), null); 
@@ -6940,12 +7031,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3270:6: ( 'G' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3311:6: ( 'G' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3270:6: ( 'G' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3270:8: 'G'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3311:6: ( 'G' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3311:8: 'G'
                     {
-                    match(input,40,FOLLOW_40_in_ruleClassType5639); 
+                    match(input,40,FOLLOW_40_in_ruleClassType5742); 
 
                             current = grammarAccess.getClassTypeAccess().getGEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getGEnumLiteralDeclaration_6(), null); 
@@ -6957,12 +7048,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3276:6: ( 'Q' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3317:6: ( 'Q' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3276:6: ( 'Q' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3276:8: 'Q'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3317:6: ( 'Q' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3317:8: 'Q'
                     {
-                    match(input,41,FOLLOW_41_in_ruleClassType5654); 
+                    match(input,41,FOLLOW_41_in_ruleClassType5757); 
 
                             current = grammarAccess.getClassTypeAccess().getQEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getQEnumLiteralDeclaration_7(), null); 
@@ -6974,12 +7065,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3282:6: ( 'R' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3323:6: ( 'R' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3282:6: ( 'R' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3282:8: 'R'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3323:6: ( 'R' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3323:8: 'R'
                     {
-                    match(input,42,FOLLOW_42_in_ruleClassType5669); 
+                    match(input,42,FOLLOW_42_in_ruleClassType5772); 
 
                             current = grammarAccess.getClassTypeAccess().getREnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getREnumLiteralDeclaration_8(), null); 
@@ -6991,12 +7082,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3288:6: ( 'W' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3329:6: ( 'W' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3288:6: ( 'W' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3288:8: 'W'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3329:6: ( 'W' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3329:8: 'W'
                     {
-                    match(input,43,FOLLOW_43_in_ruleClassType5684); 
+                    match(input,43,FOLLOW_43_in_ruleClassType5787); 
 
                             current = grammarAccess.getClassTypeAccess().getWEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getWEnumLiteralDeclaration_9(), null); 
@@ -7008,12 +7099,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 11 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3294:6: ( 'P' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3335:6: ( 'P' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3294:6: ( 'P' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3294:8: 'P'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3335:6: ( 'P' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3335:8: 'P'
                     {
-                    match(input,44,FOLLOW_44_in_ruleClassType5699); 
+                    match(input,44,FOLLOW_44_in_ruleClassType5802); 
 
                             current = grammarAccess.getClassTypeAccess().getPEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getPEnumLiteralDeclaration_10(), null); 
@@ -7025,12 +7116,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 12 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3300:6: ( 'GP' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3341:6: ( 'GP' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3300:6: ( 'GP' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3300:8: 'GP'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3341:6: ( 'GP' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3341:8: 'GP'
                     {
-                    match(input,45,FOLLOW_45_in_ruleClassType5714); 
+                    match(input,45,FOLLOW_45_in_ruleClassType5817); 
 
                             current = grammarAccess.getClassTypeAccess().getGPEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getGPEnumLiteralDeclaration_11(), null); 
@@ -7042,12 +7133,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 13 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3306:6: ( 'TMZ' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3347:6: ( 'TMZ' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3306:6: ( 'TMZ' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3306:8: 'TMZ'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3347:6: ( 'TMZ' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3347:8: 'TMZ'
                     {
-                    match(input,46,FOLLOW_46_in_ruleClassType5729); 
+                    match(input,46,FOLLOW_46_in_ruleClassType5832); 
 
                             current = grammarAccess.getClassTypeAccess().getTMZEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getTMZEnumLiteralDeclaration_12(), null); 
@@ -7059,12 +7150,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 14 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3312:6: ( 'CTR' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3353:6: ( 'CTR' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3312:6: ( 'CTR' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3312:8: 'CTR'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3353:6: ( 'CTR' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3353:8: 'CTR'
                     {
-                    match(input,47,FOLLOW_47_in_ruleClassType5744); 
+                    match(input,47,FOLLOW_47_in_ruleClassType5847); 
 
                             current = grammarAccess.getClassTypeAccess().getCTREnumLiteralDeclaration_13().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getCTREnumLiteralDeclaration_13(), null); 
@@ -7076,12 +7167,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 15 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3318:6: ( 'Restricted' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3359:6: ( 'Restricted' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3318:6: ( 'Restricted' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3318:8: 'Restricted'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3359:6: ( 'Restricted' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3359:8: 'Restricted'
                     {
-                    match(input,48,FOLLOW_48_in_ruleClassType5759); 
+                    match(input,48,FOLLOW_48_in_ruleClassType5862); 
 
                             current = grammarAccess.getClassTypeAccess().getRestrictedEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getRestrictedEnumLiteralDeclaration_14(), null); 
@@ -7093,12 +7184,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 16 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3324:6: ( 'UKN' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3365:6: ( 'UKN' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3324:6: ( 'UKN' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3324:8: 'UKN'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3365:6: ( 'UKN' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3365:8: 'UKN'
                     {
-                    match(input,49,FOLLOW_49_in_ruleClassType5774); 
+                    match(input,49,FOLLOW_49_in_ruleClassType5877); 
 
                             current = grammarAccess.getClassTypeAccess().getUKNEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getClassTypeAccess().getUKNEnumLiteralDeclaration_15(), null); 
@@ -7132,16 +7223,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleUnits
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3334:1: ruleUnits returns [Enumerator current=null] : ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3375:1: ruleUnits returns [Enumerator current=null] : ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) ) ;
     public final Enumerator ruleUnits() throws RecognitionException {
         Enumerator current = null;
 
          setCurrentLookahead(); resetLookahead(); 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3338:6: ( ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3339:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3379:6: ( ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3380:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3339:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3380:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )
             int alt16=10;
             switch ( input.LA(1) ) {
             case 50:
@@ -7196,19 +7287,19 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("3339:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )", 16, 0, input);
+                    new NoViableAltException("3380:1: ( ( 'ft' ) | ( 'm' ) | ( 'MSL' ) | ( 'm MSL' ) | ( 'ft MSL' ) | ( 'AGL' ) | ( 'm AGL' ) | ( 'ft AGL' ) | ( 'AMSL' ) | ( 'm AMSL' ) )", 16, 0, input);
 
                 throw nvae;
             }
 
             switch (alt16) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3339:2: ( 'ft' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3380:2: ( 'ft' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3339:2: ( 'ft' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3339:4: 'ft'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3380:2: ( 'ft' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3380:4: 'ft'
                     {
-                    match(input,50,FOLLOW_50_in_ruleUnits5817); 
+                    match(input,50,FOLLOW_50_in_ruleUnits5920); 
 
                             current = grammarAccess.getUnitsAccess().getFeedEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getFeedEnumLiteralDeclaration_0(), null); 
@@ -7220,12 +7311,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3345:6: ( 'm' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3386:6: ( 'm' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3345:6: ( 'm' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3345:8: 'm'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3386:6: ( 'm' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3386:8: 'm'
                     {
-                    match(input,51,FOLLOW_51_in_ruleUnits5832); 
+                    match(input,51,FOLLOW_51_in_ruleUnits5935); 
 
                             current = grammarAccess.getUnitsAccess().getMeterEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getMeterEnumLiteralDeclaration_1(), null); 
@@ -7237,12 +7328,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3351:6: ( 'MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3392:6: ( 'MSL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3351:6: ( 'MSL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3351:8: 'MSL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3392:6: ( 'MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3392:8: 'MSL'
                     {
-                    match(input,52,FOLLOW_52_in_ruleUnits5847); 
+                    match(input,52,FOLLOW_52_in_ruleUnits5950); 
 
                             current = grammarAccess.getUnitsAccess().getMslEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getMslEnumLiteralDeclaration_2(), null); 
@@ -7254,12 +7345,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3357:6: ( 'm MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3398:6: ( 'm MSL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3357:6: ( 'm MSL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3357:8: 'm MSL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3398:6: ( 'm MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3398:8: 'm MSL'
                     {
-                    match(input,53,FOLLOW_53_in_ruleUnits5862); 
+                    match(input,53,FOLLOW_53_in_ruleUnits5965); 
 
                             current = grammarAccess.getUnitsAccess().getM_mslEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getM_mslEnumLiteralDeclaration_3(), null); 
@@ -7271,12 +7362,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3363:6: ( 'ft MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3404:6: ( 'ft MSL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3363:6: ( 'ft MSL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3363:8: 'ft MSL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3404:6: ( 'ft MSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3404:8: 'ft MSL'
                     {
-                    match(input,54,FOLLOW_54_in_ruleUnits5877); 
+                    match(input,54,FOLLOW_54_in_ruleUnits5980); 
 
                             current = grammarAccess.getUnitsAccess().getFt_mslEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getFt_mslEnumLiteralDeclaration_4(), null); 
@@ -7288,12 +7379,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3369:6: ( 'AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3410:6: ( 'AGL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3369:6: ( 'AGL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3369:8: 'AGL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3410:6: ( 'AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3410:8: 'AGL'
                     {
-                    match(input,55,FOLLOW_55_in_ruleUnits5892); 
+                    match(input,55,FOLLOW_55_in_ruleUnits5995); 
 
                             current = grammarAccess.getUnitsAccess().getAglEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getAglEnumLiteralDeclaration_5(), null); 
@@ -7305,12 +7396,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3375:6: ( 'm AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3416:6: ( 'm AGL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3375:6: ( 'm AGL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3375:8: 'm AGL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3416:6: ( 'm AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3416:8: 'm AGL'
                     {
-                    match(input,56,FOLLOW_56_in_ruleUnits5907); 
+                    match(input,56,FOLLOW_56_in_ruleUnits6010); 
 
                             current = grammarAccess.getUnitsAccess().getM_aglEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getM_aglEnumLiteralDeclaration_6(), null); 
@@ -7322,12 +7413,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3381:6: ( 'ft AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3422:6: ( 'ft AGL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3381:6: ( 'ft AGL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3381:8: 'ft AGL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3422:6: ( 'ft AGL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3422:8: 'ft AGL'
                     {
-                    match(input,57,FOLLOW_57_in_ruleUnits5922); 
+                    match(input,57,FOLLOW_57_in_ruleUnits6025); 
 
                             current = grammarAccess.getUnitsAccess().getFt_AGLEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getFt_AGLEnumLiteralDeclaration_7(), null); 
@@ -7339,12 +7430,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3387:6: ( 'AMSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3428:6: ( 'AMSL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3387:6: ( 'AMSL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3387:8: 'AMSL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3428:6: ( 'AMSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3428:8: 'AMSL'
                     {
-                    match(input,58,FOLLOW_58_in_ruleUnits5937); 
+                    match(input,58,FOLLOW_58_in_ruleUnits6040); 
 
                             current = grammarAccess.getUnitsAccess().getAMSLEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getAMSLEnumLiteralDeclaration_8(), null); 
@@ -7356,12 +7447,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3393:6: ( 'm AMSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3434:6: ( 'm AMSL' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3393:6: ( 'm AMSL' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3393:8: 'm AMSL'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3434:6: ( 'm AMSL' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3434:8: 'm AMSL'
                     {
-                    match(input,59,FOLLOW_59_in_ruleUnits5952); 
+                    match(input,59,FOLLOW_59_in_ruleUnits6055); 
 
                             current = grammarAccess.getUnitsAccess().getM_AMSLEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getUnitsAccess().getM_AMSLEnumLiteralDeclaration_9(), null); 
@@ -7395,16 +7486,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleWE
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3403:1: ruleWE returns [Enumerator current=null] : ( ( 'W' ) | ( 'E' ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3444:1: ruleWE returns [Enumerator current=null] : ( ( 'W' ) | ( 'E' ) ) ;
     public final Enumerator ruleWE() throws RecognitionException {
         Enumerator current = null;
 
          setCurrentLookahead(); resetLookahead(); 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3407:6: ( ( ( 'W' ) | ( 'E' ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3408:1: ( ( 'W' ) | ( 'E' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3448:6: ( ( ( 'W' ) | ( 'E' ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3449:1: ( ( 'W' ) | ( 'E' ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3408:1: ( ( 'W' ) | ( 'E' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3449:1: ( ( 'W' ) | ( 'E' ) )
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -7416,18 +7507,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("3408:1: ( ( 'W' ) | ( 'E' ) )", 17, 0, input);
+                    new NoViableAltException("3449:1: ( ( 'W' ) | ( 'E' ) )", 17, 0, input);
 
                 throw nvae;
             }
             switch (alt17) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3408:2: ( 'W' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3449:2: ( 'W' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3408:2: ( 'W' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3408:4: 'W'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3449:2: ( 'W' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3449:4: 'W'
                     {
-                    match(input,43,FOLLOW_43_in_ruleWE5995); 
+                    match(input,43,FOLLOW_43_in_ruleWE6098); 
 
                             current = grammarAccess.getWEAccess().getWEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getWEAccess().getWEnumLiteralDeclaration_0(), null); 
@@ -7439,12 +7530,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3414:6: ( 'E' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3455:6: ( 'E' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3414:6: ( 'E' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3414:8: 'E'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3455:6: ( 'E' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3455:8: 'E'
                     {
-                    match(input,38,FOLLOW_38_in_ruleWE6010); 
+                    match(input,38,FOLLOW_38_in_ruleWE6113); 
 
                             current = grammarAccess.getWEAccess().getEEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getWEAccess().getEEnumLiteralDeclaration_1(), null); 
@@ -7478,16 +7569,16 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start ruleNS
-    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3424:1: ruleNS returns [Enumerator current=null] : ( ( 'N' ) | ( 'S' ) ) ;
+    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3465:1: ruleNS returns [Enumerator current=null] : ( ( 'N' ) | ( 'S' ) ) ;
     public final Enumerator ruleNS() throws RecognitionException {
         Enumerator current = null;
 
          setCurrentLookahead(); resetLookahead(); 
         try {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3428:6: ( ( ( 'N' ) | ( 'S' ) ) )
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3429:1: ( ( 'N' ) | ( 'S' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3469:6: ( ( ( 'N' ) | ( 'S' ) ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3470:1: ( ( 'N' ) | ( 'S' ) )
             {
-            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3429:1: ( ( 'N' ) | ( 'S' ) )
+            // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3470:1: ( ( 'N' ) | ( 'S' ) )
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -7499,18 +7590,18 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("3429:1: ( ( 'N' ) | ( 'S' ) )", 18, 0, input);
+                    new NoViableAltException("3470:1: ( ( 'N' ) | ( 'S' ) )", 18, 0, input);
 
                 throw nvae;
             }
             switch (alt18) {
                 case 1 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3429:2: ( 'N' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3470:2: ( 'N' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3429:2: ( 'N' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3429:4: 'N'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3470:2: ( 'N' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3470:4: 'N'
                     {
-                    match(input,60,FOLLOW_60_in_ruleNS6053); 
+                    match(input,60,FOLLOW_60_in_ruleNS6156); 
 
                             current = grammarAccess.getNSAccess().getNEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getNSAccess().getNEnumLiteralDeclaration_0(), null); 
@@ -7522,12 +7613,12 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3435:6: ( 'S' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3476:6: ( 'S' )
                     {
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3435:6: ( 'S' )
-                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3435:8: 'S'
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3476:6: ( 'S' )
+                    // ../www.ubx.ch.OpenAir/src-gen/www/ubx/ch/parser/antlr/internal/InternalOpenAir.g:3476:8: 'S'
                     {
-                    match(input,61,FOLLOW_61_in_ruleNS6068); 
+                    match(input,61,FOLLOW_61_in_ruleNS6171); 
 
                             current = grammarAccess.getNSAccess().getSEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             createLeafNode(grammarAccess.getNSAccess().getSEnumLiteralDeclaration_1(), null); 
@@ -7726,83 +7817,86 @@ public class InternalOpenAirParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_RULE_INT_in_ruleLatDegr4233 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleMinSec_in_entryRuleMinSec4273 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleMinSec4283 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleMinSec4318 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleMinSec4335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSecDec_in_entryRuleSecDec4376 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleSecDec4386 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleSecDec4421 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_REAL_in_ruleSecDec4438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMinDec_in_entryRuleMinDec4479 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMinDec4489 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleMinDec4524 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_REAL_in_ruleMinDec4541 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLongDec_in_entryRuleLongDec4582 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleLongDec4592 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REAL_in_ruleLongDec4633 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLatDec_in_entryRuleLatDec4673 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleLatDec4683 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REAL_in_ruleLatDec4724 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDA_in_entryRuleDA4764 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDA4774 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleDA4809 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_ruleDaParams_in_ruleDA4830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDaParams_in_entryRuleDaParams4866 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams4876 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDaParams1_in_ruleDaParams4923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDaParams2_in_ruleDaParams4950 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDaParams1_in_entryRuleDaParams14985 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams14995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REAL_in_ruleDaParams15037 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleDaParams15052 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams15069 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleDaParams15084 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams15101 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDaParams2_in_entryRuleDaParams25142 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams25152 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25194 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleDaParams25209 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25226 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleDaParams25241 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25258 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDB_in_entryRuleDB5299 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDB5309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleDB5344 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rulePoint_in_ruleDB5365 = new BitSet(new long[]{0x0000000000004050L});
-    public static final BitSet FOLLOW_14_in_ruleDB5376 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rulePoint_in_ruleDB5399 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAT_in_entryRuleAT5435 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAT5445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_ruleAT5480 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rulePoint_in_ruleAT5501 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_ruleClassType5549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_ruleClassType5564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_ruleClassType5579 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_ruleClassType5594 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleClassType5609 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleClassType5624 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_ruleClassType5639 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_ruleClassType5654 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleClassType5669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleClassType5684 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_ruleClassType5699 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_ruleClassType5714 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_ruleClassType5729 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_ruleClassType5744 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_ruleClassType5759 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_49_in_ruleClassType5774 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_50_in_ruleUnits5817 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_51_in_ruleUnits5832 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_52_in_ruleUnits5847 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_ruleUnits5862 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_54_in_ruleUnits5877 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_55_in_ruleUnits5892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_56_in_ruleUnits5907 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_57_in_ruleUnits5922 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_ruleUnits5937 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_ruleUnits5952 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleWE5995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleWE6010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_60_in_ruleNS6053 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_61_in_ruleNS6068 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSep_in_ruleMinSec4324 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleMinSec4340 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSecDec_in_entryRuleSecDec4381 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleSecDec4391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSep_in_ruleSecDec4432 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_REAL_in_ruleSecDec4448 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMinDec_in_entryRuleMinDec4489 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMinDec4499 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSep_in_ruleMinDec4540 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_REAL_in_ruleMinDec4556 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLongDec_in_entryRuleLongDec4597 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleLongDec4607 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REAL_in_ruleLongDec4648 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLatDec_in_entryRuleLatDec4688 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleLatDec4698 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REAL_in_ruleLatDec4739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSep_in_entryRuleSep4780 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleSep4791 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleSep4828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDA_in_entryRuleDA4867 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDA4877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleDA4912 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_ruleDaParams_in_ruleDA4933 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDaParams_in_entryRuleDaParams4969 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams4979 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDaParams1_in_ruleDaParams5026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDaParams2_in_ruleDaParams5053 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDaParams1_in_entryRuleDaParams15088 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams15098 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REAL_in_ruleDaParams15140 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleDaParams15155 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams15172 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleDaParams15187 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams15204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDaParams2_in_entryRuleDaParams25245 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDaParams25255 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25297 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleDaParams25312 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25329 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleDaParams25344 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDaParams25361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDB_in_entryRuleDB5402 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDB5412 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleDB5447 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rulePoint_in_ruleDB5468 = new BitSet(new long[]{0x0000000000004050L});
+    public static final BitSet FOLLOW_14_in_ruleDB5479 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rulePoint_in_ruleDB5502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAT_in_entryRuleAT5538 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAT5548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_ruleAT5583 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rulePoint_in_ruleAT5604 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_ruleClassType5652 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleClassType5667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_ruleClassType5682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleClassType5697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleClassType5712 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleClassType5727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleClassType5742 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_ruleClassType5757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_ruleClassType5772 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleClassType5787 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleClassType5802 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleClassType5817 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_ruleClassType5832 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_ruleClassType5847 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_ruleClassType5862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_49_in_ruleClassType5877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_50_in_ruleUnits5920 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_51_in_ruleUnits5935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_ruleUnits5950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_53_in_ruleUnits5965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_54_in_ruleUnits5980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_55_in_ruleUnits5995 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_56_in_ruleUnits6010 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_ruleUnits6025 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_58_in_ruleUnits6040 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_ruleUnits6055 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleWE6098 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleWE6113 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_60_in_ruleNS6156 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_61_in_ruleNS6171 = new BitSet(new long[]{0x0000000000000002L});
 
 }
