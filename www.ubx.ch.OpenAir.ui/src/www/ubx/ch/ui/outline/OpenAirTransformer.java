@@ -10,6 +10,7 @@ import org.eclipse.xtext.ui.editor.outline.ContentOutlineNode;
 import org.eclipse.xtext.ui.editor.outline.transformer.AbstractDeclarativeSemanticModelTransformer;
 
 import www.ubx.ch.openAir.Airspace;
+import www.ubx.ch.openAir.AsName;
 import www.ubx.ch.openAir.OpenAir;
 
 /**
@@ -24,15 +25,9 @@ public class OpenAirTransformer extends AbstractDeclarativeSemanticModelTransfor
 	 * - first param: subclass of EObject <br>
 	 * - second param: ContentOutlineNode
 	 */
-	public ContentOutlineNode createNode(OpenAir semanticNode, ContentOutlineNode parentNode) {
-		ContentOutlineNode node = super.newOutlineNode(semanticNode, parentNode);
-		node.setLabel("special " + node.getLabel());
-		return node;
-	}
-
 	public ContentOutlineNode createNode(Airspace semanticNode, ContentOutlineNode parentNode) {
 		ContentOutlineNode node = super.newOutlineNode(semanticNode, parentNode);
-		node.setLabel("special " + node.getLabel());
+		node.setLabel("Airspace " + node.getLabel());
 		return node;
 	}
 
@@ -41,7 +36,7 @@ public class OpenAirTransformer extends AbstractDeclarativeSemanticModelTransfor
 	 * - method name must be getChildren <br>
 	 * - first param: subclass of EObject
 	 */
-	public List<EObject> getChildren(OpenAir attribute) {
+	public List<EObject> getChildren(Airspace attribute) {
 		return attribute.eContents();
 	}
 

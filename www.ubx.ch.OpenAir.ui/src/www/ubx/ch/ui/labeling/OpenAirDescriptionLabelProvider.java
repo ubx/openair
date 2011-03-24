@@ -3,6 +3,7 @@
 */
 package www.ubx.ch.ui.labeling;
 
+import org.eclipse.xtext.resource.IEObjectDescription;
 import org.eclipse.xtext.ui.label.DefaultDescriptionLabelProvider;
 
 /**
@@ -12,12 +13,14 @@ import org.eclipse.xtext.ui.label.DefaultDescriptionLabelProvider;
  */
 public class OpenAirDescriptionLabelProvider extends DefaultDescriptionLabelProvider {
 
-/*
+//	public String text(IEObjectDescription ele) {
+//		  return "my "+ele.getName();
+//		}
+
+	
+	/*
 	//Labels and icons can be computed like this:
 	
-	String text(IEObjectDescription ele) {
-	  return "my "+ele.getName();
-	}
 	 
     String image(IEObjectDescription ele) {
       return ele.getEClass().getName() + ".gif";
