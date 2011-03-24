@@ -31,12 +31,22 @@ public class OpenAirTransformer extends AbstractDeclarativeSemanticModelTransfor
 		return node;
 	}
 
+	public ContentOutlineNode createNode(AsName semanticNode, ContentOutlineNode parentNode) {
+		ContentOutlineNode node = super.newOutlineNode(semanticNode, parentNode);
+		node.setLabel("special " + node.getLabel());
+		return node;
+	}
+
 	/**
 	 * This method will be called by naming convention: <br>
 	 * - method name must be getChildren <br>
 	 * - first param: subclass of EObject
 	 */
 	public List<EObject> getChildren(Airspace attribute) {
+		return attribute.eContents();
+	}
+
+	public List<EObject> getChildren(AsName attribute) {
 		return attribute.eContents();
 	}
 
