@@ -20,9 +20,8 @@ import www.ubx.ch.openAir.ClassType;
 import www.ubx.ch.openAir.DaParams;
 import www.ubx.ch.openAir.DaParams1;
 import www.ubx.ch.openAir.DaParams2;
-import www.ubx.ch.openAir.HLimit;
+import www.ubx.ch.openAir.Dir;
 import www.ubx.ch.openAir.HighLimit;
-import www.ubx.ch.openAir.LLimit;
 import www.ubx.ch.openAir.LatDec;
 import www.ubx.ch.openAir.LatDegr;
 import www.ubx.ch.openAir.Limit;
@@ -32,9 +31,11 @@ import www.ubx.ch.openAir.LongDegr;
 import www.ubx.ch.openAir.LowLimit;
 import www.ubx.ch.openAir.MinDec;
 import www.ubx.ch.openAir.MinSec;
+import www.ubx.ch.openAir.Minus;
 import www.ubx.ch.openAir.OpenAir;
 import www.ubx.ch.openAir.OpenAirFactory;
 import www.ubx.ch.openAir.OpenAirPackage;
+import www.ubx.ch.openAir.Plus;
 import www.ubx.ch.openAir.Point;
 import www.ubx.ch.openAir.Point1;
 import www.ubx.ch.openAir.Point2;
@@ -115,20 +116,6 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass lLimitEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass hLimitEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EClass theGeomEClass = null;
 
   /**
@@ -200,6 +187,27 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * @generated
    */
   private EClass vsubEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass dirEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass plusEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass minusEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -717,9 +725,9 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getLLimit()
+  public EReference getLimites_HighLimit()
   {
-    return lLimitEClass;
+    return (EReference)limitesEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -727,29 +735,9 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getLLimit_HighLimit()
+  public EReference getLimites_HeighLimit()
   {
-    return (EReference)lLimitEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getHLimit()
-  {
-    return hLimitEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getHLimit_HeighLimit()
-  {
-    return (EReference)hLimitEClass.getEStructuralFeatures().get(0);
+    return (EReference)limitesEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -937,9 +925,39 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getVsub_D()
+  public EReference getVsub_D()
   {
-    return (EAttribute)vsubEClass.getEStructuralFeatures().get(1);
+    return (EReference)vsubEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getDir()
+  {
+    return dirEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPlus()
+  {
+    return plusEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getMinus()
+  {
+    return minusEClass;
   }
 
   /**
@@ -1617,12 +1635,8 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
 
     limitesEClass = createEClass(LIMITES);
     createEReference(limitesEClass, LIMITES__LOW_LIMIT);
-
-    lLimitEClass = createEClass(LLIMIT);
-    createEReference(lLimitEClass, LLIMIT__HIGH_LIMIT);
-
-    hLimitEClass = createEClass(HLIMIT);
-    createEReference(hLimitEClass, HLIMIT__HEIGH_LIMIT);
+    createEReference(limitesEClass, LIMITES__HIGH_LIMIT);
+    createEReference(limitesEClass, LIMITES__HEIGH_LIMIT);
 
     theGeomEClass = createEClass(THE_GEOM);
 
@@ -1652,7 +1666,13 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
 
     vsubEClass = createEClass(VSUB);
     createEReference(vsubEClass, VSUB__X);
-    createEAttribute(vsubEClass, VSUB__D);
+    createEReference(vsubEClass, VSUB__D);
+
+    dirEClass = createEClass(DIR);
+
+    plusEClass = createEClass(PLUS);
+
+    minusEClass = createEClass(MINUS);
 
     dcEClass = createEClass(DC);
     createEAttribute(dcEClass, DC__RADIUS);
@@ -1767,14 +1787,14 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    lLimitEClass.getESuperTypes().add(this.getLimites());
-    hLimitEClass.getESuperTypes().add(this.getLimites());
     flEClass.getESuperTypes().add(this.getLimit());
     sfcEClass.getESuperTypes().add(this.getLimit());
     gndEClass.getESuperTypes().add(this.getLimit());
     unlEClass.getESuperTypes().add(this.getLimit());
     valEClass.getESuperTypes().add(this.getLimit());
     vEClass.getESuperTypes().add(this.getTheGeom());
+    plusEClass.getESuperTypes().add(this.getDir());
+    minusEClass.getESuperTypes().add(this.getDir());
     dcEClass.getESuperTypes().add(this.getTheGeom());
     dpEClass.getESuperTypes().add(this.getTheGeom());
     point1EClass.getESuperTypes().add(this.getPoint());
@@ -1822,12 +1842,8 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
 
     initEClass(limitesEClass, Limites.class, "Limites", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getLimites_LowLimit(), this.getLowLimit(), null, "lowLimit", null, 0, 1, Limites.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(lLimitEClass, LLimit.class, "LLimit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getLLimit_HighLimit(), this.getHighLimit(), null, "highLimit", null, 0, 1, LLimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(hLimitEClass, HLimit.class, "HLimit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getHLimit_HeighLimit(), this.getHighLimit(), null, "heighLimit", null, 0, 1, HLimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getLimites_HighLimit(), this.getHighLimit(), null, "highLimit", null, 0, 1, Limites.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getLimites_HeighLimit(), this.getHighLimit(), null, "heighLimit", null, 0, 1, Limites.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(theGeomEClass, TheGeom.class, "TheGeom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1857,7 +1873,13 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
 
     initEClass(vsubEClass, Vsub.class, "Vsub", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getVsub_X(), this.getPoint(), null, "x", null, 0, 1, Vsub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVsub_D(), ecorePackage.getEString(), "d", null, 0, 1, Vsub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getVsub_D(), this.getDir(), null, "d", null, 0, 1, Vsub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(dirEClass, Dir.class, "Dir", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(plusEClass, Plus.class, "Plus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(minusEClass, Minus.class, "Minus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(dcEClass, www.ubx.ch.openAir.DC.class, "DC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getDC_Radius(), ecorePackage.getEString(), "radius", null, 0, 1, www.ubx.ch.openAir.DC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

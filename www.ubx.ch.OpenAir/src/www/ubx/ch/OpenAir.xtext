@@ -29,13 +29,7 @@ AsName:
 	'AN' name=STRING;
 
 Limites:
-	(LLimit | HLimit);
-
-LLimit:
-	lowLimit=LowLimit highLimit=HighLimit;
-
-HLimit:
-	heighLimit=HighLimit lowLimit=LowLimit;
+	(lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit);
 
 TheGeom:
 	V | DP | DA | DB | DC;
@@ -75,10 +69,18 @@ V:
 	'V' vsub=Vsub;
 
 Vsub:
-	('X=' x=Point | 'D=' d=D);
+	('X=' x=Point | 'D=' d=Dir);
 
-D:
-	('+' | '-');
+Dir:
+	(Plus | Minus);
+
+Plus:
+	{Plus}
+	'+';
+
+Minus:
+	{Minus}
+	'-';
 
 DC:
 	'DC' radius=REAL;

@@ -66,12 +66,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Limites">
     <eStructuralFeatures xsi:type="ecore:EReference" name="lowLimit" eType="#//LowLimit"
         containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LLimit" eSuperTypes="#//Limites">
     <eStructuralFeatures xsi:type="ecore:EReference" name="highLimit" eType="#//HighLimit"
         containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HLimit" eSuperTypes="#//Limites">
     <eStructuralFeatures xsi:type="ecore:EReference" name="heighLimit" eType="#//HighLimit"
         containment="true"/>
   </eClassifiers>
@@ -110,8 +106,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Vsub">
     <eStructuralFeatures xsi:type="ecore:EReference" name="x" eType="#//Point" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="d" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="d" eType="#//Dir" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dir"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Plus" eSuperTypes="#//Dir"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Minus" eSuperTypes="#//Dir"/>
   <eClassifiers xsi:type="ecore:EClass" name="DC" eSuperTypes="#//TheGeom">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="radius" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>

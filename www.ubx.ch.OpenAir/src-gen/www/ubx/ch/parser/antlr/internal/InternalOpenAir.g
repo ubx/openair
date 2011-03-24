@@ -758,56 +758,14 @@ ruleLimites returns [EObject current=null]
     @after { resetLookahead(); 
     	lastConsumedNode = currentNode;
     }:
-(
-    { 
-        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getLLimitParserRuleCall_0(), currentNode); 
-    }
-    this_LLimit_0=ruleLLimit
-    { 
-        $current = $this_LLimit_0.current; 
-        currentNode = currentNode.getParent();
-    }
-
-    |
-    { 
-        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getHLimitParserRuleCall_1(), currentNode); 
-    }
-    this_HLimit_1=ruleHLimit
-    { 
-        $current = $this_HLimit_1.current; 
-        currentNode = currentNode.getParent();
-    }
-)
-;
-
-
-
-
-
-// Entry rule entryRuleLLimit
-entryRuleLLimit returns [EObject current=null] 
-	:
-	{ currentNode = createCompositeNode(grammarAccess.getLLimitRule(), currentNode); }
-	 iv_ruleLLimit=ruleLLimit 
-	 { $current=$iv_ruleLLimit.current; } 
-	 EOF 
-;
-
-// Rule LLimit
-ruleLLimit returns [EObject current=null] 
-    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
-    }
-    @after { resetLookahead(); 
-    	lastConsumedNode = currentNode;
-    }:
-((
+(((
 (
 		{ 
-	        currentNode=createCompositeNode(grammarAccess.getLLimitAccess().getLowLimitLowLimitParserRuleCall_0_0(), currentNode); 
+	        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getLowLimitLowLimitParserRuleCall_0_0_0(), currentNode); 
 	    }
 		lv_lowLimit_0_0=ruleLowLimit		{
 	        if ($current==null) {
-	            $current = factory.create(grammarAccess.getLLimitRule().getType().getClassifier());
+	            $current = factory.create(grammarAccess.getLimitesRule().getType().getClassifier());
 	            associateNodeWithAstElement(currentNode.getParent(), $current);
 	        }
 	        try {
@@ -827,11 +785,11 @@ ruleLLimit returns [EObject current=null]
 )(
 (
 		{ 
-	        currentNode=createCompositeNode(grammarAccess.getLLimitAccess().getHighLimitHighLimitParserRuleCall_1_0(), currentNode); 
+	        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getHighLimitHighLimitParserRuleCall_0_1_0(), currentNode); 
 	    }
 		lv_highLimit_1_0=ruleHighLimit		{
 	        if ($current==null) {
-	            $current = factory.create(grammarAccess.getLLimitRule().getType().getClassifier());
+	            $current = factory.create(grammarAccess.getLimitesRule().getType().getClassifier());
 	            associateNodeWithAstElement(currentNode.getParent(), $current);
 	        }
 	        try {
@@ -849,43 +807,21 @@ ruleLLimit returns [EObject current=null]
 
 )
 ))
-;
-
-
-
-
-
-// Entry rule entryRuleHLimit
-entryRuleHLimit returns [EObject current=null] 
-	:
-	{ currentNode = createCompositeNode(grammarAccess.getHLimitRule(), currentNode); }
-	 iv_ruleHLimit=ruleHLimit 
-	 { $current=$iv_ruleHLimit.current; } 
-	 EOF 
-;
-
-// Rule HLimit
-ruleHLimit returns [EObject current=null] 
-    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
-    }
-    @after { resetLookahead(); 
-    	lastConsumedNode = currentNode;
-    }:
-((
+    |((
 (
 		{ 
-	        currentNode=createCompositeNode(grammarAccess.getHLimitAccess().getHeighLimitHighLimitParserRuleCall_0_0(), currentNode); 
+	        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getHeighLimitHighLimitParserRuleCall_1_0_0(), currentNode); 
 	    }
-		lv_heighLimit_0_0=ruleHighLimit		{
+		lv_heighLimit_2_0=ruleHighLimit		{
 	        if ($current==null) {
-	            $current = factory.create(grammarAccess.getHLimitRule().getType().getClassifier());
+	            $current = factory.create(grammarAccess.getLimitesRule().getType().getClassifier());
 	            associateNodeWithAstElement(currentNode.getParent(), $current);
 	        }
 	        try {
 	       		set(
 	       			$current, 
 	       			"heighLimit",
-	        		lv_heighLimit_0_0, 
+	        		lv_heighLimit_2_0, 
 	        		"HighLimit", 
 	        		currentNode);
 	        } catch (ValueConverterException vce) {
@@ -898,18 +834,18 @@ ruleHLimit returns [EObject current=null]
 )(
 (
 		{ 
-	        currentNode=createCompositeNode(grammarAccess.getHLimitAccess().getLowLimitLowLimitParserRuleCall_1_0(), currentNode); 
+	        currentNode=createCompositeNode(grammarAccess.getLimitesAccess().getLowLimitLowLimitParserRuleCall_1_1_0(), currentNode); 
 	    }
-		lv_lowLimit_1_0=ruleLowLimit		{
+		lv_lowLimit_3_0=ruleLowLimit		{
 	        if ($current==null) {
-	            $current = factory.create(grammarAccess.getHLimitRule().getType().getClassifier());
+	            $current = factory.create(grammarAccess.getLimitesRule().getType().getClassifier());
 	            associateNodeWithAstElement(currentNode.getParent(), $current);
 	        }
 	        try {
 	       		set(
 	       			$current, 
 	       			"lowLimit",
-	        		lv_lowLimit_1_0, 
+	        		lv_lowLimit_3_0, 
 	        		"LowLimit", 
 	        		currentNode);
 	        } catch (ValueConverterException vce) {
@@ -919,7 +855,7 @@ ruleHLimit returns [EObject current=null]
 	    }
 
 )
-))
+)))
 ;
 
 
@@ -1511,9 +1447,9 @@ ruleVsub returns [EObject current=null]
 (
 (
 		{ 
-	        currentNode=createCompositeNode(grammarAccess.getVsubAccess().getDDParserRuleCall_1_1_0(), currentNode); 
+	        currentNode=createCompositeNode(grammarAccess.getVsubAccess().getDDirParserRuleCall_1_1_0(), currentNode); 
 	    }
-		lv_d_3_0=ruleD		{
+		lv_d_3_0=ruleDir		{
 	        if ($current==null) {
 	            $current = factory.create(grammarAccess.getVsubRule().getType().getClassifier());
 	            associateNodeWithAstElement(currentNode.getParent(), $current);
@@ -1523,7 +1459,7 @@ ruleVsub returns [EObject current=null]
 	       			$current, 
 	       			"d",
 	        		lv_d_3_0, 
-	        		"D", 
+	        		"Dir", 
 	        		currentNode);
 	        } catch (ValueConverterException vce) {
 				handleValueConverterException(vce);
@@ -1539,37 +1475,119 @@ ruleVsub returns [EObject current=null]
 
 
 
-// Entry rule entryRuleD
-entryRuleD returns [String current=null] 
+// Entry rule entryRuleDir
+entryRuleDir returns [EObject current=null] 
 	:
-	{ currentNode = createCompositeNode(grammarAccess.getDRule(), currentNode); } 
-	 iv_ruleD=ruleD 
-	 { $current=$iv_ruleD.current.getText(); }  
+	{ currentNode = createCompositeNode(grammarAccess.getDirRule(), currentNode); }
+	 iv_ruleDir=ruleDir 
+	 { $current=$iv_ruleDir.current; } 
 	 EOF 
 ;
 
-// Rule D
-ruleD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
-    @init { setCurrentLookahead(); resetLookahead(); 
+// Rule Dir
+ruleDir returns [EObject current=null] 
+    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
     }
     @after { resetLookahead(); 
-	    lastConsumedNode = currentNode;
+    	lastConsumedNode = currentNode;
     }:
 (
-	kw='+' 
-    {
-        $current.merge(kw);
-        createLeafNode(grammarAccess.getDAccess().getPlusSignKeyword_0(), null); 
+    { 
+        currentNode=createCompositeNode(grammarAccess.getDirAccess().getPlusParserRuleCall_0(), currentNode); 
+    }
+    this_Plus_0=rulePlus
+    { 
+        $current = $this_Plus_0.current; 
+        currentNode = currentNode.getParent();
     }
 
     |
-	kw='-' 
-    {
-        $current.merge(kw);
-        createLeafNode(grammarAccess.getDAccess().getHyphenMinusKeyword_1(), null); 
+    { 
+        currentNode=createCompositeNode(grammarAccess.getDirAccess().getMinusParserRuleCall_1(), currentNode); 
+    }
+    this_Minus_1=ruleMinus
+    { 
+        $current = $this_Minus_1.current; 
+        currentNode = currentNode.getParent();
     }
 )
-    ;
+;
+
+
+
+
+
+// Entry rule entryRulePlus
+entryRulePlus returns [EObject current=null] 
+	:
+	{ currentNode = createCompositeNode(grammarAccess.getPlusRule(), currentNode); }
+	 iv_rulePlus=rulePlus 
+	 { $current=$iv_rulePlus.current; } 
+	 EOF 
+;
+
+// Rule Plus
+rulePlus returns [EObject current=null] 
+    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
+    }
+    @after { resetLookahead(); 
+    	lastConsumedNode = currentNode;
+    }:
+((
+    { 
+        temp=factory.create(grammarAccess.getPlusAccess().getPlusAction_0().getType().getClassifier());
+        $current = temp; 
+        temp = null;
+        CompositeNode newNode = createCompositeNode(grammarAccess.getPlusAccess().getPlusAction_0(), currentNode.getParent());
+    newNode.getChildren().add(currentNode);
+    moveLookaheadInfo(currentNode, newNode);
+    currentNode = newNode; 
+        associateNodeWithAstElement(currentNode, $current); 
+    }
+)	'+' 
+    {
+        createLeafNode(grammarAccess.getPlusAccess().getPlusSignKeyword_1(), null); 
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleMinus
+entryRuleMinus returns [EObject current=null] 
+	:
+	{ currentNode = createCompositeNode(grammarAccess.getMinusRule(), currentNode); }
+	 iv_ruleMinus=ruleMinus 
+	 { $current=$iv_ruleMinus.current; } 
+	 EOF 
+;
+
+// Rule Minus
+ruleMinus returns [EObject current=null] 
+    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
+    }
+    @after { resetLookahead(); 
+    	lastConsumedNode = currentNode;
+    }:
+((
+    { 
+        temp=factory.create(grammarAccess.getMinusAccess().getMinusAction_0().getType().getClassifier());
+        $current = temp; 
+        temp = null;
+        CompositeNode newNode = createCompositeNode(grammarAccess.getMinusAccess().getMinusAction_0(), currentNode.getParent());
+    newNode.getChildren().add(currentNode);
+    moveLookaheadInfo(currentNode, newNode);
+    currentNode = newNode; 
+        associateNodeWithAstElement(currentNode, $current); 
+    }
+)	'-' 
+    {
+        createLeafNode(grammarAccess.getMinusAccess().getHyphenMinusKeyword_1(), null); 
+    }
+)
+;
 
 
 

@@ -7,7 +7,29 @@ import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider;
 import org.eclipse.xtext.ui.label.DefaultEObjectLabelProvider;
 
 import www.ubx.ch.openAir.Airspace;
-import www.ubx.ch.openAir.OpenAir;
+import www.ubx.ch.openAir.AsClass;
+import www.ubx.ch.openAir.FL;
+import www.ubx.ch.openAir.GND;
+import www.ubx.ch.openAir.HighLimit;
+import www.ubx.ch.openAir.Limites;
+import www.ubx.ch.openAir.LowLimit;
+import www.ubx.ch.openAir.Minus;
+import www.ubx.ch.openAir.Plus;
+import www.ubx.ch.openAir.Point;
+import www.ubx.ch.openAir.Point1;
+import www.ubx.ch.openAir.Point2;
+import www.ubx.ch.openAir.Point3;
+import www.ubx.ch.openAir.Point4;
+import www.ubx.ch.openAir.SFC;
+import www.ubx.ch.openAir.TheDef;
+import www.ubx.ch.openAir.TheGeom;
+import www.ubx.ch.openAir.UNL;
+import www.ubx.ch.openAir.VAL;
+import www.ubx.ch.openAir.impl.FLImpl;
+import www.ubx.ch.openAir.impl.GNDImpl;
+import www.ubx.ch.openAir.impl.SFCImpl;
+import www.ubx.ch.openAir.impl.UNLImpl;
+import www.ubx.ch.openAir.impl.VALImpl;
 
 import com.google.inject.Inject;
 
@@ -23,15 +45,120 @@ public class OpenAirLabelProvider extends DefaultEObjectLabelProvider {
 		super(delegate);
 	}
 
-	String text(Airspace rule) {
+	protected String text(Airspace rule) {
 		return "->" + rule.getThedef().getName().getName();
 	}
 
-	/*
-	 * //Labels and icons can be computed like this:
-	 * 
-	 * String text(MyModel ele) { return "my "+ele.getName(); }
-	 * 
-	 * String image(MyModel ele) { return "MyModel.gif"; }
-	 */
+	protected String text(TheDef rule) {
+		return "Definition";
+	}
+
+	protected String text(AsClass rule) {
+		return "Class: " + rule.getName().getName();
+	}
+
+	protected String text(Limites rule) {
+		return "Limits";
+	}
+
+	protected String text(LowLimit rule) {
+		if (rule.getLl() instanceof SFCImpl) {
+			return "Low: SFC";
+		}
+		if (rule.getLl() instanceof GNDImpl) {
+			return "Low: GND";
+		}
+		if (rule.getLl() instanceof UNLImpl) {
+			return "Low: Unlimited";
+		}
+		if (rule.getLl() instanceof VALImpl) {
+			VALImpl val = (VALImpl) rule.getLl();
+			return "Low: " + val.getValue() + " " + val.getUnit();
+		}
+		return "Low: ";
+	}
+
+	protected String text(HighLimit rule) {
+		if (rule.getHl() instanceof SFCImpl) {
+			return "High: SFC";
+		}
+		if (rule.getHl() instanceof GNDImpl) {
+			return "Low: GND";
+		}
+		if (rule.getHl() instanceof UNLImpl) {
+			return "Low: Unlimited";
+		}
+		if (rule.getHl() instanceof VALImpl) {
+			VALImpl val = (VALImpl) rule.getHl();
+			return "High: " + val.getValue() + " " + val.getUnit();
+		}
+		if (rule.getHl() instanceof FLImpl) {
+			FLImpl val = (FLImpl) rule.getHl();
+			return "High: FL" + val.getValue();
+		}
+		return "High: ";
+	}
+
+	protected String text(FL rule) {
+		return "FL " + rule.getValue();
+	}
+
+	protected String text(SFC rule) {
+		return "SFC";
+	}
+
+	protected String text(GND rule) {
+		return "GND";
+	}
+
+	protected String text(UNL rule) {
+		return "Unlimited";
+	}
+
+	protected String text(VAL rule) {
+		return rule.getValue() + " " + rule.getUnit();
+	}
+
+	protected String text(TheGeom rule) {
+		return null;
+	}
+
+	protected String text(Point1 rule) {
+		return fmt2(rule.getLongD().getValue()) + ":" + fmt2(rule.getLongM().getValue()) + ":"
+				+ fmt2(rule.getLongS().getValue()) + " " + rule.getNs().getName() + " -- " + fmt3(rule.getLatD().getValue())
+				+ ":" + fmt2(rule.getLatM().getValue()) + ":" + fmt2(rule.getLatS().getValue()) + " " + rule.getWe().getName();
+	}
+
+	protected String text(Point2 rule) {
+		return "Point2"; // TODO
+	}
+
+	protected String text(Point3 rule) {
+		return "Point3"; // TODO
+	}
+
+	protected String text(Point4 rule) {
+		return "Point4"; // TODO
+	}
+
+	protected String text(Plus rule) {
+		return "Set direction clockwise";
+	}
+
+	protected String text(Minus rule) {
+		return "Set direction counterclockwise";
+	}
+
+	protected String text(Point rule) {
+		return "Center";
+	}
+
+	private String fmt2(int val) {
+		return String.format("%02d", val);
+	}
+
+	private String fmt3(int val) {
+		return String.format("%03d", val);
+
+	}
 }

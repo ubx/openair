@@ -151,22 +151,6 @@ public class OpenAirSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case OpenAirPackage.LLIMIT:
-      {
-        LLimit lLimit = (LLimit)theEObject;
-        T result = caseLLimit(lLimit);
-        if (result == null) result = caseLimites(lLimit);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case OpenAirPackage.HLIMIT:
-      {
-        HLimit hLimit = (HLimit)theEObject;
-        T result = caseHLimit(hLimit);
-        if (result == null) result = caseLimites(hLimit);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case OpenAirPackage.THE_GEOM:
       {
         TheGeom theGeom = (TheGeom)theEObject;
@@ -247,6 +231,29 @@ public class OpenAirSwitch<T>
       {
         Vsub vsub = (Vsub)theEObject;
         T result = caseVsub(vsub);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case OpenAirPackage.DIR:
+      {
+        Dir dir = (Dir)theEObject;
+        T result = caseDir(dir);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case OpenAirPackage.PLUS:
+      {
+        Plus plus = (Plus)theEObject;
+        T result = casePlus(plus);
+        if (result == null) result = caseDir(plus);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case OpenAirPackage.MINUS:
+      {
+        Minus minus = (Minus)theEObject;
+        T result = caseMinus(minus);
+        if (result == null) result = caseDir(minus);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -533,38 +540,6 @@ public class OpenAirSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>LLimit</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>LLimit</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseLLimit(LLimit object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>HLimit</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>HLimit</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseHLimit(HLimit object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>The Geom</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -736,6 +711,54 @@ public class OpenAirSwitch<T>
    * @generated
    */
   public T caseVsub(Vsub object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Dir</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Dir</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseDir(Dir object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Plus</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Plus</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePlus(Plus object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Minus</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Minus</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseMinus(Minus object)
   {
     return null;
   }

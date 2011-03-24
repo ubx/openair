@@ -118,16 +118,6 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
         return createLimitesAdapter();
       }
       @Override
-      public Adapter caseLLimit(LLimit object)
-      {
-        return createLLimitAdapter();
-      }
-      @Override
-      public Adapter caseHLimit(HLimit object)
-      {
-        return createHLimitAdapter();
-      }
-      @Override
       public Adapter caseTheGeom(TheGeom object)
       {
         return createTheGeomAdapter();
@@ -181,6 +171,21 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
       public Adapter caseVsub(Vsub object)
       {
         return createVsubAdapter();
+      }
+      @Override
+      public Adapter caseDir(Dir object)
+      {
+        return createDirAdapter();
+      }
+      @Override
+      public Adapter casePlus(Plus object)
+      {
+        return createPlusAdapter();
+      }
+      @Override
+      public Adapter caseMinus(Minus object)
+      {
+        return createMinusAdapter();
       }
       @Override
       public Adapter caseDC(DC object)
@@ -425,36 +430,6 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.LLimit <em>LLimit</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see www.ubx.ch.openAir.LLimit
-   * @generated
-   */
-  public Adapter createLLimitAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.HLimit <em>HLimit</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see www.ubx.ch.openAir.HLimit
-   * @generated
-   */
-  public Adapter createHLimitAdapter()
-  {
-    return null;
-  }
-
-  /**
    * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.TheGeom <em>The Geom</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -615,6 +590,51 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createVsubAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.Dir <em>Dir</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see www.ubx.ch.openAir.Dir
+   * @generated
+   */
+  public Adapter createDirAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.Plus <em>Plus</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see www.ubx.ch.openAir.Plus
+   * @generated
+   */
+  public Adapter createPlusAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.Minus <em>Minus</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see www.ubx.ch.openAir.Minus
+   * @generated
+   */
+  public Adapter createMinusAdapter()
   {
     return null;
   }

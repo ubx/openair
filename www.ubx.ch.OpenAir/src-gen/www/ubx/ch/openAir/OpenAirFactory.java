@@ -98,24 +98,6 @@ public interface OpenAirFactory extends EFactory
   Limites createLimites();
 
   /**
-   * Returns a new object of class '<em>LLimit</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>LLimit</em>'.
-   * @generated
-   */
-  LLimit createLLimit();
-
-  /**
-   * Returns a new object of class '<em>HLimit</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>HLimit</em>'.
-   * @generated
-   */
-  HLimit createHLimit();
-
-  /**
    * Returns a new object of class '<em>The Geom</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -213,6 +195,33 @@ public interface OpenAirFactory extends EFactory
    * @generated
    */
   Vsub createVsub();
+
+  /**
+   * Returns a new object of class '<em>Dir</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Dir</em>'.
+   * @generated
+   */
+  Dir createDir();
+
+  /**
+   * Returns a new object of class '<em>Plus</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Plus</em>'.
+   * @generated
+   */
+  Plus createPlus();
+
+  /**
+   * Returns a new object of class '<em>Minus</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Minus</em>'.
+   * @generated
+   */
+  Minus createMinus();
 
   /**
    * Returns a new object of class '<em>DC</em>'.

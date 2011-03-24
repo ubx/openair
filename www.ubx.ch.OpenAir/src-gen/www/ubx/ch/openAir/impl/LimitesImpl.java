@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import www.ubx.ch.openAir.HighLimit;
 import www.ubx.ch.openAir.Limites;
 import www.ubx.ch.openAir.LowLimit;
 import www.ubx.ch.openAir.OpenAirPackage;
@@ -26,6 +27,8 @@ import www.ubx.ch.openAir.OpenAirPackage;
  * The following features are implemented:
  * <ul>
  *   <li>{@link www.ubx.ch.openAir.impl.LimitesImpl#getLowLimit <em>Low Limit</em>}</li>
+ *   <li>{@link www.ubx.ch.openAir.impl.LimitesImpl#getHighLimit <em>High Limit</em>}</li>
+ *   <li>{@link www.ubx.ch.openAir.impl.LimitesImpl#getHeighLimit <em>Heigh Limit</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,6 +45,26 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
    * @ordered
    */
   protected LowLimit lowLimit;
+
+  /**
+   * The cached value of the '{@link #getHighLimit() <em>High Limit</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getHighLimit()
+   * @generated
+   * @ordered
+   */
+  protected HighLimit highLimit;
+
+  /**
+   * The cached value of the '{@link #getHeighLimit() <em>Heigh Limit</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getHeighLimit()
+   * @generated
+   * @ordered
+   */
+  protected HighLimit heighLimit;
 
   /**
    * <!-- begin-user-doc -->
@@ -117,6 +140,102 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
    * <!-- end-user-doc -->
    * @generated
    */
+  public HighLimit getHighLimit()
+  {
+    return highLimit;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetHighLimit(HighLimit newHighLimit, NotificationChain msgs)
+  {
+    HighLimit oldHighLimit = highLimit;
+    highLimit = newHighLimit;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAirPackage.LIMITES__HIGH_LIMIT, oldHighLimit, newHighLimit);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setHighLimit(HighLimit newHighLimit)
+  {
+    if (newHighLimit != highLimit)
+    {
+      NotificationChain msgs = null;
+      if (highLimit != null)
+        msgs = ((InternalEObject)highLimit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.LIMITES__HIGH_LIMIT, null, msgs);
+      if (newHighLimit != null)
+        msgs = ((InternalEObject)newHighLimit).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.LIMITES__HIGH_LIMIT, null, msgs);
+      msgs = basicSetHighLimit(newHighLimit, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.LIMITES__HIGH_LIMIT, newHighLimit, newHighLimit));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public HighLimit getHeighLimit()
+  {
+    return heighLimit;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetHeighLimit(HighLimit newHeighLimit, NotificationChain msgs)
+  {
+    HighLimit oldHeighLimit = heighLimit;
+    heighLimit = newHeighLimit;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAirPackage.LIMITES__HEIGH_LIMIT, oldHeighLimit, newHeighLimit);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setHeighLimit(HighLimit newHeighLimit)
+  {
+    if (newHeighLimit != heighLimit)
+    {
+      NotificationChain msgs = null;
+      if (heighLimit != null)
+        msgs = ((InternalEObject)heighLimit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.LIMITES__HEIGH_LIMIT, null, msgs);
+      if (newHeighLimit != null)
+        msgs = ((InternalEObject)newHeighLimit).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.LIMITES__HEIGH_LIMIT, null, msgs);
+      msgs = basicSetHeighLimit(newHeighLimit, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.LIMITES__HEIGH_LIMIT, newHeighLimit, newHeighLimit));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -124,6 +243,10 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
     {
       case OpenAirPackage.LIMITES__LOW_LIMIT:
         return basicSetLowLimit(null, msgs);
+      case OpenAirPackage.LIMITES__HIGH_LIMIT:
+        return basicSetHighLimit(null, msgs);
+      case OpenAirPackage.LIMITES__HEIGH_LIMIT:
+        return basicSetHeighLimit(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -140,6 +263,10 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
     {
       case OpenAirPackage.LIMITES__LOW_LIMIT:
         return getLowLimit();
+      case OpenAirPackage.LIMITES__HIGH_LIMIT:
+        return getHighLimit();
+      case OpenAirPackage.LIMITES__HEIGH_LIMIT:
+        return getHeighLimit();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -156,6 +283,12 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
     {
       case OpenAirPackage.LIMITES__LOW_LIMIT:
         setLowLimit((LowLimit)newValue);
+        return;
+      case OpenAirPackage.LIMITES__HIGH_LIMIT:
+        setHighLimit((HighLimit)newValue);
+        return;
+      case OpenAirPackage.LIMITES__HEIGH_LIMIT:
+        setHeighLimit((HighLimit)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -174,6 +307,12 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
       case OpenAirPackage.LIMITES__LOW_LIMIT:
         setLowLimit((LowLimit)null);
         return;
+      case OpenAirPackage.LIMITES__HIGH_LIMIT:
+        setHighLimit((HighLimit)null);
+        return;
+      case OpenAirPackage.LIMITES__HEIGH_LIMIT:
+        setHeighLimit((HighLimit)null);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -190,6 +329,10 @@ public class LimitesImpl extends MinimalEObjectImpl.Container implements Limites
     {
       case OpenAirPackage.LIMITES__LOW_LIMIT:
         return lowLimit != null;
+      case OpenAirPackage.LIMITES__HIGH_LIMIT:
+        return highLimit != null;
+      case OpenAirPackage.LIMITES__HEIGH_LIMIT:
+        return heighLimit != null;
     }
     return super.eIsSet(featureID);
   }

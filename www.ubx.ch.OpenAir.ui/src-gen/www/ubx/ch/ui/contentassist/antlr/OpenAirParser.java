@@ -41,7 +41,7 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTheGeomAccess().getAlternatives(), "rule__TheGeom__Alternatives");
 					put(grammarAccess.getLimitAccess().getAlternatives(), "rule__Limit__Alternatives");
 					put(grammarAccess.getVsubAccess().getAlternatives(), "rule__Vsub__Alternatives");
-					put(grammarAccess.getDAccess().getAlternatives(), "rule__D__Alternatives");
+					put(grammarAccess.getDirAccess().getAlternatives(), "rule__Dir__Alternatives");
 					put(grammarAccess.getPointAccess().getAlternatives(), "rule__Point__Alternatives");
 					put(grammarAccess.getDaParamsAccess().getAlternatives(), "rule__DaParams__Alternatives");
 					put(grammarAccess.getClassTypeAccess().getAlternatives(), "rule__ClassType__Alternatives");
@@ -54,8 +54,8 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getSPAccess().getGroup(), "rule__SP__Group__0");
 					put(grammarAccess.getSBAccess().getGroup(), "rule__SB__Group__0");
 					put(grammarAccess.getAsNameAccess().getGroup(), "rule__AsName__Group__0");
-					put(grammarAccess.getLLimitAccess().getGroup(), "rule__LLimit__Group__0");
-					put(grammarAccess.getHLimitAccess().getGroup(), "rule__HLimit__Group__0");
+					put(grammarAccess.getLimitesAccess().getGroup_0(), "rule__Limites__Group_0__0");
+					put(grammarAccess.getLimitesAccess().getGroup_1(), "rule__Limites__Group_1__0");
 					put(grammarAccess.getLowLimitAccess().getGroup(), "rule__LowLimit__Group__0");
 					put(grammarAccess.getHighLimitAccess().getGroup(), "rule__HighLimit__Group__0");
 					put(grammarAccess.getFLAccess().getGroup(), "rule__FL__Group__0");
@@ -66,6 +66,8 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getVAccess().getGroup(), "rule__V__Group__0");
 					put(grammarAccess.getVsubAccess().getGroup_0(), "rule__Vsub__Group_0__0");
 					put(grammarAccess.getVsubAccess().getGroup_1(), "rule__Vsub__Group_1__0");
+					put(grammarAccess.getPlusAccess().getGroup(), "rule__Plus__Group__0");
+					put(grammarAccess.getMinusAccess().getGroup(), "rule__Minus__Group__0");
 					put(grammarAccess.getDCAccess().getGroup(), "rule__DC__Group__0");
 					put(grammarAccess.getDPAccess().getGroup(), "rule__DP__Group__0");
 					put(grammarAccess.getPoint1Access().getGroup(), "rule__Point1__Group__0");
@@ -99,10 +101,10 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getSBAccess().getSbVal2Assignment_3(), "rule__SB__SbVal2Assignment_3");
 					put(grammarAccess.getSBAccess().getSbVal3Assignment_5(), "rule__SB__SbVal3Assignment_5");
 					put(grammarAccess.getAsNameAccess().getNameAssignment_1(), "rule__AsName__NameAssignment_1");
-					put(grammarAccess.getLLimitAccess().getLowLimitAssignment_0(), "rule__LLimit__LowLimitAssignment_0");
-					put(grammarAccess.getLLimitAccess().getHighLimitAssignment_1(), "rule__LLimit__HighLimitAssignment_1");
-					put(grammarAccess.getHLimitAccess().getHeighLimitAssignment_0(), "rule__HLimit__HeighLimitAssignment_0");
-					put(grammarAccess.getHLimitAccess().getLowLimitAssignment_1(), "rule__HLimit__LowLimitAssignment_1");
+					put(grammarAccess.getLimitesAccess().getLowLimitAssignment_0_0(), "rule__Limites__LowLimitAssignment_0_0");
+					put(grammarAccess.getLimitesAccess().getHighLimitAssignment_0_1(), "rule__Limites__HighLimitAssignment_0_1");
+					put(grammarAccess.getLimitesAccess().getHeighLimitAssignment_1_0(), "rule__Limites__HeighLimitAssignment_1_0");
+					put(grammarAccess.getLimitesAccess().getLowLimitAssignment_1_1(), "rule__Limites__LowLimitAssignment_1_1");
 					put(grammarAccess.getLowLimitAccess().getLlAssignment_1(), "rule__LowLimit__LlAssignment_1");
 					put(grammarAccess.getHighLimitAccess().getHlAssignment_1(), "rule__HighLimit__HlAssignment_1");
 					put(grammarAccess.getFLAccess().getValueAssignment_1(), "rule__FL__ValueAssignment_1");

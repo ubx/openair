@@ -39,39 +39,40 @@ protected class ThisRootNode extends RootToken {
 			case 5: return new SB_Group(this, this, 5, inst);
 			case 6: return new AsName_Group(this, this, 6, inst);
 			case 7: return new Limites_Alternatives(this, this, 7, inst);
-			case 8: return new LLimit_Group(this, this, 8, inst);
-			case 9: return new HLimit_Group(this, this, 9, inst);
-			case 10: return new TheGeom_Alternatives(this, this, 10, inst);
-			case 11: return new LowLimit_Group(this, this, 11, inst);
-			case 12: return new HighLimit_Group(this, this, 12, inst);
-			case 13: return new Limit_Alternatives(this, this, 13, inst);
-			case 14: return new FL_Group(this, this, 14, inst);
-			case 15: return new SFC_Group(this, this, 15, inst);
-			case 16: return new GND_Group(this, this, 16, inst);
-			case 17: return new UNL_Group(this, this, 17, inst);
-			case 18: return new VAL_Group(this, this, 18, inst);
-			case 19: return new V_Group(this, this, 19, inst);
-			case 20: return new Vsub_Alternatives(this, this, 20, inst);
-			case 21: return new DC_Group(this, this, 21, inst);
-			case 22: return new DP_Group(this, this, 22, inst);
-			case 23: return new Point_Alternatives(this, this, 23, inst);
-			case 24: return new Point1_Group(this, this, 24, inst);
-			case 25: return new Point2_Group(this, this, 25, inst);
-			case 26: return new Point3_Group(this, this, 26, inst);
-			case 27: return new Point4_Group(this, this, 27, inst);
-			case 28: return new LongDegr_ValueAssignment(this, this, 28, inst);
-			case 29: return new LatDegr_ValueAssignment(this, this, 29, inst);
-			case 30: return new MinSec_Group(this, this, 30, inst);
-			case 31: return new SecDec_Group(this, this, 31, inst);
-			case 32: return new MinDec_Group(this, this, 32, inst);
-			case 33: return new LongDec_ValueAssignment(this, this, 33, inst);
-			case 34: return new LatDec_ValueAssignment(this, this, 34, inst);
-			case 35: return new DA_Group(this, this, 35, inst);
-			case 36: return new DaParams_Alternatives(this, this, 36, inst);
-			case 37: return new DaParams1_Group(this, this, 37, inst);
-			case 38: return new DaParams2_Group(this, this, 38, inst);
-			case 39: return new DB_Group(this, this, 39, inst);
-			case 40: return new AT_Group(this, this, 40, inst);
+			case 8: return new TheGeom_Alternatives(this, this, 8, inst);
+			case 9: return new LowLimit_Group(this, this, 9, inst);
+			case 10: return new HighLimit_Group(this, this, 10, inst);
+			case 11: return new Limit_Alternatives(this, this, 11, inst);
+			case 12: return new FL_Group(this, this, 12, inst);
+			case 13: return new SFC_Group(this, this, 13, inst);
+			case 14: return new GND_Group(this, this, 14, inst);
+			case 15: return new UNL_Group(this, this, 15, inst);
+			case 16: return new VAL_Group(this, this, 16, inst);
+			case 17: return new V_Group(this, this, 17, inst);
+			case 18: return new Vsub_Alternatives(this, this, 18, inst);
+			case 19: return new Dir_Alternatives(this, this, 19, inst);
+			case 20: return new Plus_Group(this, this, 20, inst);
+			case 21: return new Minus_Group(this, this, 21, inst);
+			case 22: return new DC_Group(this, this, 22, inst);
+			case 23: return new DP_Group(this, this, 23, inst);
+			case 24: return new Point_Alternatives(this, this, 24, inst);
+			case 25: return new Point1_Group(this, this, 25, inst);
+			case 26: return new Point2_Group(this, this, 26, inst);
+			case 27: return new Point3_Group(this, this, 27, inst);
+			case 28: return new Point4_Group(this, this, 28, inst);
+			case 29: return new LongDegr_ValueAssignment(this, this, 29, inst);
+			case 30: return new LatDegr_ValueAssignment(this, this, 30, inst);
+			case 31: return new MinSec_Group(this, this, 31, inst);
+			case 32: return new SecDec_Group(this, this, 32, inst);
+			case 33: return new MinDec_Group(this, this, 33, inst);
+			case 34: return new LongDec_ValueAssignment(this, this, 34, inst);
+			case 35: return new LatDec_ValueAssignment(this, this, 35, inst);
+			case 36: return new DA_Group(this, this, 36, inst);
+			case 37: return new DaParams_Alternatives(this, this, 37, inst);
+			case 38: return new DaParams1_Group(this, this, 38, inst);
+			case 39: return new DaParams2_Group(this, this, 39, inst);
+			case 40: return new DB_Group(this, this, 40, inst);
+			case 41: return new AT_Group(this, this, 41, inst);
 			default: return null;
 		}	
 	}	
@@ -1336,11 +1337,11 @@ protected class AsName_NameAssignment_1 extends AssignmentToken  {
 /************ begin Rule Limites ****************
  *
  * Limites:
- * 	LLimit | HLimit;
+ * 	lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit;
  *
  **/
 
-// LLimit | HLimit
+// lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit
 protected class Limites_Alternatives extends AlternativesToken {
 
 	public Limites_Alternatives(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1355,144 +1356,53 @@ protected class Limites_Alternatives extends AlternativesToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Limites_LLimitParserRuleCall_0(lastRuleCallOrigin, this, 0, inst);
-			case 1: return new Limites_HLimitParserRuleCall_1(lastRuleCallOrigin, this, 1, inst);
+			case 0: return new Limites_Group_0(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Limites_Group_1(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}
 
     @Override
 	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getHLimitRule().getType().getClassifier() && 
-		   getEObject().eClass() != grammarAccess.getLLimitRule().getType().getClassifier())
+		if(getEObject().eClass() != grammarAccess.getLimitesRule().getType().getClassifier())
 			return null;
 		return eObjectConsumer;
 	}
 
 }
-
-// LLimit
-protected class Limites_LLimitParserRuleCall_0 extends RuleCallToken {
-	
-	public Limites_LLimitParserRuleCall_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
-		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
-	}
-	
-	@Override
-	public RuleCall getGrammarElement() {
-		return grammarAccess.getLimitesAccess().getLLimitParserRuleCall_0();
-	}
-
-    @Override
-	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
-		switch(index) {
-			case 0: return new LLimit_Group(this, this, 0, inst);
-			default: return null;
-		}	
-	}
-
-    @Override
-	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getLLimitRule().getType().getClassifier())
-			return null;
-		if(checkForRecursion(LLimit_Group.class, eObjectConsumer)) return null;
-		return eObjectConsumer;
-	}
-	
-    @Override
-	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
-		switch(index) {
-			default: return lastRuleCallOrigin.createFollowerAfterReturn(next, actIndex , index, inst);
-		}	
-	}	
-}
-
-// HLimit
-protected class Limites_HLimitParserRuleCall_1 extends RuleCallToken {
-	
-	public Limites_HLimitParserRuleCall_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
-		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
-	}
-	
-	@Override
-	public RuleCall getGrammarElement() {
-		return grammarAccess.getLimitesAccess().getHLimitParserRuleCall_1();
-	}
-
-    @Override
-	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
-		switch(index) {
-			case 0: return new HLimit_Group(this, this, 0, inst);
-			default: return null;
-		}	
-	}
-
-    @Override
-	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getHLimitRule().getType().getClassifier())
-			return null;
-		if(checkForRecursion(HLimit_Group.class, eObjectConsumer)) return null;
-		return eObjectConsumer;
-	}
-	
-    @Override
-	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
-		switch(index) {
-			default: return lastRuleCallOrigin.createFollowerAfterReturn(next, actIndex , index, inst);
-		}	
-	}	
-}
-
-
-/************ end Rule Limites ****************/
-
-
-/************ begin Rule LLimit ****************
- *
- * LLimit:
- * 	lowLimit=LowLimit highLimit=HighLimit;
- *
- **/
 
 // lowLimit=LowLimit highLimit=HighLimit
-protected class LLimit_Group extends GroupToken {
+protected class Limites_Group_0 extends GroupToken {
 	
-	public LLimit_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_Group_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Group getGrammarElement() {
-		return grammarAccess.getLLimitAccess().getGroup();
+		return grammarAccess.getLimitesAccess().getGroup_0();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new LLimit_HighLimitAssignment_1(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Limites_HighLimitAssignment_0_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
-	}
-
-    @Override
-	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getLLimitRule().getType().getClassifier())
-			return null;
-		return eObjectConsumer;
 	}
 
 }
 
 // lowLimit=LowLimit
-protected class LLimit_LowLimitAssignment_0 extends AssignmentToken  {
+protected class Limites_LowLimitAssignment_0_0 extends AssignmentToken  {
 	
-	public LLimit_LowLimitAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_LowLimitAssignment_0_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getLLimitAccess().getLowLimitAssignment_0();
+		return grammarAccess.getLimitesAccess().getLowLimitAssignment_0_0();
 	}
 
     @Override
@@ -1511,7 +1421,7 @@ protected class LLimit_LowLimitAssignment_0 extends AssignmentToken  {
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
 			if(param.isInstanceOf(grammarAccess.getLowLimitRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getLLimitAccess().getLowLimitLowLimitParserRuleCall_0_0(); 
+				element = grammarAccess.getLimitesAccess().getLowLimitLowLimitParserRuleCall_0_0_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -1529,15 +1439,15 @@ protected class LLimit_LowLimitAssignment_0 extends AssignmentToken  {
 }
 
 // highLimit=HighLimit
-protected class LLimit_HighLimitAssignment_1 extends AssignmentToken  {
+protected class Limites_HighLimitAssignment_0_1 extends AssignmentToken  {
 	
-	public LLimit_HighLimitAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_HighLimitAssignment_0_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getLLimitAccess().getHighLimitAssignment_1();
+		return grammarAccess.getLimitesAccess().getHighLimitAssignment_0_1();
 	}
 
     @Override
@@ -1556,7 +1466,7 @@ protected class LLimit_HighLimitAssignment_1 extends AssignmentToken  {
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
 			if(param.isInstanceOf(grammarAccess.getHighLimitRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getLLimitAccess().getHighLimitHighLimitParserRuleCall_1_0(); 
+				element = grammarAccess.getLimitesAccess().getHighLimitHighLimitParserRuleCall_0_1_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -1568,62 +1478,45 @@ protected class LLimit_HighLimitAssignment_1 extends AssignmentToken  {
 	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
 		if(value == inst.getEObject() && !inst.isConsumed()) return null;
 		switch(index) {
-			case 0: return new LLimit_LowLimitAssignment_0(lastRuleCallOrigin, next, actIndex, consumed);
+			case 0: return new Limites_LowLimitAssignment_0_0(lastRuleCallOrigin, next, actIndex, consumed);
 			default: return null;
 		}	
 	}	
 }
 
 
-/************ end Rule LLimit ****************/
-
-
-/************ begin Rule HLimit ****************
- *
- * HLimit:
- * 	heighLimit=HighLimit lowLimit=LowLimit;
- *
- **/
-
 // heighLimit=HighLimit lowLimit=LowLimit
-protected class HLimit_Group extends GroupToken {
+protected class Limites_Group_1 extends GroupToken {
 	
-	public HLimit_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_Group_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Group getGrammarElement() {
-		return grammarAccess.getHLimitAccess().getGroup();
+		return grammarAccess.getLimitesAccess().getGroup_1();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new HLimit_LowLimitAssignment_1(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Limites_LowLimitAssignment_1_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
-	}
-
-    @Override
-	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getHLimitRule().getType().getClassifier())
-			return null;
-		return eObjectConsumer;
 	}
 
 }
 
 // heighLimit=HighLimit
-protected class HLimit_HeighLimitAssignment_0 extends AssignmentToken  {
+protected class Limites_HeighLimitAssignment_1_0 extends AssignmentToken  {
 	
-	public HLimit_HeighLimitAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_HeighLimitAssignment_1_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getHLimitAccess().getHeighLimitAssignment_0();
+		return grammarAccess.getLimitesAccess().getHeighLimitAssignment_1_0();
 	}
 
     @Override
@@ -1642,7 +1535,7 @@ protected class HLimit_HeighLimitAssignment_0 extends AssignmentToken  {
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
 			if(param.isInstanceOf(grammarAccess.getHighLimitRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getHLimitAccess().getHeighLimitHighLimitParserRuleCall_0_0(); 
+				element = grammarAccess.getLimitesAccess().getHeighLimitHighLimitParserRuleCall_1_0_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -1660,15 +1553,15 @@ protected class HLimit_HeighLimitAssignment_0 extends AssignmentToken  {
 }
 
 // lowLimit=LowLimit
-protected class HLimit_LowLimitAssignment_1 extends AssignmentToken  {
+protected class Limites_LowLimitAssignment_1_1 extends AssignmentToken  {
 	
-	public HLimit_LowLimitAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Limites_LowLimitAssignment_1_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getHLimitAccess().getLowLimitAssignment_1();
+		return grammarAccess.getLimitesAccess().getLowLimitAssignment_1_1();
 	}
 
     @Override
@@ -1687,7 +1580,7 @@ protected class HLimit_LowLimitAssignment_1 extends AssignmentToken  {
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
 			if(param.isInstanceOf(grammarAccess.getLowLimitRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getHLimitAccess().getLowLimitLowLimitParserRuleCall_1_0(); 
+				element = grammarAccess.getLimitesAccess().getLowLimitLowLimitParserRuleCall_1_1_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -1699,14 +1592,15 @@ protected class HLimit_LowLimitAssignment_1 extends AssignmentToken  {
 	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
 		if(value == inst.getEObject() && !inst.isConsumed()) return null;
 		switch(index) {
-			case 0: return new HLimit_HeighLimitAssignment_0(lastRuleCallOrigin, next, actIndex, consumed);
+			case 0: return new Limites_HeighLimitAssignment_1_0(lastRuleCallOrigin, next, actIndex, consumed);
 			default: return null;
 		}	
 	}	
 }
 
 
-/************ end Rule HLimit ****************/
+
+/************ end Rule Limites ****************/
 
 
 /************ begin Rule TheGeom ****************
@@ -2955,11 +2849,11 @@ protected class V_VsubAssignment_1 extends AssignmentToken  {
 /************ begin Rule Vsub ****************
  *
  * Vsub:
- * 	"X=" x=Point | "D=" d=D;
+ * 	"X=" x=Point | "D=" d=Dir;
  *
  **/
 
-// "X=" x=Point | "D=" d=D
+// "X=" x=Point | "D=" d=Dir
 protected class Vsub_Alternatives extends AlternativesToken {
 
 	public Vsub_Alternatives(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -3079,7 +2973,7 @@ protected class Vsub_XAssignment_0_1 extends AssignmentToken  {
 }
 
 
-// "D=" d=D
+// "D=" d=Dir
 protected class Vsub_Group_1 extends GroupToken {
 	
 	public Vsub_Group_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -3122,7 +3016,7 @@ protected class Vsub_DKeyword_1_0 extends KeywordToken  {
 
 }
 
-// d=D
+// d=Dir
 protected class Vsub_DAssignment_1_1 extends AssignmentToken  {
 	
 	public Vsub_DAssignment_1_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -3137,7 +3031,7 @@ protected class Vsub_DAssignment_1_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Vsub_DKeyword_1_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Dir_Alternatives(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -3146,20 +3040,321 @@ protected class Vsub_DAssignment_1_1 extends AssignmentToken  {
 	public IEObjectConsumer tryConsume() {
 		if((value = eObjectConsumer.getConsumable("d",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("d");
-		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getVsubAccess().getDDParserRuleCall_1_1_0(), value, null)) {
-			type = AssignmentType.DATATYPE_RULE_CALL;
-			element = grammarAccess.getVsubAccess().getDDParserRuleCall_1_1_0();
-			return obj;
+		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
+			IEObjectConsumer param = createEObjectConsumer((EObject)value);
+			if(param.isInstanceOf(grammarAccess.getDirRule().getType().getClassifier())) {
+				type = AssignmentType.PARSER_RULE_CALL;
+				element = grammarAccess.getVsubAccess().getDDirParserRuleCall_1_1_0(); 
+				consumed = obj;
+				return param;
+			}
 		}
 		return null;
 	}
 
+    @Override
+	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
+		if(value == inst.getEObject() && !inst.isConsumed()) return null;
+		switch(index) {
+			case 0: return new Vsub_DKeyword_1_0(lastRuleCallOrigin, next, actIndex, consumed);
+			default: return null;
+		}	
+	}	
 }
 
 
 
 /************ end Rule Vsub ****************/
 
+
+/************ begin Rule Dir ****************
+ *
+ * Dir:
+ * 	Plus | Minus;
+ *
+ **/
+
+// Plus | Minus
+protected class Dir_Alternatives extends AlternativesToken {
+
+	public Dir_Alternatives(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Alternatives getGrammarElement() {
+		return grammarAccess.getDirAccess().getAlternatives();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Dir_PlusParserRuleCall_0(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Dir_MinusParserRuleCall_1(lastRuleCallOrigin, this, 1, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getMinusAccess().getMinusAction_0().getType().getClassifier() && 
+		   getEObject().eClass() != grammarAccess.getPlusAccess().getPlusAction_0().getType().getClassifier())
+			return null;
+		return eObjectConsumer;
+	}
+
+}
+
+// Plus
+protected class Dir_PlusParserRuleCall_0 extends RuleCallToken {
+	
+	public Dir_PlusParserRuleCall_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public RuleCall getGrammarElement() {
+		return grammarAccess.getDirAccess().getPlusParserRuleCall_0();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Plus_Group(this, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getPlusAccess().getPlusAction_0().getType().getClassifier())
+			return null;
+		if(checkForRecursion(Plus_Group.class, eObjectConsumer)) return null;
+		return eObjectConsumer;
+	}
+	
+    @Override
+	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(next, actIndex , index, inst);
+		}	
+	}	
+}
+
+// Minus
+protected class Dir_MinusParserRuleCall_1 extends RuleCallToken {
+	
+	public Dir_MinusParserRuleCall_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public RuleCall getGrammarElement() {
+		return grammarAccess.getDirAccess().getMinusParserRuleCall_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Minus_Group(this, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getMinusAccess().getMinusAction_0().getType().getClassifier())
+			return null;
+		if(checkForRecursion(Minus_Group.class, eObjectConsumer)) return null;
+		return eObjectConsumer;
+	}
+	
+    @Override
+	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(next, actIndex , index, inst);
+		}	
+	}	
+}
+
+
+/************ end Rule Dir ****************/
+
+
+/************ begin Rule Plus ****************
+ *
+ * Plus:
+ * 	{Plus} "+";
+ *
+ **/
+
+// {Plus} "+"
+protected class Plus_Group extends GroupToken {
+	
+	public Plus_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Group getGrammarElement() {
+		return grammarAccess.getPlusAccess().getGroup();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Plus_PlusSignKeyword_1(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getPlusAccess().getPlusAction_0().getType().getClassifier())
+			return null;
+		return eObjectConsumer;
+	}
+
+}
+
+// {Plus}
+protected class Plus_PlusAction_0 extends ActionToken  {
+
+	public Plus_PlusAction_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Action getGrammarElement() {
+		return grammarAccess.getPlusAccess().getPlusAction_0();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(this, index, index, inst);
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(!eObjectConsumer.isConsumed()) return null;
+		return eObjectConsumer;
+	}
+}
+
+// "+"
+protected class Plus_PlusSignKeyword_1 extends KeywordToken  {
+	
+	public Plus_PlusSignKeyword_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Keyword getGrammarElement() {
+		return grammarAccess.getPlusAccess().getPlusSignKeyword_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Plus_PlusAction_0(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+
+/************ end Rule Plus ****************/
+
+
+/************ begin Rule Minus ****************
+ *
+ * Minus:
+ * 	{Minus} "-";
+ *
+ **/
+
+// {Minus} "-"
+protected class Minus_Group extends GroupToken {
+	
+	public Minus_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Group getGrammarElement() {
+		return grammarAccess.getMinusAccess().getGroup();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Minus_HyphenMinusKeyword_1(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getMinusAccess().getMinusAction_0().getType().getClassifier())
+			return null;
+		return eObjectConsumer;
+	}
+
+}
+
+// {Minus}
+protected class Minus_MinusAction_0 extends ActionToken  {
+
+	public Minus_MinusAction_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Action getGrammarElement() {
+		return grammarAccess.getMinusAccess().getMinusAction_0();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(this, index, index, inst);
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(!eObjectConsumer.isConsumed()) return null;
+		return eObjectConsumer;
+	}
+}
+
+// "-"
+protected class Minus_HyphenMinusKeyword_1 extends KeywordToken  {
+	
+	public Minus_HyphenMinusKeyword_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Keyword getGrammarElement() {
+		return grammarAccess.getMinusAccess().getHyphenMinusKeyword_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Minus_MinusAction_0(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+
+/************ end Rule Minus ****************/
 
 
 /************ begin Rule DC ****************

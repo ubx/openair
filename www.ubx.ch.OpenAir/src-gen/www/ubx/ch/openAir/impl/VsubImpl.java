@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import www.ubx.ch.openAir.Dir;
 import www.ubx.ch.openAir.OpenAirPackage;
 import www.ubx.ch.openAir.Point;
 import www.ubx.ch.openAir.Vsub;
@@ -45,24 +46,14 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
   protected Point x;
 
   /**
-   * The default value of the '{@link #getD() <em>D</em>}' attribute.
+   * The cached value of the '{@link #getD() <em>D</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getD()
    * @generated
    * @ordered
    */
-  protected static final String D_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getD() <em>D</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getD()
-   * @generated
-   * @ordered
-   */
-  protected String d = D_EDEFAULT;
+  protected Dir d;
 
   /**
    * <!-- begin-user-doc -->
@@ -138,7 +129,7 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getD()
+  public Dir getD()
   {
     return d;
   }
@@ -148,12 +139,37 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setD(String newD)
+  public NotificationChain basicSetD(Dir newD, NotificationChain msgs)
   {
-    String oldD = d;
+    Dir oldD = d;
     d = newD;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.VSUB__D, oldD, d));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAirPackage.VSUB__D, oldD, newD);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setD(Dir newD)
+  {
+    if (newD != d)
+    {
+      NotificationChain msgs = null;
+      if (d != null)
+        msgs = ((InternalEObject)d).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.VSUB__D, null, msgs);
+      if (newD != null)
+        msgs = ((InternalEObject)newD).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.VSUB__D, null, msgs);
+      msgs = basicSetD(newD, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.VSUB__D, newD, newD));
   }
 
   /**
@@ -168,6 +184,8 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
     {
       case OpenAirPackage.VSUB__X:
         return basicSetX(null, msgs);
+      case OpenAirPackage.VSUB__D:
+        return basicSetD(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -204,7 +222,7 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
         setX((Point)newValue);
         return;
       case OpenAirPackage.VSUB__D:
-        setD((String)newValue);
+        setD((Dir)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -224,7 +242,7 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
         setX((Point)null);
         return;
       case OpenAirPackage.VSUB__D:
-        setD(D_EDEFAULT);
+        setD((Dir)null);
         return;
     }
     super.eUnset(featureID);
@@ -243,26 +261,9 @@ public class VsubImpl extends MinimalEObjectImpl.Container implements Vsub
       case OpenAirPackage.VSUB__X:
         return x != null;
       case OpenAirPackage.VSUB__D:
-        return D_EDEFAULT == null ? d != null : !D_EDEFAULT.equals(d);
+        return d != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (d: ");
-    result.append(d);
-    result.append(')');
-    return result.toString();
   }
 
 } //VsubImpl

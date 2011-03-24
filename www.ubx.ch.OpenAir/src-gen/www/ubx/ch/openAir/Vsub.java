@@ -53,29 +53,29 @@ public interface Vsub extends EObject
   void setX(Point value);
 
   /**
-   * Returns the value of the '<em><b>D</b></em>' attribute.
+   * Returns the value of the '<em><b>D</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>D</em>' attribute isn't clear,
+   * If the meaning of the '<em>D</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>D</em>' attribute.
-   * @see #setD(String)
+   * @return the value of the '<em>D</em>' containment reference.
+   * @see #setD(Dir)
    * @see www.ubx.ch.openAir.OpenAirPackage#getVsub_D()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getD();
+  Dir getD();
 
   /**
-   * Sets the value of the '{@link www.ubx.ch.openAir.Vsub#getD <em>D</em>}' attribute.
+   * Sets the value of the '{@link www.ubx.ch.openAir.Vsub#getD <em>D</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>D</em>' attribute.
+   * @param value the new value of the '<em>D</em>' containment reference.
    * @see #getD()
    * @generated
    */
-  void setD(String value);
+  void setD(Dir value);
 
 } // Vsub

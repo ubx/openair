@@ -81,12 +81,8 @@
     </genClasses>
     <genClasses ecoreClass="OpenAir.ecore#//Limites">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Limites/lowLimit"/>
-    </genClasses>
-    <genClasses ecoreClass="OpenAir.ecore#//LLimit">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//LLimit/highLimit"/>
-    </genClasses>
-    <genClasses ecoreClass="OpenAir.ecore#//HLimit">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//HLimit/heighLimit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Limites/highLimit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Limites/heighLimit"/>
     </genClasses>
     <genClasses ecoreClass="OpenAir.ecore#//TheGeom"/>
     <genClasses ecoreClass="OpenAir.ecore#//LowLimit">
@@ -111,8 +107,11 @@
     </genClasses>
     <genClasses ecoreClass="OpenAir.ecore#//Vsub">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Vsub/x"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Vsub/d"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//Vsub/d"/>
     </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Dir"/>
+    <genClasses ecoreClass="OpenAir.ecore#//Plus"/>
+    <genClasses ecoreClass="OpenAir.ecore#//Minus"/>
     <genClasses ecoreClass="OpenAir.ecore#//DC">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DC/radius"/>
     </genClasses>

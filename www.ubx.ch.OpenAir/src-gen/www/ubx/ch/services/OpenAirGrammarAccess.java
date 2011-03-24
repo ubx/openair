@@ -296,77 +296,53 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	public class LimitesElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Limites");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cLLimitParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cHLimitParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
+		private final Assignment cLowLimitAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
+		private final RuleCall cLowLimitLowLimitParserRuleCall_0_0_0 = (RuleCall)cLowLimitAssignment_0_0.eContents().get(0);
+		private final Assignment cHighLimitAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
+		private final RuleCall cHighLimitHighLimitParserRuleCall_0_1_0 = (RuleCall)cHighLimitAssignment_0_1.eContents().get(0);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
+		private final Assignment cHeighLimitAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
+		private final RuleCall cHeighLimitHighLimitParserRuleCall_1_0_0 = (RuleCall)cHeighLimitAssignment_1_0.eContents().get(0);
+		private final Assignment cLowLimitAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
+		private final RuleCall cLowLimitLowLimitParserRuleCall_1_1_0 = (RuleCall)cLowLimitAssignment_1_1.eContents().get(0);
 		
 		//Limites:
-		//	LLimit | HLimit;
+		//	lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit;
 		public ParserRule getRule() { return rule; }
 
-		//LLimit | HLimit
+		//lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//LLimit
-		public RuleCall getLLimitParserRuleCall_0() { return cLLimitParserRuleCall_0; }
-
-		//HLimit
-		public RuleCall getHLimitParserRuleCall_1() { return cHLimitParserRuleCall_1; }
-	}
-
-	public class LLimitElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LLimit");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cLowLimitAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cLowLimitLowLimitParserRuleCall_0_0 = (RuleCall)cLowLimitAssignment_0.eContents().get(0);
-		private final Assignment cHighLimitAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cHighLimitHighLimitParserRuleCall_1_0 = (RuleCall)cHighLimitAssignment_1.eContents().get(0);
-		
-		//LLimit:
-		//	lowLimit=LowLimit highLimit=HighLimit;
-		public ParserRule getRule() { return rule; }
-
 		//lowLimit=LowLimit highLimit=HighLimit
-		public Group getGroup() { return cGroup; }
+		public Group getGroup_0() { return cGroup_0; }
 
 		//lowLimit=LowLimit
-		public Assignment getLowLimitAssignment_0() { return cLowLimitAssignment_0; }
+		public Assignment getLowLimitAssignment_0_0() { return cLowLimitAssignment_0_0; }
 
 		//LowLimit
-		public RuleCall getLowLimitLowLimitParserRuleCall_0_0() { return cLowLimitLowLimitParserRuleCall_0_0; }
+		public RuleCall getLowLimitLowLimitParserRuleCall_0_0_0() { return cLowLimitLowLimitParserRuleCall_0_0_0; }
 
 		//highLimit=HighLimit
-		public Assignment getHighLimitAssignment_1() { return cHighLimitAssignment_1; }
+		public Assignment getHighLimitAssignment_0_1() { return cHighLimitAssignment_0_1; }
 
 		//HighLimit
-		public RuleCall getHighLimitHighLimitParserRuleCall_1_0() { return cHighLimitHighLimitParserRuleCall_1_0; }
-	}
-
-	public class HLimitElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "HLimit");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cHeighLimitAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cHeighLimitHighLimitParserRuleCall_0_0 = (RuleCall)cHeighLimitAssignment_0.eContents().get(0);
-		private final Assignment cLowLimitAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cLowLimitLowLimitParserRuleCall_1_0 = (RuleCall)cLowLimitAssignment_1.eContents().get(0);
-		
-		//HLimit:
-		//	heighLimit=HighLimit lowLimit=LowLimit;
-		public ParserRule getRule() { return rule; }
+		public RuleCall getHighLimitHighLimitParserRuleCall_0_1_0() { return cHighLimitHighLimitParserRuleCall_0_1_0; }
 
 		//heighLimit=HighLimit lowLimit=LowLimit
-		public Group getGroup() { return cGroup; }
+		public Group getGroup_1() { return cGroup_1; }
 
 		//heighLimit=HighLimit
-		public Assignment getHeighLimitAssignment_0() { return cHeighLimitAssignment_0; }
+		public Assignment getHeighLimitAssignment_1_0() { return cHeighLimitAssignment_1_0; }
 
 		//HighLimit
-		public RuleCall getHeighLimitHighLimitParserRuleCall_0_0() { return cHeighLimitHighLimitParserRuleCall_0_0; }
+		public RuleCall getHeighLimitHighLimitParserRuleCall_1_0_0() { return cHeighLimitHighLimitParserRuleCall_1_0_0; }
 
 		//lowLimit=LowLimit
-		public Assignment getLowLimitAssignment_1() { return cLowLimitAssignment_1; }
+		public Assignment getLowLimitAssignment_1_1() { return cLowLimitAssignment_1_1; }
 
 		//LowLimit
-		public RuleCall getLowLimitLowLimitParserRuleCall_1_0() { return cLowLimitLowLimitParserRuleCall_1_0; }
+		public RuleCall getLowLimitLowLimitParserRuleCall_1_1_0() { return cLowLimitLowLimitParserRuleCall_1_1_0; }
 	}
 
 	public class TheGeomElements extends AbstractParserRuleElementFinder {
@@ -627,13 +603,13 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
 		private final Keyword cDKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final Assignment cDAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final RuleCall cDDParserRuleCall_1_1_0 = (RuleCall)cDAssignment_1_1.eContents().get(0);
+		private final RuleCall cDDirParserRuleCall_1_1_0 = (RuleCall)cDAssignment_1_1.eContents().get(0);
 		
 		//Vsub:
-		//	"X=" x=Point | "D=" d=D;
+		//	"X=" x=Point | "D=" d=Dir;
 		public ParserRule getRule() { return rule; }
 
-		//"X=" x=Point | "D=" d=D
+		//"X=" x=Point | "D=" d=Dir
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//"X=" x=Point
@@ -648,34 +624,74 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		//Point
 		public RuleCall getXPointParserRuleCall_0_1_0() { return cXPointParserRuleCall_0_1_0; }
 
-		//"D=" d=D
+		//"D=" d=Dir
 		public Group getGroup_1() { return cGroup_1; }
 
 		//"D="
 		public Keyword getDKeyword_1_0() { return cDKeyword_1_0; }
 
-		//d=D
+		//d=Dir
 		public Assignment getDAssignment_1_1() { return cDAssignment_1_1; }
 
-		//D
-		public RuleCall getDDParserRuleCall_1_1_0() { return cDDParserRuleCall_1_1_0; }
+		//Dir
+		public RuleCall getDDirParserRuleCall_1_1_0() { return cDDirParserRuleCall_1_1_0; }
 	}
 
-	public class DElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "D");
+	public class DirElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Dir");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Keyword cPlusSignKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
-		private final Keyword cHyphenMinusKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		private final RuleCall cPlusParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cMinusParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
-		//D returns ecore::EString:
-		//	"+" | "-";
+		//Dir:
+		//	Plus | Minus;
 		public ParserRule getRule() { return rule; }
 
-		//"+" | "-"
+		//Plus | Minus
 		public Alternatives getAlternatives() { return cAlternatives; }
 
+		//Plus
+		public RuleCall getPlusParserRuleCall_0() { return cPlusParserRuleCall_0; }
+
+		//Minus
+		public RuleCall getMinusParserRuleCall_1() { return cMinusParserRuleCall_1; }
+	}
+
+	public class PlusElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Plus");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cPlusAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cPlusSignKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		
+		//Plus:
+		//	{Plus} "+";
+		public ParserRule getRule() { return rule; }
+
+		//{Plus} "+"
+		public Group getGroup() { return cGroup; }
+
+		//{Plus}
+		public Action getPlusAction_0() { return cPlusAction_0; }
+
 		//"+"
-		public Keyword getPlusSignKeyword_0() { return cPlusSignKeyword_0; }
+		public Keyword getPlusSignKeyword_1() { return cPlusSignKeyword_1; }
+	}
+
+	public class MinusElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Minus");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cMinusAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cHyphenMinusKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		
+		//Minus:
+		//	{Minus} "-";
+		public ParserRule getRule() { return rule; }
+
+		//{Minus} "-"
+		public Group getGroup() { return cGroup; }
+
+		//{Minus}
+		public Action getMinusAction_0() { return cMinusAction_0; }
 
 		//"-"
 		public Keyword getHyphenMinusKeyword_1() { return cHyphenMinusKeyword_1; }
@@ -1653,8 +1669,6 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	private SBElements pSB;
 	private AsNameElements pAsName;
 	private LimitesElements pLimites;
-	private LLimitElements pLLimit;
-	private HLimitElements pHLimit;
 	private TheGeomElements pTheGeom;
 	private LowLimitElements pLowLimit;
 	private HighLimitElements pHighLimit;
@@ -1667,7 +1681,9 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	private UnitsElements unknownRuleUnits;
 	private VElements pV;
 	private VsubElements pVsub;
-	private DElements pD;
+	private DirElements pDir;
+	private PlusElements pPlus;
+	private MinusElements pMinus;
 	private DCElements pDC;
 	private DPElements pDP;
 	private PointElements pPoint;
@@ -1796,33 +1812,13 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Limites:
-	//	LLimit | HLimit;
+	//	lowLimit=LowLimit highLimit=HighLimit | heighLimit=HighLimit lowLimit=LowLimit;
 	public LimitesElements getLimitesAccess() {
 		return (pLimites != null) ? pLimites : (pLimites = new LimitesElements());
 	}
 	
 	public ParserRule getLimitesRule() {
 		return getLimitesAccess().getRule();
-	}
-
-	//LLimit:
-	//	lowLimit=LowLimit highLimit=HighLimit;
-	public LLimitElements getLLimitAccess() {
-		return (pLLimit != null) ? pLLimit : (pLLimit = new LLimitElements());
-	}
-	
-	public ParserRule getLLimitRule() {
-		return getLLimitAccess().getRule();
-	}
-
-	//HLimit:
-	//	heighLimit=HighLimit lowLimit=LowLimit;
-	public HLimitElements getHLimitAccess() {
-		return (pHLimit != null) ? pHLimit : (pHLimit = new HLimitElements());
-	}
-	
-	public ParserRule getHLimitRule() {
-		return getHLimitAccess().getRule();
 	}
 
 	//TheGeom:
@@ -1937,7 +1933,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Vsub:
-	//	"X=" x=Point | "D=" d=D;
+	//	"X=" x=Point | "D=" d=Dir;
 	public VsubElements getVsubAccess() {
 		return (pVsub != null) ? pVsub : (pVsub = new VsubElements());
 	}
@@ -1946,14 +1942,34 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		return getVsubAccess().getRule();
 	}
 
-	//D returns ecore::EString:
-	//	"+" | "-";
-	public DElements getDAccess() {
-		return (pD != null) ? pD : (pD = new DElements());
+	//Dir:
+	//	Plus | Minus;
+	public DirElements getDirAccess() {
+		return (pDir != null) ? pDir : (pDir = new DirElements());
 	}
 	
-	public ParserRule getDRule() {
-		return getDAccess().getRule();
+	public ParserRule getDirRule() {
+		return getDirAccess().getRule();
+	}
+
+	//Plus:
+	//	{Plus} "+";
+	public PlusElements getPlusAccess() {
+		return (pPlus != null) ? pPlus : (pPlus = new PlusElements());
+	}
+	
+	public ParserRule getPlusRule() {
+		return getPlusAccess().getRule();
+	}
+
+	//Minus:
+	//	{Minus} "-";
+	public MinusElements getMinusAccess() {
+		return (pMinus != null) ? pMinus : (pMinus = new MinusElements());
+	}
+	
+	public ParserRule getMinusRule() {
+		return getMinusAccess().getRule();
 	}
 
 	//DC:

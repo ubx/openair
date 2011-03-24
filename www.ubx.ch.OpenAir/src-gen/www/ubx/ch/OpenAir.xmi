@@ -24,7 +24,7 @@
           <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.2"/>
         </elements>
         <elements xsi:type="xtext:Assignment" cardinality="*" feature="thegeom" operator="+=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.9"/>
         </elements>
       </alternatives>
     </rules>
@@ -202,33 +202,21 @@
         <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Limites"/>
       </type>
       <alternatives xsi:type="xtext:Alternatives">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.9"/>
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
-      </alternatives>
-    </rules>
-    <rules xsi:type="xtext:ParserRule" name="LLimit">
-      <type metamodel="/0/@metamodelDeclarations.0">
-        <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//LLimit"/>
-      </type>
-      <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:Assignment" feature="lowLimit" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:Group">
+          <elements xsi:type="xtext:Assignment" feature="lowLimit" operator="=">
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
+          </elements>
+          <elements xsi:type="xtext:Assignment" feature="highLimit" operator="=">
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
+          </elements>
         </elements>
-        <elements xsi:type="xtext:Assignment" feature="highLimit" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
-        </elements>
-      </alternatives>
-    </rules>
-    <rules xsi:type="xtext:ParserRule" name="HLimit">
-      <type metamodel="/0/@metamodelDeclarations.0">
-        <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//HLimit"/>
-      </type>
-      <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:Assignment" feature="heighLimit" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
-        </elements>
-        <elements xsi:type="xtext:Assignment" feature="lowLimit" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:Group">
+          <elements xsi:type="xtext:Assignment" feature="heighLimit" operator="=">
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
+          </elements>
+          <elements xsi:type="xtext:Assignment" feature="lowLimit" operator="=">
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
+          </elements>
         </elements>
       </alternatives>
     </rules>
@@ -237,7 +225,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//TheGeom"/>
       </type>
       <alternatives xsi:type="xtext:Alternatives">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.21"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.19"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.25"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.41"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.45"/>
@@ -251,7 +239,7 @@
       <alternatives xsi:type="xtext:Group">
         <elements xsi:type="xtext:Keyword" value="AL"/>
         <elements xsi:type="xtext:Assignment" feature="ll" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.14"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
         </elements>
       </alternatives>
     </rules>
@@ -262,7 +250,7 @@
       <alternatives xsi:type="xtext:Group">
         <elements xsi:type="xtext:Keyword" value="AH"/>
         <elements xsi:type="xtext:Assignment" feature="hl" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.14"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
         </elements>
       </alternatives>
     </rules>
@@ -271,11 +259,11 @@
         <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Limit"/>
       </type>
       <alternatives xsi:type="xtext:Alternatives">
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.14"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.15"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.16"/>
         <elements xsi:type="xtext:RuleCall" rule="/0/@rules.17"/>
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.18"/>
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.19"/>
       </alternatives>
     </rules>
     <rules xsi:type="xtext:ParserRule" name="FL">
@@ -337,7 +325,7 @@
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.1"/>
         </elements>
         <elements xsi:type="xtext:Assignment" feature="unit" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.20"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.18"/>
         </elements>
       </alternatives>
     </rules>
@@ -395,7 +383,7 @@
       <alternatives xsi:type="xtext:Group">
         <elements xsi:type="xtext:Keyword" value="V"/>
         <elements xsi:type="xtext:Assignment" feature="vsub" operator="=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.22"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.20"/>
         </elements>
       </alternatives>
     </rules>
@@ -413,17 +401,43 @@
         <elements xsi:type="xtext:Group">
           <elements xsi:type="xtext:Keyword" value="D="/>
           <elements xsi:type="xtext:Assignment" feature="d" operator="=">
-            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.23"/>
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.21"/>
           </elements>
         </elements>
       </alternatives>
     </rules>
-    <rules xsi:type="xtext:ParserRule" name="D">
-      <type metamodel="/0/@metamodelDeclarations.1">
-        <classifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <rules xsi:type="xtext:ParserRule" name="Dir">
+      <type metamodel="/0/@metamodelDeclarations.0">
+        <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Dir"/>
       </type>
       <alternatives xsi:type="xtext:Alternatives">
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.22"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.23"/>
+      </alternatives>
+    </rules>
+    <rules xsi:type="xtext:ParserRule" name="Plus">
+      <type metamodel="/0/@metamodelDeclarations.0">
+        <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Plus"/>
+      </type>
+      <alternatives xsi:type="xtext:Group">
+        <elements xsi:type="xtext:Action">
+          <type metamodel="/0/@metamodelDeclarations.0">
+            <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Plus"/>
+          </type>
+        </elements>
         <elements xsi:type="xtext:Keyword" value="+"/>
+      </alternatives>
+    </rules>
+    <rules xsi:type="xtext:ParserRule" name="Minus">
+      <type metamodel="/0/@metamodelDeclarations.0">
+        <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Minus"/>
+      </type>
+      <alternatives xsi:type="xtext:Group">
+        <elements xsi:type="xtext:Action">
+          <type metamodel="/0/@metamodelDeclarations.0">
+            <classifier xsi:type="ecore:EClass" href="http://www.ubx.www/ch/OpenAir#//Minus"/>
+          </type>
+        </elements>
         <elements xsi:type="xtext:Keyword" value="-"/>
       </alternatives>
     </rules>

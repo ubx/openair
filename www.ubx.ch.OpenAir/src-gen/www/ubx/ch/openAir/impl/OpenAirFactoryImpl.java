@@ -76,8 +76,6 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
       case OpenAirPackage.SB: return createSB();
       case OpenAirPackage.AS_NAME: return createAsName();
       case OpenAirPackage.LIMITES: return createLimites();
-      case OpenAirPackage.LLIMIT: return createLLimit();
-      case OpenAirPackage.HLIMIT: return createHLimit();
       case OpenAirPackage.THE_GEOM: return createTheGeom();
       case OpenAirPackage.LOW_LIMIT: return createLowLimit();
       case OpenAirPackage.HIGH_LIMIT: return createHighLimit();
@@ -89,6 +87,9 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
       case OpenAirPackage.VAL: return createVAL();
       case OpenAirPackage.V: return createV();
       case OpenAirPackage.VSUB: return createVsub();
+      case OpenAirPackage.DIR: return createDir();
+      case OpenAirPackage.PLUS: return createPlus();
+      case OpenAirPackage.MINUS: return createMinus();
       case OpenAirPackage.DC: return createDC();
       case OpenAirPackage.DP: return createDP();
       case OpenAirPackage.POINT: return createPoint();
@@ -253,28 +254,6 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public LLimit createLLimit()
-  {
-    LLimitImpl lLimit = new LLimitImpl();
-    return lLimit;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public HLimit createHLimit()
-  {
-    HLimitImpl hLimit = new HLimitImpl();
-    return hLimit;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public TheGeom createTheGeom()
   {
     TheGeomImpl theGeom = new TheGeomImpl();
@@ -389,6 +368,39 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
   {
     VsubImpl vsub = new VsubImpl();
     return vsub;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Dir createDir()
+  {
+    DirImpl dir = new DirImpl();
+    return dir;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Plus createPlus()
+  {
+    PlusImpl plus = new PlusImpl();
+    return plus;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Minus createMinus()
+  {
+    MinusImpl minus = new MinusImpl();
+    return minus;
   }
 
   /**

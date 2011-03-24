@@ -384,69 +384,13 @@ public interface OpenAirPackage extends EPackage
   int LIMITES__LOW_LIMIT = 0;
 
   /**
-   * The number of structural features of the '<em>Limites</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int LIMITES_FEATURE_COUNT = 1;
-
-  /**
-   * The meta object id for the '{@link www.ubx.ch.openAir.impl.LLimitImpl <em>LLimit</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see www.ubx.ch.openAir.impl.LLimitImpl
-   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLLimit()
-   * @generated
-   */
-  int LLIMIT = 8;
-
-  /**
-   * The feature id for the '<em><b>Low Limit</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int LLIMIT__LOW_LIMIT = LIMITES__LOW_LIMIT;
-
-  /**
    * The feature id for the '<em><b>High Limit</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int LLIMIT__HIGH_LIMIT = LIMITES_FEATURE_COUNT + 0;
-
-  /**
-   * The number of structural features of the '<em>LLimit</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int LLIMIT_FEATURE_COUNT = LIMITES_FEATURE_COUNT + 1;
-
-  /**
-   * The meta object id for the '{@link www.ubx.ch.openAir.impl.HLimitImpl <em>HLimit</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see www.ubx.ch.openAir.impl.HLimitImpl
-   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getHLimit()
-   * @generated
-   */
-  int HLIMIT = 9;
-
-  /**
-   * The feature id for the '<em><b>Low Limit</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int HLIMIT__LOW_LIMIT = LIMITES__LOW_LIMIT;
+  int LIMITES__HIGH_LIMIT = 1;
 
   /**
    * The feature id for the '<em><b>Heigh Limit</b></em>' containment reference.
@@ -455,16 +399,16 @@ public interface OpenAirPackage extends EPackage
    * @generated
    * @ordered
    */
-  int HLIMIT__HEIGH_LIMIT = LIMITES_FEATURE_COUNT + 0;
+  int LIMITES__HEIGH_LIMIT = 2;
 
   /**
-   * The number of structural features of the '<em>HLimit</em>' class.
+   * The number of structural features of the '<em>Limites</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int HLIMIT_FEATURE_COUNT = LIMITES_FEATURE_COUNT + 1;
+  int LIMITES_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.impl.TheGeomImpl <em>The Geom</em>}' class.
@@ -474,7 +418,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getTheGeom()
    * @generated
    */
-  int THE_GEOM = 10;
+  int THE_GEOM = 8;
 
   /**
    * The number of structural features of the '<em>The Geom</em>' class.
@@ -493,7 +437,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLowLimit()
    * @generated
    */
-  int LOW_LIMIT = 11;
+  int LOW_LIMIT = 9;
 
   /**
    * The feature id for the '<em><b>Ll</b></em>' containment reference.
@@ -521,7 +465,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getHighLimit()
    * @generated
    */
-  int HIGH_LIMIT = 12;
+  int HIGH_LIMIT = 10;
 
   /**
    * The feature id for the '<em><b>Hl</b></em>' containment reference.
@@ -549,7 +493,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLimit()
    * @generated
    */
-  int LIMIT = 13;
+  int LIMIT = 11;
 
   /**
    * The number of structural features of the '<em>Limit</em>' class.
@@ -568,7 +512,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getFL()
    * @generated
    */
-  int FL = 14;
+  int FL = 12;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -596,7 +540,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getSFC()
    * @generated
    */
-  int SFC = 15;
+  int SFC = 13;
 
   /**
    * The number of structural features of the '<em>SFC</em>' class.
@@ -615,7 +559,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getGND()
    * @generated
    */
-  int GND = 16;
+  int GND = 14;
 
   /**
    * The number of structural features of the '<em>GND</em>' class.
@@ -634,7 +578,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getUNL()
    * @generated
    */
-  int UNL = 17;
+  int UNL = 15;
 
   /**
    * The number of structural features of the '<em>UNL</em>' class.
@@ -653,7 +597,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getVAL()
    * @generated
    */
-  int VAL = 18;
+  int VAL = 16;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -690,7 +634,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getV()
    * @generated
    */
-  int V = 19;
+  int V = 17;
 
   /**
    * The feature id for the '<em><b>Vsub</b></em>' containment reference.
@@ -718,7 +662,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getVsub()
    * @generated
    */
-  int VSUB = 20;
+  int VSUB = 18;
 
   /**
    * The feature id for the '<em><b>X</b></em>' containment reference.
@@ -730,7 +674,7 @@ public interface OpenAirPackage extends EPackage
   int VSUB__X = 0;
 
   /**
-   * The feature id for the '<em><b>D</b></em>' attribute.
+   * The feature id for the '<em><b>D</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -748,6 +692,63 @@ public interface OpenAirPackage extends EPackage
   int VSUB_FEATURE_COUNT = 2;
 
   /**
+   * The meta object id for the '{@link www.ubx.ch.openAir.impl.DirImpl <em>Dir</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see www.ubx.ch.openAir.impl.DirImpl
+   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDir()
+   * @generated
+   */
+  int DIR = 19;
+
+  /**
+   * The number of structural features of the '<em>Dir</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DIR_FEATURE_COUNT = 0;
+
+  /**
+   * The meta object id for the '{@link www.ubx.ch.openAir.impl.PlusImpl <em>Plus</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see www.ubx.ch.openAir.impl.PlusImpl
+   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPlus()
+   * @generated
+   */
+  int PLUS = 20;
+
+  /**
+   * The number of structural features of the '<em>Plus</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PLUS_FEATURE_COUNT = DIR_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link www.ubx.ch.openAir.impl.MinusImpl <em>Minus</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see www.ubx.ch.openAir.impl.MinusImpl
+   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinus()
+   * @generated
+   */
+  int MINUS = 21;
+
+  /**
+   * The number of structural features of the '<em>Minus</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MINUS_FEATURE_COUNT = DIR_FEATURE_COUNT + 0;
+
+  /**
    * The meta object id for the '{@link www.ubx.ch.openAir.impl.DCImpl <em>DC</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -755,7 +756,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDC()
    * @generated
    */
-  int DC = 21;
+  int DC = 22;
 
   /**
    * The feature id for the '<em><b>Radius</b></em>' attribute.
@@ -783,7 +784,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDP()
    * @generated
    */
-  int DP = 22;
+  int DP = 23;
 
   /**
    * The feature id for the '<em><b>Dp</b></em>' containment reference.
@@ -811,7 +812,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint()
    * @generated
    */
-  int POINT = 23;
+  int POINT = 24;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -848,7 +849,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint1()
    * @generated
    */
-  int POINT1 = 24;
+  int POINT1 = 25;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -939,7 +940,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint2()
    * @generated
    */
-  int POINT2 = 25;
+  int POINT2 = 26;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1012,7 +1013,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint3()
    * @generated
    */
-  int POINT3 = 26;
+  int POINT3 = 27;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1103,7 +1104,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint4()
    * @generated
    */
-  int POINT4 = 27;
+  int POINT4 = 28;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1158,7 +1159,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLongDegr()
    * @generated
    */
-  int LONG_DEGR = 28;
+  int LONG_DEGR = 29;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1186,7 +1187,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLatDegr()
    * @generated
    */
-  int LAT_DEGR = 29;
+  int LAT_DEGR = 30;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1214,7 +1215,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinSec()
    * @generated
    */
-  int MIN_SEC = 30;
+  int MIN_SEC = 31;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1242,7 +1243,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getSecDec()
    * @generated
    */
-  int SEC_DEC = 31;
+  int SEC_DEC = 32;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1270,7 +1271,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinDec()
    * @generated
    */
-  int MIN_DEC = 32;
+  int MIN_DEC = 33;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1298,7 +1299,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLongDec()
    * @generated
    */
-  int LONG_DEC = 33;
+  int LONG_DEC = 34;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1326,7 +1327,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLatDec()
    * @generated
    */
-  int LAT_DEC = 34;
+  int LAT_DEC = 35;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1354,7 +1355,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDA()
    * @generated
    */
-  int DA = 35;
+  int DA = 36;
 
   /**
    * The feature id for the '<em><b>Da</b></em>' containment reference.
@@ -1382,7 +1383,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams()
    * @generated
    */
-  int DA_PARAMS = 36;
+  int DA_PARAMS = 37;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1419,7 +1420,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams1()
    * @generated
    */
-  int DA_PARAMS1 = 37;
+  int DA_PARAMS1 = 38;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1465,7 +1466,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams2()
    * @generated
    */
-  int DA_PARAMS2 = 38;
+  int DA_PARAMS2 = 39;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1511,7 +1512,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDB()
    * @generated
    */
-  int DB = 39;
+  int DB = 40;
 
   /**
    * The feature id for the '<em><b>Dp0</b></em>' containment reference.
@@ -1548,7 +1549,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getAT()
    * @generated
    */
-  int AT = 40;
+  int AT = 41;
 
   /**
    * The feature id for the '<em><b>Lp</b></em>' containment reference.
@@ -1576,7 +1577,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getClassType()
    * @generated
    */
-  int CLASS_TYPE = 41;
+  int CLASS_TYPE = 42;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.Units <em>Units</em>}' enum.
@@ -1586,7 +1587,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getUnits()
    * @generated
    */
-  int UNITS = 42;
+  int UNITS = 43;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.WE <em>WE</em>}' enum.
@@ -1596,7 +1597,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getWE()
    * @generated
    */
-  int WE = 43;
+  int WE = 44;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.NS <em>NS</em>}' enum.
@@ -1606,7 +1607,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getNS()
    * @generated
    */
-  int NS = 44;
+  int NS = 45;
 
 
   /**
@@ -1910,46 +1911,26 @@ public interface OpenAirPackage extends EPackage
   EReference getLimites_LowLimit();
 
   /**
-   * Returns the meta object for class '{@link www.ubx.ch.openAir.LLimit <em>LLimit</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>LLimit</em>'.
-   * @see www.ubx.ch.openAir.LLimit
-   * @generated
-   */
-  EClass getLLimit();
-
-  /**
-   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.LLimit#getHighLimit <em>High Limit</em>}'.
+   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.Limites#getHighLimit <em>High Limit</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>High Limit</em>'.
-   * @see www.ubx.ch.openAir.LLimit#getHighLimit()
-   * @see #getLLimit()
+   * @see www.ubx.ch.openAir.Limites#getHighLimit()
+   * @see #getLimites()
    * @generated
    */
-  EReference getLLimit_HighLimit();
+  EReference getLimites_HighLimit();
 
   /**
-   * Returns the meta object for class '{@link www.ubx.ch.openAir.HLimit <em>HLimit</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>HLimit</em>'.
-   * @see www.ubx.ch.openAir.HLimit
-   * @generated
-   */
-  EClass getHLimit();
-
-  /**
-   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.HLimit#getHeighLimit <em>Heigh Limit</em>}'.
+   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.Limites#getHeighLimit <em>Heigh Limit</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Heigh Limit</em>'.
-   * @see www.ubx.ch.openAir.HLimit#getHeighLimit()
-   * @see #getHLimit()
+   * @see www.ubx.ch.openAir.Limites#getHeighLimit()
+   * @see #getLimites()
    * @generated
    */
-  EReference getHLimit_HeighLimit();
+  EReference getLimites_HeighLimit();
 
   /**
    * Returns the meta object for class '{@link www.ubx.ch.openAir.TheGeom <em>The Geom</em>}'.
@@ -2139,15 +2120,45 @@ public interface OpenAirPackage extends EPackage
   EReference getVsub_X();
 
   /**
-   * Returns the meta object for the attribute '{@link www.ubx.ch.openAir.Vsub#getD <em>D</em>}'.
+   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.Vsub#getD <em>D</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>D</em>'.
+   * @return the meta object for the containment reference '<em>D</em>'.
    * @see www.ubx.ch.openAir.Vsub#getD()
    * @see #getVsub()
    * @generated
    */
-  EAttribute getVsub_D();
+  EReference getVsub_D();
+
+  /**
+   * Returns the meta object for class '{@link www.ubx.ch.openAir.Dir <em>Dir</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Dir</em>'.
+   * @see www.ubx.ch.openAir.Dir
+   * @generated
+   */
+  EClass getDir();
+
+  /**
+   * Returns the meta object for class '{@link www.ubx.ch.openAir.Plus <em>Plus</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Plus</em>'.
+   * @see www.ubx.ch.openAir.Plus
+   * @generated
+   */
+  EClass getPlus();
+
+  /**
+   * Returns the meta object for class '{@link www.ubx.ch.openAir.Minus <em>Minus</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Minus</em>'.
+   * @see www.ubx.ch.openAir.Minus
+   * @generated
+   */
+  EClass getMinus();
 
   /**
    * Returns the meta object for class '{@link www.ubx.ch.openAir.DC <em>DC</em>}'.
@@ -3060,32 +3071,12 @@ public interface OpenAirPackage extends EPackage
     EReference LIMITES__LOW_LIMIT = eINSTANCE.getLimites_LowLimit();
 
     /**
-     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.LLimitImpl <em>LLimit</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see www.ubx.ch.openAir.impl.LLimitImpl
-     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLLimit()
-     * @generated
-     */
-    EClass LLIMIT = eINSTANCE.getLLimit();
-
-    /**
      * The meta object literal for the '<em><b>High Limit</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference LLIMIT__HIGH_LIMIT = eINSTANCE.getLLimit_HighLimit();
-
-    /**
-     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.HLimitImpl <em>HLimit</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see www.ubx.ch.openAir.impl.HLimitImpl
-     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getHLimit()
-     * @generated
-     */
-    EClass HLIMIT = eINSTANCE.getHLimit();
+    EReference LIMITES__HIGH_LIMIT = eINSTANCE.getLimites_HighLimit();
 
     /**
      * The meta object literal for the '<em><b>Heigh Limit</b></em>' containment reference feature.
@@ -3093,7 +3084,7 @@ public interface OpenAirPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference HLIMIT__HEIGH_LIMIT = eINSTANCE.getHLimit_HeighLimit();
+    EReference LIMITES__HEIGH_LIMIT = eINSTANCE.getLimites_HeighLimit();
 
     /**
      * The meta object literal for the '{@link www.ubx.ch.openAir.impl.TheGeomImpl <em>The Geom</em>}' class.
@@ -3262,12 +3253,42 @@ public interface OpenAirPackage extends EPackage
     EReference VSUB__X = eINSTANCE.getVsub_X();
 
     /**
-     * The meta object literal for the '<em><b>D</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>D</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VSUB__D = eINSTANCE.getVsub_D();
+    EReference VSUB__D = eINSTANCE.getVsub_D();
+
+    /**
+     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.DirImpl <em>Dir</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see www.ubx.ch.openAir.impl.DirImpl
+     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDir()
+     * @generated
+     */
+    EClass DIR = eINSTANCE.getDir();
+
+    /**
+     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.PlusImpl <em>Plus</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see www.ubx.ch.openAir.impl.PlusImpl
+     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPlus()
+     * @generated
+     */
+    EClass PLUS = eINSTANCE.getPlus();
+
+    /**
+     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.MinusImpl <em>Minus</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see www.ubx.ch.openAir.impl.MinusImpl
+     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinus()
+     * @generated
+     */
+    EClass MINUS = eINSTANCE.getMinus();
 
     /**
      * The meta object literal for the '{@link www.ubx.ch.openAir.impl.DCImpl <em>DC</em>}' class.
