@@ -352,7 +352,31 @@ ruleTheDef returns [EObject current=null]
 	    }
 
 )
-))
+)(
+(
+		{ 
+	        currentNode=createCompositeNode(grammarAccess.getTheDefAccess().getAtATParserRuleCall_6_0(), currentNode); 
+	    }
+		lv_at_6_0=ruleAT		{
+	        if ($current==null) {
+	            $current = factory.create(grammarAccess.getTheDefRule().getType().getClassifier());
+	            associateNodeWithAstElement(currentNode.getParent(), $current);
+	        }
+	        try {
+	       		add(
+	       			$current, 
+	       			"at",
+	        		lv_at_6_0, 
+	        		"AT", 
+	        		currentNode);
+	        } catch (ValueConverterException vce) {
+				handleValueConverterException(vce);
+	        }
+	        currentNode = currentNode.getParent();
+	    }
+
+)
+)*)
 ;
 
 
@@ -1615,20 +1639,92 @@ ruleDC returns [EObject current=null]
     }
 (
 (
-		lv_radius_1_0=RULE_REAL
-		{
-			createLeafNode(grammarAccess.getDCAccess().getRadiusREALTerminalRuleCall_1_0(), "radius"); 
-		}
-		{
+		{ 
+	        currentNode=createCompositeNode(grammarAccess.getDCAccess().getRadiusRadiusParserRuleCall_1_0(), currentNode); 
+	    }
+		lv_radius_1_0=ruleRadius		{
 	        if ($current==null) {
 	            $current = factory.create(grammarAccess.getDCRule().getType().getClassifier());
-	            associateNodeWithAstElement(currentNode, $current);
+	            associateNodeWithAstElement(currentNode.getParent(), $current);
 	        }
 	        try {
 	       		set(
 	       			$current, 
 	       			"radius",
 	        		lv_radius_1_0, 
+	        		"Radius", 
+	        		currentNode);
+	        } catch (ValueConverterException vce) {
+				handleValueConverterException(vce);
+	        }
+	        currentNode = currentNode.getParent();
+	    }
+
+)
+))
+;
+
+
+
+
+
+// Entry rule entryRuleRadius
+entryRuleRadius returns [EObject current=null] 
+	:
+	{ currentNode = createCompositeNode(grammarAccess.getRadiusRule(), currentNode); }
+	 iv_ruleRadius=ruleRadius 
+	 { $current=$iv_ruleRadius.current; } 
+	 EOF 
+;
+
+// Rule Radius
+ruleRadius returns [EObject current=null] 
+    @init { EObject temp=null; setCurrentLookahead(); resetLookahead(); 
+    }
+    @after { resetLookahead(); 
+    	lastConsumedNode = currentNode;
+    }:
+((
+(
+		lv_intValue_0_0=RULE_INT
+		{
+			createLeafNode(grammarAccess.getRadiusAccess().getIntValueINTTerminalRuleCall_0_0(), "intValue"); 
+		}
+		{
+	        if ($current==null) {
+	            $current = factory.create(grammarAccess.getRadiusRule().getType().getClassifier());
+	            associateNodeWithAstElement(currentNode, $current);
+	        }
+	        try {
+	       		set(
+	       			$current, 
+	       			"intValue",
+	        		lv_intValue_0_0, 
+	        		"INT", 
+	        		lastConsumedNode);
+	        } catch (ValueConverterException vce) {
+				handleValueConverterException(vce);
+	        }
+	    }
+
+)
+)
+    |(
+(
+		lv_reakValuer_1_0=RULE_REAL
+		{
+			createLeafNode(grammarAccess.getRadiusAccess().getReakValuerREALTerminalRuleCall_1_0(), "reakValuer"); 
+		}
+		{
+	        if ($current==null) {
+	            $current = factory.create(grammarAccess.getRadiusRule().getType().getClassifier());
+	            associateNodeWithAstElement(currentNode, $current);
+	        }
+	        try {
+	       		set(
+	       			$current, 
+	       			"reakValuer",
+	        		lv_reakValuer_1_0, 
 	        		"REAL", 
 	        		lastConsumedNode);
 	        } catch (ValueConverterException vce) {
@@ -3500,13 +3596,13 @@ ruleNS returns [Enumerator current=null]
 
 
 
-RULE_REAL : '-'? RULE_INT+ '.' RULE_INT+;
+RULE_INT : ('-'|'+')? ('0'..'9')+;
+
+RULE_REAL : RULE_INT+ '.' RULE_INT+;
 
 RULE_SL_COMMENT : '*' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
-
-RULE_INT : ('0'..'9')+;
 
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 

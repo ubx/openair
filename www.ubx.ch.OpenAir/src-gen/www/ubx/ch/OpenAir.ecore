@@ -112,7 +112,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="Plus" eSuperTypes="#//Dir"/>
   <eClassifiers xsi:type="ecore:EClass" name="Minus" eSuperTypes="#//Dir"/>
   <eClassifiers xsi:type="ecore:EClass" name="DC" eSuperTypes="#//TheGeom">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="radius" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="radius" eType="#//Radius"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Radius">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reakValuer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DP" eSuperTypes="#//TheGeom">
     <eStructuralFeatures xsi:type="ecore:EReference" name="dp" eType="#//Point" containment="true"/>

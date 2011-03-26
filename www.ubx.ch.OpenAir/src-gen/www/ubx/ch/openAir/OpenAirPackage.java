@@ -759,7 +759,7 @@ public interface OpenAirPackage extends EPackage
   int DC = 22;
 
   /**
-   * The feature id for the '<em><b>Radius</b></em>' attribute.
+   * The feature id for the '<em><b>Radius</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -777,6 +777,43 @@ public interface OpenAirPackage extends EPackage
   int DC_FEATURE_COUNT = THE_GEOM_FEATURE_COUNT + 1;
 
   /**
+   * The meta object id for the '{@link www.ubx.ch.openAir.impl.RadiusImpl <em>Radius</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see www.ubx.ch.openAir.impl.RadiusImpl
+   * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getRadius()
+   * @generated
+   */
+  int RADIUS = 23;
+
+  /**
+   * The feature id for the '<em><b>Int Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RADIUS__INT_VALUE = 0;
+
+  /**
+   * The feature id for the '<em><b>Reak Valuer</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RADIUS__REAK_VALUER = 1;
+
+  /**
+   * The number of structural features of the '<em>Radius</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RADIUS_FEATURE_COUNT = 2;
+
+  /**
    * The meta object id for the '{@link www.ubx.ch.openAir.impl.DPImpl <em>DP</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -784,7 +821,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDP()
    * @generated
    */
-  int DP = 23;
+  int DP = 24;
 
   /**
    * The feature id for the '<em><b>Dp</b></em>' containment reference.
@@ -812,7 +849,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint()
    * @generated
    */
-  int POINT = 24;
+  int POINT = 25;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -849,7 +886,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint1()
    * @generated
    */
-  int POINT1 = 25;
+  int POINT1 = 26;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -940,7 +977,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint2()
    * @generated
    */
-  int POINT2 = 26;
+  int POINT2 = 27;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1013,7 +1050,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint3()
    * @generated
    */
-  int POINT3 = 27;
+  int POINT3 = 28;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1104,7 +1141,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getPoint4()
    * @generated
    */
-  int POINT4 = 28;
+  int POINT4 = 29;
 
   /**
    * The feature id for the '<em><b>Ns</b></em>' attribute.
@@ -1159,7 +1196,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLongDegr()
    * @generated
    */
-  int LONG_DEGR = 29;
+  int LONG_DEGR = 30;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1187,7 +1224,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLatDegr()
    * @generated
    */
-  int LAT_DEGR = 30;
+  int LAT_DEGR = 31;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1215,7 +1252,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinSec()
    * @generated
    */
-  int MIN_SEC = 31;
+  int MIN_SEC = 32;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1243,7 +1280,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getSecDec()
    * @generated
    */
-  int SEC_DEC = 32;
+  int SEC_DEC = 33;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1271,7 +1308,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getMinDec()
    * @generated
    */
-  int MIN_DEC = 33;
+  int MIN_DEC = 34;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1299,7 +1336,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLongDec()
    * @generated
    */
-  int LONG_DEC = 34;
+  int LONG_DEC = 35;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1327,7 +1364,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getLatDec()
    * @generated
    */
-  int LAT_DEC = 35;
+  int LAT_DEC = 36;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1355,7 +1392,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDA()
    * @generated
    */
-  int DA = 36;
+  int DA = 37;
 
   /**
    * The feature id for the '<em><b>Da</b></em>' containment reference.
@@ -1383,7 +1420,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams()
    * @generated
    */
-  int DA_PARAMS = 37;
+  int DA_PARAMS = 38;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1420,7 +1457,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams1()
    * @generated
    */
-  int DA_PARAMS1 = 38;
+  int DA_PARAMS1 = 39;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1466,7 +1503,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDaParams2()
    * @generated
    */
-  int DA_PARAMS2 = 39;
+  int DA_PARAMS2 = 40;
 
   /**
    * The feature id for the '<em><b>Angle Start</b></em>' attribute.
@@ -1512,7 +1549,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getDB()
    * @generated
    */
-  int DB = 40;
+  int DB = 41;
 
   /**
    * The feature id for the '<em><b>Dp0</b></em>' containment reference.
@@ -1549,7 +1586,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getAT()
    * @generated
    */
-  int AT = 41;
+  int AT = 42;
 
   /**
    * The feature id for the '<em><b>Lp</b></em>' containment reference.
@@ -1577,7 +1614,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getClassType()
    * @generated
    */
-  int CLASS_TYPE = 42;
+  int CLASS_TYPE = 43;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.Units <em>Units</em>}' enum.
@@ -1587,7 +1624,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getUnits()
    * @generated
    */
-  int UNITS = 43;
+  int UNITS = 44;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.WE <em>WE</em>}' enum.
@@ -1597,7 +1634,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getWE()
    * @generated
    */
-  int WE = 44;
+  int WE = 45;
 
   /**
    * The meta object id for the '{@link www.ubx.ch.openAir.NS <em>NS</em>}' enum.
@@ -1607,7 +1644,7 @@ public interface OpenAirPackage extends EPackage
    * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getNS()
    * @generated
    */
-  int NS = 45;
+  int NS = 46;
 
 
   /**
@@ -2171,15 +2208,47 @@ public interface OpenAirPackage extends EPackage
   EClass getDC();
 
   /**
-   * Returns the meta object for the attribute '{@link www.ubx.ch.openAir.DC#getRadius <em>Radius</em>}'.
+   * Returns the meta object for the containment reference '{@link www.ubx.ch.openAir.DC#getRadius <em>Radius</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Radius</em>'.
+   * @return the meta object for the containment reference '<em>Radius</em>'.
    * @see www.ubx.ch.openAir.DC#getRadius()
    * @see #getDC()
    * @generated
    */
-  EAttribute getDC_Radius();
+  EReference getDC_Radius();
+
+  /**
+   * Returns the meta object for class '{@link www.ubx.ch.openAir.Radius <em>Radius</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Radius</em>'.
+   * @see www.ubx.ch.openAir.Radius
+   * @generated
+   */
+  EClass getRadius();
+
+  /**
+   * Returns the meta object for the attribute '{@link www.ubx.ch.openAir.Radius#getIntValue <em>Int Value</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Int Value</em>'.
+   * @see www.ubx.ch.openAir.Radius#getIntValue()
+   * @see #getRadius()
+   * @generated
+   */
+  EAttribute getRadius_IntValue();
+
+  /**
+   * Returns the meta object for the attribute '{@link www.ubx.ch.openAir.Radius#getReakValuer <em>Reak Valuer</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Reak Valuer</em>'.
+   * @see www.ubx.ch.openAir.Radius#getReakValuer()
+   * @see #getRadius()
+   * @generated
+   */
+  EAttribute getRadius_ReakValuer();
 
   /**
    * Returns the meta object for class '{@link www.ubx.ch.openAir.DP <em>DP</em>}'.
@@ -3301,12 +3370,38 @@ public interface OpenAirPackage extends EPackage
     EClass DC = eINSTANCE.getDC();
 
     /**
-     * The meta object literal for the '<em><b>Radius</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Radius</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DC__RADIUS = eINSTANCE.getDC_Radius();
+    EReference DC__RADIUS = eINSTANCE.getDC_Radius();
+
+    /**
+     * The meta object literal for the '{@link www.ubx.ch.openAir.impl.RadiusImpl <em>Radius</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see www.ubx.ch.openAir.impl.RadiusImpl
+     * @see www.ubx.ch.openAir.impl.OpenAirPackageImpl#getRadius()
+     * @generated
+     */
+    EClass RADIUS = eINSTANCE.getRadius();
+
+    /**
+     * The meta object literal for the '<em><b>Int Value</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute RADIUS__INT_VALUE = eINSTANCE.getRadius_IntValue();
+
+    /**
+     * The meta object literal for the '<em><b>Reak Valuer</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute RADIUS__REAK_VALUER = eINSTANCE.getRadius_ReakValuer();
 
     /**
      * The meta object literal for the '{@link www.ubx.ch.openAir.impl.DPImpl <em>DP</em>}' class.

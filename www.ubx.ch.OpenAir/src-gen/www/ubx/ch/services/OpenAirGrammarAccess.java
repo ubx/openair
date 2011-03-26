@@ -76,12 +76,14 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cAtATParserRuleCall_4_0 = (RuleCall)cAtAssignment_4.eContents().get(0);
 		private final Assignment cLimitAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cLimitLimitesParserRuleCall_5_0 = (RuleCall)cLimitAssignment_5.eContents().get(0);
+		private final Assignment cAtAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cAtATParserRuleCall_6_0 = (RuleCall)cAtAssignment_6.eContents().get(0);
 		
 		//TheDef:
-		//	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites;
+		//	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*;
 		public ParserRule getRule() { return rule; }
 
-		//asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites
+		//asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*
 		public Group getGroup() { return cGroup; }
 
 		//asclass=AsClass
@@ -119,6 +121,12 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 
 		//Limites
 		public RuleCall getLimitLimitesParserRuleCall_5_0() { return cLimitLimitesParserRuleCall_5_0; }
+
+		//at+=AT*
+		public Assignment getAtAssignment_6() { return cAtAssignment_6; }
+
+		//AT
+		public RuleCall getAtATParserRuleCall_6_0() { return cAtATParserRuleCall_6_0; }
 	}
 
 	public class AsClassElements extends AbstractParserRuleElementFinder {
@@ -702,23 +710,51 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDCKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cRadiusAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cRadiusREALTerminalRuleCall_1_0 = (RuleCall)cRadiusAssignment_1.eContents().get(0);
+		private final RuleCall cRadiusRadiusParserRuleCall_1_0 = (RuleCall)cRadiusAssignment_1.eContents().get(0);
 		
 		//DC:
-		//	"DC" radius=REAL;
+		//	"DC" radius=Radius;
 		public ParserRule getRule() { return rule; }
 
-		//"DC" radius=REAL
+		//"DC" radius=Radius
 		public Group getGroup() { return cGroup; }
 
 		//"DC"
 		public Keyword getDCKeyword_0() { return cDCKeyword_0; }
 
-		//radius=REAL
+		//radius=Radius
 		public Assignment getRadiusAssignment_1() { return cRadiusAssignment_1; }
 
+		//Radius
+		public RuleCall getRadiusRadiusParserRuleCall_1_0() { return cRadiusRadiusParserRuleCall_1_0; }
+	}
+
+	public class RadiusElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Radius");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Assignment cIntValueAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
+		private final RuleCall cIntValueINTTerminalRuleCall_0_0 = (RuleCall)cIntValueAssignment_0.eContents().get(0);
+		private final Assignment cReakValuerAssignment_1 = (Assignment)cAlternatives.eContents().get(1);
+		private final RuleCall cReakValuerREALTerminalRuleCall_1_0 = (RuleCall)cReakValuerAssignment_1.eContents().get(0);
+		
+		//Radius:
+		//	intValue=INT | reakValuer=REAL;
+		public ParserRule getRule() { return rule; }
+
+		//intValue=INT | reakValuer=REAL
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//intValue=INT
+		public Assignment getIntValueAssignment_0() { return cIntValueAssignment_0; }
+
+		//INT
+		public RuleCall getIntValueINTTerminalRuleCall_0_0() { return cIntValueINTTerminalRuleCall_0_0; }
+
+		//reakValuer=REAL
+		public Assignment getReakValuerAssignment_1() { return cReakValuerAssignment_1; }
+
 		//REAL
-		public RuleCall getRadiusREALTerminalRuleCall_1_0() { return cRadiusREALTerminalRuleCall_1_0; }
+		public RuleCall getReakValuerREALTerminalRuleCall_1_0() { return cReakValuerREALTerminalRuleCall_1_0; }
 	}
 
 	public class DPElements extends AbstractParserRuleElementFinder {
@@ -1685,6 +1721,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	private PlusElements pPlus;
 	private MinusElements pMinus;
 	private DCElements pDC;
+	private RadiusElements pRadius;
 	private DPElements pDP;
 	private PointElements pPoint;
 	private Point1Elements pPoint1;
@@ -1707,6 +1744,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	private DaParams2Elements pDaParams2;
 	private DBElements pDB;
 	private ATElements pAT;
+	private TerminalRule tINT;
 	private TerminalRule tREAL;
 	private TerminalRule tSL_COMMENT;
 	
@@ -1752,7 +1790,7 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//TheDef:
-	//	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites;
+	//	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*;
 	public TheDefElements getTheDefAccess() {
 		return (pTheDef != null) ? pTheDef : (pTheDef = new TheDefElements());
 	}
@@ -1973,13 +2011,23 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//DC:
-	//	"DC" radius=REAL;
+	//	"DC" radius=Radius;
 	public DCElements getDCAccess() {
 		return (pDC != null) ? pDC : (pDC = new DCElements());
 	}
 	
 	public ParserRule getDCRule() {
 		return getDCAccess().getRule();
+	}
+
+	//Radius:
+	//	intValue=INT | reakValuer=REAL;
+	public RadiusElements getRadiusAccess() {
+		return (pRadius != null) ? pRadius : (pRadius = new RadiusElements());
+	}
+	
+	public ParserRule getRadiusRule() {
+		return getRadiusAccess().getRule();
 	}
 
 	//DP:
@@ -2202,8 +2250,14 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 		return getATAccess().getRule();
 	}
 
+	//terminal INT returns ecore::EInt:
+	//	("-" | "+")? "0".."9"+;
+	public TerminalRule getINTRule() {
+		return (tINT != null) ? tINT : (tINT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "INT"));
+	} 
+
 	//terminal REAL:
-	//	"-"? INT+ "." INT+;
+	//	INT+ "." INT+;
 	public TerminalRule getREALRule() {
 		return (tREAL != null) ? tREAL : (tREAL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "REAL"));
 	} 
@@ -2218,12 +2272,6 @@ public class OpenAirGrammarAccess extends AbstractGrammarElementFinder {
 	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;
 	public TerminalRule getIDRule() {
 		return gaTerminals.getIDRule();
-	} 
-
-	//terminal INT returns ecore::EInt:
-	//	"0".."9"+;
-	public TerminalRule getINTRule() {
-		return gaTerminals.getINTRule();
 	} 
 
 	//terminal STRING:

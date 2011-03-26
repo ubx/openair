@@ -25,29 +25,29 @@ package www.ubx.ch.openAir;
 public interface DC extends TheGeom
 {
   /**
-   * Returns the value of the '<em><b>Radius</b></em>' attribute.
+   * Returns the value of the '<em><b>Radius</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Radius</em>' attribute isn't clear,
+   * If the meaning of the '<em>Radius</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Radius</em>' attribute.
-   * @see #setRadius(String)
+   * @return the value of the '<em>Radius</em>' containment reference.
+   * @see #setRadius(Radius)
    * @see www.ubx.ch.openAir.OpenAirPackage#getDC_Radius()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getRadius();
+  Radius getRadius();
 
   /**
-   * Sets the value of the '{@link www.ubx.ch.openAir.DC#getRadius <em>Radius</em>}' attribute.
+   * Sets the value of the '{@link www.ubx.ch.openAir.DC#getRadius <em>Radius</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Radius</em>' attribute.
+   * @param value the new value of the '<em>Radius</em>' containment reference.
    * @see #getRadius()
    * @generated
    */
-  void setRadius(String value);
+  void setRadius(Radius value);
 
 } // DC

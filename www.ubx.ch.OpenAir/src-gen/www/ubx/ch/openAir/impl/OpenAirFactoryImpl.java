@@ -91,6 +91,7 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
       case OpenAirPackage.PLUS: return createPlus();
       case OpenAirPackage.MINUS: return createMinus();
       case OpenAirPackage.DC: return createDC();
+      case OpenAirPackage.RADIUS: return createRadius();
       case OpenAirPackage.DP: return createDP();
       case OpenAirPackage.POINT: return createPoint();
       case OpenAirPackage.POINT1: return createPoint1();
@@ -412,6 +413,17 @@ public class OpenAirFactoryImpl extends EFactoryImpl implements OpenAirFactory
   {
     DCImpl dc = new DCImpl();
     return dc;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Radius createRadius()
+  {
+    RadiusImpl radius = new RadiusImpl();
+    return radius;
   }
 
   /**

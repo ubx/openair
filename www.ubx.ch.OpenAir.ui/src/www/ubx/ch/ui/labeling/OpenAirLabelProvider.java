@@ -124,9 +124,9 @@ public class OpenAirLabelProvider extends DefaultEObjectLabelProvider {
 	}
 
 	protected String text(Point1 rule) {
-		return fmt2(rule.getLongD().getValue()) + ":" + fmt2(rule.getLongM().getValue()) + ":"
-				+ fmt2(rule.getLongS().getValue()) + " " + rule.getNs().getName() + " -- " + fmt3(rule.getLatD().getValue())
-				+ ":" + fmt2(rule.getLatM().getValue()) + ":" + fmt2(rule.getLatS().getValue()) + " " + rule.getWe().getName();
+		return fmt2(rule.getLongD().getValue()) + ":" + fmt2(rule.getLongM().getValue()) + ":" + fmt2(rule.getLongS().getValue())
+				+ " " + rule.getNs().getName() + " -- " + fmt3(rule.getLatD().getValue()) + ":" + fmt2(rule.getLatM().getValue())
+				+ ":" + fmt2(rule.getLatS().getValue()) + " " + rule.getWe().getName();
 	}
 
 	protected String text(Point2 rule) {

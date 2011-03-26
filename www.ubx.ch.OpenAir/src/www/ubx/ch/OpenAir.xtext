@@ -10,7 +10,7 @@ Airspace:
 	thedef=TheDef thegeom+=TheGeom*;
 
 TheDef:
-	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites;
+	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*;
 
 AsClass:
 	{AsClass}
@@ -83,7 +83,10 @@ Minus:
 	'-';
 
 DC:
-	'DC' radius=REAL;
+	'DC' radius=Radius;
+
+Radius:
+	intValue=INT | reakValuer=REAL;
 
 DP:
 	'DP' dp=Point;
@@ -151,8 +154,11 @@ DB:
 AT:
 	'AT' lp=Point;
 
+terminal INT returns ecore::EInt:
+	('-' | '+')? ('0'..'9')+;
+
 terminal REAL:
-	('-')? INT+ '.' INT+;
+	INT+ '.' INT+;
 
 terminal SL_COMMENT:
 	'*' !('\n' | '\r')* ('\r'? '\n')?;

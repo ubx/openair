@@ -265,6 +265,13 @@ public class OpenAirSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case OpenAirPackage.RADIUS:
+      {
+        Radius radius = (Radius)theEObject;
+        T result = caseRadius(radius);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case OpenAirPackage.DP:
       {
         DP dp = (DP)theEObject;
@@ -775,6 +782,22 @@ public class OpenAirSwitch<T>
    * @generated
    */
   public T caseDC(DC object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Radius</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Radius</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRadius(Radius object)
   {
     return null;
   }

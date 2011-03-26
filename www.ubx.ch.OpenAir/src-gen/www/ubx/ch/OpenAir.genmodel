@@ -113,7 +113,11 @@
     <genClasses ecoreClass="OpenAir.ecore#//Plus"/>
     <genClasses ecoreClass="OpenAir.ecore#//Minus"/>
     <genClasses ecoreClass="OpenAir.ecore#//DC">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//DC/radius"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DC/radius"/>
+    </genClasses>
+    <genClasses ecoreClass="OpenAir.ecore#//Radius">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Radius/intValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OpenAir.ecore#//Radius/reakValuer"/>
     </genClasses>
     <genClasses ecoreClass="OpenAir.ecore#//DP">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OpenAir.ecore#//DP/dp"/>

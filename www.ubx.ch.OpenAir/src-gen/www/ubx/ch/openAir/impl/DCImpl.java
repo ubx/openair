@@ -6,13 +6,16 @@
 package www.ubx.ch.openAir.impl;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import www.ubx.ch.openAir.DC;
 import www.ubx.ch.openAir.OpenAirPackage;
+import www.ubx.ch.openAir.Radius;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,24 +33,14 @@ import www.ubx.ch.openAir.OpenAirPackage;
 public class DCImpl extends TheGeomImpl implements DC
 {
   /**
-   * The default value of the '{@link #getRadius() <em>Radius</em>}' attribute.
+   * The cached value of the '{@link #getRadius() <em>Radius</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getRadius()
    * @generated
    * @ordered
    */
-  protected static final String RADIUS_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getRadius() <em>Radius</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getRadius()
-   * @generated
-   * @ordered
-   */
-  protected String radius = RADIUS_EDEFAULT;
+  protected Radius radius;
 
   /**
    * <!-- begin-user-doc -->
@@ -75,7 +68,7 @@ public class DCImpl extends TheGeomImpl implements DC
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getRadius()
+  public Radius getRadius()
   {
     return radius;
   }
@@ -85,12 +78,53 @@ public class DCImpl extends TheGeomImpl implements DC
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRadius(String newRadius)
+  public NotificationChain basicSetRadius(Radius newRadius, NotificationChain msgs)
   {
-    String oldRadius = radius;
+    Radius oldRadius = radius;
     radius = newRadius;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.DC__RADIUS, oldRadius, radius));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAirPackage.DC__RADIUS, oldRadius, newRadius);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setRadius(Radius newRadius)
+  {
+    if (newRadius != radius)
+    {
+      NotificationChain msgs = null;
+      if (radius != null)
+        msgs = ((InternalEObject)radius).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.DC__RADIUS, null, msgs);
+      if (newRadius != null)
+        msgs = ((InternalEObject)newRadius).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAirPackage.DC__RADIUS, null, msgs);
+      msgs = basicSetRadius(newRadius, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OpenAirPackage.DC__RADIUS, newRadius, newRadius));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case OpenAirPackage.DC__RADIUS:
+        return basicSetRadius(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -120,7 +154,7 @@ public class DCImpl extends TheGeomImpl implements DC
     switch (featureID)
     {
       case OpenAirPackage.DC__RADIUS:
-        setRadius((String)newValue);
+        setRadius((Radius)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -137,7 +171,7 @@ public class DCImpl extends TheGeomImpl implements DC
     switch (featureID)
     {
       case OpenAirPackage.DC__RADIUS:
-        setRadius(RADIUS_EDEFAULT);
+        setRadius((Radius)null);
         return;
     }
     super.eUnset(featureID);
@@ -154,26 +188,9 @@ public class DCImpl extends TheGeomImpl implements DC
     switch (featureID)
     {
       case OpenAirPackage.DC__RADIUS:
-        return RADIUS_EDEFAULT == null ? radius != null : !RADIUS_EDEFAULT.equals(radius);
+        return radius != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (radius: ");
-    result.append(radius);
-    result.append(')');
-    return result.toString();
   }
 
 } //DCImpl

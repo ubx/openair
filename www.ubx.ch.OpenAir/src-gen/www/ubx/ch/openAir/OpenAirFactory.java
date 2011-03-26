@@ -233,6 +233,15 @@ public interface OpenAirFactory extends EFactory
   DC createDC();
 
   /**
+   * Returns a new object of class '<em>Radius</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Radius</em>'.
+   * @generated
+   */
+  Radius createRadius();
+
+  /**
    * Returns a new object of class '<em>DP</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

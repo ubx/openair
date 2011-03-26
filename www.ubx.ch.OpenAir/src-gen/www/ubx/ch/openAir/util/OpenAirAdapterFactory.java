@@ -193,6 +193,11 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
         return createDCAdapter();
       }
       @Override
+      public Adapter caseRadius(Radius object)
+      {
+        return createRadiusAdapter();
+      }
+      @Override
       public Adapter caseDP(DP object)
       {
         return createDPAdapter();
@@ -650,6 +655,21 @@ public class OpenAirAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createDCAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link www.ubx.ch.openAir.Radius <em>Radius</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see www.ubx.ch.openAir.Radius
+   * @generated
+   */
+  public Adapter createRadiusAdapter()
   {
     return null;
   }

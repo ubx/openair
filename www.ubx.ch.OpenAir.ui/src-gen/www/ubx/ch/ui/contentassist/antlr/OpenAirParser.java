@@ -42,6 +42,7 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getLimitAccess().getAlternatives(), "rule__Limit__Alternatives");
 					put(grammarAccess.getVsubAccess().getAlternatives(), "rule__Vsub__Alternatives");
 					put(grammarAccess.getDirAccess().getAlternatives(), "rule__Dir__Alternatives");
+					put(grammarAccess.getRadiusAccess().getAlternatives(), "rule__Radius__Alternatives");
 					put(grammarAccess.getPointAccess().getAlternatives(), "rule__Point__Alternatives");
 					put(grammarAccess.getDaParamsAccess().getAlternatives(), "rule__DaParams__Alternatives");
 					put(grammarAccess.getClassTypeAccess().getAlternatives(), "rule__ClassType__Alternatives");
@@ -91,6 +92,7 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTheDefAccess().getNameAssignment_3(), "rule__TheDef__NameAssignment_3");
 					put(grammarAccess.getTheDefAccess().getAtAssignment_4(), "rule__TheDef__AtAssignment_4");
 					put(grammarAccess.getTheDefAccess().getLimitAssignment_5(), "rule__TheDef__LimitAssignment_5");
+					put(grammarAccess.getTheDefAccess().getAtAssignment_6(), "rule__TheDef__AtAssignment_6");
 					put(grammarAccess.getAsClassAccess().getNameAssignment_2(), "rule__AsClass__NameAssignment_2");
 					put(grammarAccess.getSPAccess().getSp0Assignment_1(), "rule__SP__Sp0Assignment_1");
 					put(grammarAccess.getSPAccess().getSp1Assignment_3(), "rule__SP__Sp1Assignment_3");
@@ -114,6 +116,8 @@ public class OpenAirParser extends AbstractContentAssistParser {
 					put(grammarAccess.getVsubAccess().getXAssignment_0_1(), "rule__Vsub__XAssignment_0_1");
 					put(grammarAccess.getVsubAccess().getDAssignment_1_1(), "rule__Vsub__DAssignment_1_1");
 					put(grammarAccess.getDCAccess().getRadiusAssignment_1(), "rule__DC__RadiusAssignment_1");
+					put(grammarAccess.getRadiusAccess().getIntValueAssignment_0(), "rule__Radius__IntValueAssignment_0");
+					put(grammarAccess.getRadiusAccess().getReakValuerAssignment_1(), "rule__Radius__ReakValuerAssignment_1");
 					put(grammarAccess.getDPAccess().getDpAssignment_1(), "rule__DP__DpAssignment_1");
 					put(grammarAccess.getPoint1Access().getLongDAssignment_0(), "rule__Point1__LongDAssignment_0");
 					put(grammarAccess.getPoint1Access().getLongMAssignment_1(), "rule__Point1__LongMAssignment_1");

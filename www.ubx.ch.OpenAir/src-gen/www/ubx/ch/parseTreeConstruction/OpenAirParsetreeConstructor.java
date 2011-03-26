@@ -54,25 +54,26 @@ protected class ThisRootNode extends RootToken {
 			case 20: return new Plus_Group(this, this, 20, inst);
 			case 21: return new Minus_Group(this, this, 21, inst);
 			case 22: return new DC_Group(this, this, 22, inst);
-			case 23: return new DP_Group(this, this, 23, inst);
-			case 24: return new Point_Alternatives(this, this, 24, inst);
-			case 25: return new Point1_Group(this, this, 25, inst);
-			case 26: return new Point2_Group(this, this, 26, inst);
-			case 27: return new Point3_Group(this, this, 27, inst);
-			case 28: return new Point4_Group(this, this, 28, inst);
-			case 29: return new LongDegr_ValueAssignment(this, this, 29, inst);
-			case 30: return new LatDegr_ValueAssignment(this, this, 30, inst);
-			case 31: return new MinSec_Group(this, this, 31, inst);
-			case 32: return new SecDec_Group(this, this, 32, inst);
-			case 33: return new MinDec_Group(this, this, 33, inst);
-			case 34: return new LongDec_ValueAssignment(this, this, 34, inst);
-			case 35: return new LatDec_ValueAssignment(this, this, 35, inst);
-			case 36: return new DA_Group(this, this, 36, inst);
-			case 37: return new DaParams_Alternatives(this, this, 37, inst);
-			case 38: return new DaParams1_Group(this, this, 38, inst);
-			case 39: return new DaParams2_Group(this, this, 39, inst);
-			case 40: return new DB_Group(this, this, 40, inst);
-			case 41: return new AT_Group(this, this, 41, inst);
+			case 23: return new Radius_Alternatives(this, this, 23, inst);
+			case 24: return new DP_Group(this, this, 24, inst);
+			case 25: return new Point_Alternatives(this, this, 25, inst);
+			case 26: return new Point1_Group(this, this, 26, inst);
+			case 27: return new Point2_Group(this, this, 27, inst);
+			case 28: return new Point3_Group(this, this, 28, inst);
+			case 29: return new Point4_Group(this, this, 29, inst);
+			case 30: return new LongDegr_ValueAssignment(this, this, 30, inst);
+			case 31: return new LatDegr_ValueAssignment(this, this, 31, inst);
+			case 32: return new MinSec_Group(this, this, 32, inst);
+			case 33: return new SecDec_Group(this, this, 33, inst);
+			case 34: return new MinDec_Group(this, this, 34, inst);
+			case 35: return new LongDec_ValueAssignment(this, this, 35, inst);
+			case 36: return new LatDec_ValueAssignment(this, this, 36, inst);
+			case 37: return new DA_Group(this, this, 37, inst);
+			case 38: return new DaParams_Alternatives(this, this, 38, inst);
+			case 39: return new DaParams1_Group(this, this, 39, inst);
+			case 40: return new DaParams2_Group(this, this, 40, inst);
+			case 41: return new DB_Group(this, this, 41, inst);
+			case 42: return new AT_Group(this, this, 42, inst);
 			default: return null;
 		}	
 	}	
@@ -271,11 +272,11 @@ protected class Airspace_ThegeomAssignment_1 extends AssignmentToken  {
 /************ begin Rule TheDef ****************
  *
  * TheDef:
- * 	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites;
+ * 	asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*;
  *
  **/
 
-// asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites
+// asclass=AsClass sp+=SP* sb+=SB* name=AsName at+=AT* limit=Limites at+=AT*
 protected class TheDef_Group extends GroupToken {
 	
 	public TheDef_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -290,7 +291,8 @@ protected class TheDef_Group extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new TheDef_LimitAssignment_5(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new TheDef_AtAssignment_6(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new TheDef_LimitAssignment_5(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}
@@ -581,6 +583,53 @@ protected class TheDef_LimitAssignment_5 extends AssignmentToken  {
 		switch(index) {
 			case 0: return new TheDef_AtAssignment_4(lastRuleCallOrigin, next, actIndex, consumed);
 			case 1: return new TheDef_NameAssignment_3(lastRuleCallOrigin, next, actIndex, consumed);
+			default: return null;
+		}	
+	}	
+}
+
+// at+=AT*
+protected class TheDef_AtAssignment_6 extends AssignmentToken  {
+	
+	public TheDef_AtAssignment_6(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Assignment getGrammarElement() {
+		return grammarAccess.getTheDefAccess().getAtAssignment_6();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new AT_Group(this, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+    @Override	
+	public IEObjectConsumer tryConsume() {
+		if((value = eObjectConsumer.getConsumable("at",false)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("at");
+		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
+			IEObjectConsumer param = createEObjectConsumer((EObject)value);
+			if(param.isInstanceOf(grammarAccess.getATRule().getType().getClassifier())) {
+				type = AssignmentType.PARSER_RULE_CALL;
+				element = grammarAccess.getTheDefAccess().getAtATParserRuleCall_6_0(); 
+				consumed = obj;
+				return param;
+			}
+		}
+		return null;
+	}
+
+    @Override
+	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
+		if(value == inst.getEObject() && !inst.isConsumed()) return null;
+		switch(index) {
+			case 0: return new TheDef_AtAssignment_6(lastRuleCallOrigin, next, actIndex, consumed);
+			case 1: return new TheDef_LimitAssignment_5(lastRuleCallOrigin, next, actIndex, consumed);
 			default: return null;
 		}	
 	}	
@@ -3360,11 +3409,11 @@ protected class Minus_HyphenMinusKeyword_1 extends KeywordToken  {
 /************ begin Rule DC ****************
  *
  * DC:
- * 	"DC" radius=REAL;
+ * 	"DC" radius=Radius;
  *
  **/
 
-// "DC" radius=REAL
+// "DC" radius=Radius
 protected class DC_Group extends GroupToken {
 	
 	public DC_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -3414,7 +3463,7 @@ protected class DC_DCKeyword_0 extends KeywordToken  {
 
 }
 
-// radius=REAL
+// radius=Radius
 protected class DC_RadiusAssignment_1 extends AssignmentToken  {
 	
 	public DC_RadiusAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -3429,7 +3478,7 @@ protected class DC_RadiusAssignment_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new DC_DCKeyword_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Radius_Alternatives(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -3438,9 +3487,128 @@ protected class DC_RadiusAssignment_1 extends AssignmentToken  {
 	public IEObjectConsumer tryConsume() {
 		if((value = eObjectConsumer.getConsumable("radius",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("radius");
-		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getDCAccess().getRadiusREALTerminalRuleCall_1_0(), value, null)) {
+		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
+			IEObjectConsumer param = createEObjectConsumer((EObject)value);
+			if(param.isInstanceOf(grammarAccess.getRadiusRule().getType().getClassifier())) {
+				type = AssignmentType.PARSER_RULE_CALL;
+				element = grammarAccess.getDCAccess().getRadiusRadiusParserRuleCall_1_0(); 
+				consumed = obj;
+				return param;
+			}
+		}
+		return null;
+	}
+
+    @Override
+	public AbstractToken createFollowerAfterReturn(AbstractToken next,	int actIndex, int index, IEObjectConsumer inst) {
+		if(value == inst.getEObject() && !inst.isConsumed()) return null;
+		switch(index) {
+			case 0: return new DC_DCKeyword_0(lastRuleCallOrigin, next, actIndex, consumed);
+			default: return null;
+		}	
+	}	
+}
+
+
+/************ end Rule DC ****************/
+
+
+/************ begin Rule Radius ****************
+ *
+ * Radius:
+ * 	intValue=INT | reakValuer=REAL;
+ *
+ **/
+
+// intValue=INT | reakValuer=REAL
+protected class Radius_Alternatives extends AlternativesToken {
+
+	public Radius_Alternatives(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Alternatives getGrammarElement() {
+		return grammarAccess.getRadiusAccess().getAlternatives();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Radius_IntValueAssignment_0(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Radius_ReakValuerAssignment_1(lastRuleCallOrigin, this, 1, inst);
+			default: return null;
+		}	
+	}
+
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(getEObject().eClass() != grammarAccess.getRadiusRule().getType().getClassifier())
+			return null;
+		return eObjectConsumer;
+	}
+
+}
+
+// intValue=INT
+protected class Radius_IntValueAssignment_0 extends AssignmentToken  {
+	
+	public Radius_IntValueAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Assignment getGrammarElement() {
+		return grammarAccess.getRadiusAccess().getIntValueAssignment_0();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(this, index, index, inst);
+		}	
+	}
+
+    @Override	
+	public IEObjectConsumer tryConsume() {
+		if((value = eObjectConsumer.getConsumable("intValue",true)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("intValue");
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getRadiusAccess().getIntValueINTTerminalRuleCall_0_0(), value, null)) {
 			type = AssignmentType.TERMINAL_RULE_CALL;
-			element = grammarAccess.getDCAccess().getRadiusREALTerminalRuleCall_1_0();
+			element = grammarAccess.getRadiusAccess().getIntValueINTTerminalRuleCall_0_0();
+			return obj;
+		}
+		return null;
+	}
+
+}
+
+// reakValuer=REAL
+protected class Radius_ReakValuerAssignment_1 extends AssignmentToken  {
+	
+	public Radius_ReakValuerAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Assignment getGrammarElement() {
+		return grammarAccess.getRadiusAccess().getReakValuerAssignment_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			default: return lastRuleCallOrigin.createFollowerAfterReturn(this, index, index, inst);
+		}	
+	}
+
+    @Override	
+	public IEObjectConsumer tryConsume() {
+		if((value = eObjectConsumer.getConsumable("reakValuer",true)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("reakValuer");
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getRadiusAccess().getReakValuerREALTerminalRuleCall_1_0(), value, null)) {
+			type = AssignmentType.TERMINAL_RULE_CALL;
+			element = grammarAccess.getRadiusAccess().getReakValuerREALTerminalRuleCall_1_0();
 			return obj;
 		}
 		return null;
@@ -3449,7 +3617,7 @@ protected class DC_RadiusAssignment_1 extends AssignmentToken  {
 }
 
 
-/************ end Rule DC ****************/
+/************ end Rule Radius ****************/
 
 
 /************ begin Rule DP ****************

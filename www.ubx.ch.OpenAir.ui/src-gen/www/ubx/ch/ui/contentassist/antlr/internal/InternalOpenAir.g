@@ -701,6 +701,34 @@ finally {
 
 
 
+// Entry rule entryRuleRadius
+entryRuleRadius 
+:
+{ before(grammarAccess.getRadiusRule()); }
+	 ruleRadius
+{ after(grammarAccess.getRadiusRule()); } 
+	 EOF 
+;
+
+// Rule Radius
+ruleRadius
+    @init {
+		int stackSize = keepStackSize();
+    }
+	:
+(
+{ before(grammarAccess.getRadiusAccess().getAlternatives()); }
+(rule__Radius__Alternatives)
+{ after(grammarAccess.getRadiusAccess().getAlternatives()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+
 // Entry rule entryRuleDP
 entryRuleDP 
 :
@@ -1486,6 +1514,28 @@ finally {
 	restoreStackSize(stackSize);
 }
 
+rule__Radius__Alternatives
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getRadiusAccess().getIntValueAssignment_0()); }
+(rule__Radius__IntValueAssignment_0)
+{ after(grammarAccess.getRadiusAccess().getIntValueAssignment_0()); }
+)
+
+    |(
+{ before(grammarAccess.getRadiusAccess().getReakValuerAssignment_1()); }
+(rule__Radius__ReakValuerAssignment_1)
+{ after(grammarAccess.getRadiusAccess().getReakValuerAssignment_1()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
 rule__Point__Alternatives
     @init {
 		int stackSize = keepStackSize();
@@ -2006,6 +2056,7 @@ rule__TheDef__Group__5
     }
 :
 	rule__TheDef__Group__5__Impl
+	rule__TheDef__Group__6
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -2026,6 +2077,36 @@ rule__TheDef__Group__5__Impl
 finally {
 	restoreStackSize(stackSize);
 }
+
+
+rule__TheDef__Group__6
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__TheDef__Group__6__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__TheDef__Group__6__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getTheDefAccess().getAtAssignment_6()); }
+(rule__TheDef__AtAssignment_6)*
+{ after(grammarAccess.getTheDefAccess().getAtAssignment_6()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
 
 
 
@@ -5411,6 +5492,21 @@ finally {
 	restoreStackSize(stackSize);
 }
 
+rule__TheDef__AtAssignment_6
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getTheDefAccess().getAtATParserRuleCall_6_0()); }
+	ruleAT{ after(grammarAccess.getTheDefAccess().getAtATParserRuleCall_6_0()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
 rule__AsClass__NameAssignment_2
     @init {
 		int stackSize = keepStackSize();
@@ -5747,8 +5843,38 @@ rule__DC__RadiusAssignment_1
     }
 :
 (
-{ before(grammarAccess.getDCAccess().getRadiusREALTerminalRuleCall_1_0()); }
-	RULE_REAL{ after(grammarAccess.getDCAccess().getRadiusREALTerminalRuleCall_1_0()); }
+{ before(grammarAccess.getDCAccess().getRadiusRadiusParserRuleCall_1_0()); }
+	ruleRadius{ after(grammarAccess.getDCAccess().getRadiusRadiusParserRuleCall_1_0()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Radius__IntValueAssignment_0
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getRadiusAccess().getIntValueINTTerminalRuleCall_0_0()); }
+	RULE_INT{ after(grammarAccess.getRadiusAccess().getIntValueINTTerminalRuleCall_0_0()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Radius__ReakValuerAssignment_1
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getRadiusAccess().getReakValuerREALTerminalRuleCall_1_0()); }
+	RULE_REAL{ after(grammarAccess.getRadiusAccess().getReakValuerREALTerminalRuleCall_1_0()); }
 )
 
 ;
@@ -6417,13 +6543,13 @@ finally {
 }
 
 
-RULE_REAL : '-'? RULE_INT+ '.' RULE_INT+;
+RULE_INT : ('-'|'+')? ('0'..'9')+;
+
+RULE_REAL : RULE_INT+ '.' RULE_INT+;
 
 RULE_SL_COMMENT : '*' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
-
-RULE_INT : ('0'..'9')+;
 
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 

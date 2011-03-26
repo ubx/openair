@@ -41,6 +41,7 @@ import www.ubx.ch.openAir.Point1;
 import www.ubx.ch.openAir.Point2;
 import www.ubx.ch.openAir.Point3;
 import www.ubx.ch.openAir.Point4;
+import www.ubx.ch.openAir.Radius;
 import www.ubx.ch.openAir.SecDec;
 import www.ubx.ch.openAir.TheDef;
 import www.ubx.ch.openAir.TheGeom;
@@ -215,6 +216,13 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * @generated
    */
   private EClass dcEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass radiusEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -975,9 +983,39 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDC_Radius()
+  public EReference getDC_Radius()
   {
-    return (EAttribute)dcEClass.getEStructuralFeatures().get(0);
+    return (EReference)dcEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRadius()
+  {
+    return radiusEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRadius_IntValue()
+  {
+    return (EAttribute)radiusEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRadius_ReakValuer()
+  {
+    return (EAttribute)radiusEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1675,7 +1713,11 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
     minusEClass = createEClass(MINUS);
 
     dcEClass = createEClass(DC);
-    createEAttribute(dcEClass, DC__RADIUS);
+    createEReference(dcEClass, DC__RADIUS);
+
+    radiusEClass = createEClass(RADIUS);
+    createEAttribute(radiusEClass, RADIUS__INT_VALUE);
+    createEAttribute(radiusEClass, RADIUS__REAK_VALUER);
 
     dpEClass = createEClass(DP);
     createEReference(dpEClass, DP__DP);
@@ -1882,7 +1924,11 @@ public class OpenAirPackageImpl extends EPackageImpl implements OpenAirPackage
     initEClass(minusEClass, Minus.class, "Minus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(dcEClass, www.ubx.ch.openAir.DC.class, "DC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getDC_Radius(), ecorePackage.getEString(), "radius", null, 0, 1, www.ubx.ch.openAir.DC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getDC_Radius(), this.getRadius(), null, "radius", null, 0, 1, www.ubx.ch.openAir.DC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(radiusEClass, Radius.class, "Radius", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRadius_IntValue(), ecorePackage.getEInt(), "intValue", null, 0, 1, Radius.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRadius_ReakValuer(), ecorePackage.getEString(), "reakValuer", null, 0, 1, Radius.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(dpEClass, www.ubx.ch.openAir.DP.class, "DP", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getDP_Dp(), this.getPoint(), null, "dp", null, 0, 1, www.ubx.ch.openAir.DP.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
