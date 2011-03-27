@@ -2,16 +2,12 @@ package www.ubx.ch.validation;
 
 import org.eclipse.xtext.validation.Check;
 
-import www.ubx.ch.openAir.AsName;
 import www.ubx.ch.openAir.LatDegr;
 import www.ubx.ch.openAir.LongDegr;
 import www.ubx.ch.openAir.MinSec;
-import www.ubx.ch.openAir.OpenAir;
 import www.ubx.ch.openAir.OpenAirPackage;
 
 public class OpenAirJavaValidator extends AbstractOpenAirJavaValidator {
-
-	public final static String INVALID_AIRSPACE_NAME = "INVALID_AIRSPACE_NAME";
 
 	@Check
 	public void checkLongDegrRange(LongDegr longDegr) {
@@ -32,12 +28,5 @@ public class OpenAirJavaValidator extends AbstractOpenAirJavaValidator {
 		if (!(minSec.getValue() >= 0 && minSec.getValue() <= 59)) {
 			error("Min/sec in range 0 .. 59", OpenAirPackage.LONG_DEC__VALUE);
 		}
-	}
-
-	@Check
-	public void checkAsName(AsName asName) {
-		// if (!(asName.getName().startsWith("'"))) {
-		// error("Name must be in quotes", 5, INVALID_AIRSPACE_NAME);
-		// }
 	}
 }
